@@ -1,0 +1,1536 @@
+country_code,country_name,mkt_name,price_date,lat,lon,commodity,price_local
+KEN,Kenya,Garissa,2015-01-01,-0.46,39.65,maize,65.0
+KEN,Kenya,Garissa,2015-02-01,-0.46,39.65,maize,65.0
+KEN,Kenya,Garissa,2015-03-01,-0.46,39.65,maize,65.0
+KEN,Kenya,Garissa,2015-04-01,-0.46,39.65,maize,65.0
+KEN,Kenya,Garissa,2015-06-01,-0.46,39.65,maize,50.0
+KEN,Kenya,Garissa,2015-07-01,-0.46,39.65,maize,50.0
+KEN,Kenya,Garissa,2015-08-01,-0.46,39.65,maize,50.0
+KEN,Kenya,Garissa,2015-11-01,-0.46,39.65,maize,50.0
+KEN,Kenya,Garissa,2015-12-01,-0.46,39.65,maize,50.0
+KEN,Kenya,Garissa,2016-05-01,-0.46,39.65,maize,51.0
+KEN,Kenya,Garissa,2016-06-01,-0.46,39.65,maize,60.0
+KEN,Kenya,Garissa,2016-08-01,-0.46,39.65,maize,50.0
+KEN,Kenya,Garissa,2016-09-01,-0.46,39.65,maize,50.0
+KEN,Kenya,Garissa,2016-11-01,-0.46,39.65,maize,55.0
+KEN,Kenya,Garissa,2017-01-01,-0.46,39.65,maize,55.0
+KEN,Kenya,Garissa,2017-02-01,-0.46,39.65,maize,55.0
+KEN,Kenya,Garissa,2017-03-01,-0.46,39.65,maize,59.0
+KEN,Kenya,Garissa,2017-04-01,-0.46,39.65,maize,60.0
+KEN,Kenya,Garissa,2017-05-01,-0.46,39.65,maize,50.0
+KEN,Kenya,Garissa,2017-08-01,-0.46,39.65,maize,65.0
+KEN,Kenya,Garissa,2017-09-01,-0.46,39.65,maize,65.0
+KEN,Kenya,Garissa,2018-02-01,-0.46,39.65,maize,65.0
+KEN,Kenya,Garissa,2018-04-01,-0.46,39.65,maize,80.0
+KEN,Kenya,Garissa,2018-05-01,-0.46,39.65,maize,60.0
+KEN,Kenya,Garissa,2018-06-01,-0.46,39.65,maize,60.0
+KEN,Kenya,Garissa,2018-10-01,-0.46,39.65,maize,60.0
+KEN,Kenya,Garissa,2018-12-01,-0.46,39.65,maize,60.0
+KEN,Kenya,Garissa,2019-02-01,-0.46,39.65,maize,65.0
+KEN,Kenya,Garissa,2019-05-01,-0.46,39.65,maize,65.0
+KEN,Kenya,Garissa,2019-06-01,-0.46,39.65,maize,67.0
+KEN,Kenya,Garissa,2019-07-01,-0.46,39.65,maize,68.0
+KEN,Kenya,Garissa,2019-08-01,-0.46,39.65,maize,68.0
+KEN,Kenya,Garissa,2019-09-01,-0.46,39.65,maize,68.0
+KEN,Kenya,Garissa,2019-10-01,-0.46,39.65,maize,67.0
+KEN,Kenya,Garissa,2019-12-01,-0.46,39.65,maize,68.0
+KEN,Kenya,Garissa,2020-04-01,-0.46,39.65,maize,68.0
+KEN,Kenya,Garissa,2020-05-01,-0.46,39.65,maize,68.0
+KEN,Kenya,Garissa,2020-06-01,-0.46,39.65,maize,68.0
+KEN,Kenya,Garissa,2020-07-01,-0.46,39.65,maize,68.0
+KEN,Kenya,Garissa,2020-08-01,-0.46,39.65,maize,68.0
+KEN,Kenya,Garissa,2020-10-01,-0.46,39.65,maize,70.0
+KEN,Kenya,Garissa,2020-11-01,-0.46,39.65,maize,70.0
+KEN,Kenya,Hola (Tana River),2015-01-01,0.0,37.0,maize,35.0
+KEN,Kenya,Hola (Tana River),2015-02-01,0.0,37.0,maize,35.0
+KEN,Kenya,Hola (Tana River),2015-03-01,0.0,37.0,maize,31.0
+KEN,Kenya,Hola (Tana River),2015-06-01,0.0,37.0,maize,36.0
+KEN,Kenya,Hola (Tana River),2015-09-01,0.0,37.0,maize,39.25
+KEN,Kenya,Hola (Tana River),2016-01-01,0.0,37.0,maize,39.17
+KEN,Kenya,Hola (Tana River),2016-06-01,0.0,37.0,maize,41.7
+KEN,Kenya,Hola (Tana River),2016-08-01,0.0,37.0,maize,53.45
+KEN,Kenya,Hola (Tana River),2016-10-01,0.0,37.0,maize,58.0
+KEN,Kenya,Hola (Tana River),2016-11-01,0.0,37.0,maize,50.0
+KEN,Kenya,Hola (Tana River),2016-12-01,0.0,37.0,maize,50.0
+KEN,Kenya,Hola (Tana River),2017-04-01,0.0,37.0,maize,56.1
+KEN,Kenya,Hola (Tana River),2017-05-01,0.0,37.0,maize,60.0
+KEN,Kenya,Hola (Tana River),2017-07-01,0.0,37.0,maize,65.0
+KEN,Kenya,Hola (Tana River),2017-08-01,0.0,37.0,maize,55.9
+KEN,Kenya,Hola (Tana River),2017-12-01,0.0,37.0,maize,45.0
+KEN,Kenya,Hola (Tana River),2018-01-01,0.0,37.0,maize,55.0
+KEN,Kenya,Hola (Tana River),2018-02-01,0.0,37.0,maize,55.0
+KEN,Kenya,Hola (Tana River),2018-04-01,0.0,37.0,maize,50.0
+KEN,Kenya,Hola (Tana River),2018-05-01,0.0,37.0,maize,50.0
+KEN,Kenya,Hola (Tana River),2018-06-01,0.0,37.0,maize,57.0
+KEN,Kenya,Hola (Tana River),2018-11-01,0.0,37.0,maize,39.2
+KEN,Kenya,Hola (Tana River),2019-01-01,0.0,37.0,maize,63.0
+KEN,Kenya,Hola (Tana River),2019-02-01,0.0,37.0,maize,64.0
+KEN,Kenya,Hola (Tana River),2019-05-01,0.0,37.0,maize,50.0
+KEN,Kenya,Hola (Tana River),2019-07-01,0.0,37.0,maize,59.3
+KEN,Kenya,Hola (Tana River),2019-08-01,0.0,37.0,maize,56.8
+KEN,Kenya,Hola (Tana River),2019-10-01,0.0,37.0,maize,40.0
+KEN,Kenya,Hola (Tana River),2019-11-01,0.0,37.0,maize,58.0
+KEN,Kenya,Hola (Tana River),2020-04-01,0.0,37.0,maize,68.0
+KEN,Kenya,Hola (Tana River),2020-05-01,0.0,37.0,maize,66.0
+KEN,Kenya,Hola (Tana River),2020-08-01,0.0,37.0,maize,66.0
+KEN,Kenya,Hola (Tana River),2020-10-01,0.0,37.0,maize,53.0
+KEN,Kenya,Hola (Tana River),2020-12-01,0.0,37.0,maize,45.0
+KEN,Kenya,Kajiado,2015-01-01,-1.84,36.79,maize,41.1
+KEN,Kenya,Kajiado,2015-03-01,-1.84,36.79,maize,41.5
+KEN,Kenya,Kajiado,2015-07-01,-1.84,36.79,maize,50.0
+KEN,Kenya,Kajiado,2015-09-01,-1.84,36.79,maize,48.0
+KEN,Kenya,Kajiado,2015-10-01,-1.84,36.79,maize,50.0
+KEN,Kenya,Kajiado,2015-11-01,-1.84,36.79,maize,51.25
+KEN,Kenya,Kajiado,2015-12-01,-1.84,36.79,maize,48.33
+KEN,Kenya,Kajiado,2016-01-01,-1.84,36.79,maize,48.0
+KEN,Kenya,Kajiado,2016-02-01,-1.84,36.79,maize,47.5
+KEN,Kenya,Kajiado,2016-05-01,-1.84,36.79,maize,47.0
+KEN,Kenya,Kajiado,2016-06-01,-1.84,36.79,maize,45.0
+KEN,Kenya,Kajiado,2016-07-01,-1.84,36.79,maize,44.0
+KEN,Kenya,Kajiado,2016-08-01,-1.84,36.79,maize,44.0
+KEN,Kenya,Kajiado,2016-09-01,-1.84,36.79,maize,43.0
+KEN,Kenya,Kajiado,2016-10-01,-1.84,36.79,maize,46.0
+KEN,Kenya,Kajiado,2017-01-01,-1.84,36.79,maize,48.0
+KEN,Kenya,Kajiado,2017-03-01,-1.84,36.79,maize,54.4
+KEN,Kenya,Kajiado,2017-05-01,-1.84,36.79,maize,65.0
+KEN,Kenya,Kajiado,2017-06-01,-1.84,36.79,maize,65.0
+KEN,Kenya,Kajiado,2017-07-01,-1.84,36.79,maize,65.0
+KEN,Kenya,Kajiado,2017-08-01,-1.84,36.79,maize,68.0
+KEN,Kenya,Kajiado,2017-09-01,-1.84,36.79,maize,70.0
+KEN,Kenya,Kajiado,2017-10-01,-1.84,36.79,maize,73.0
+KEN,Kenya,Kajiado,2018-01-01,-1.84,36.79,maize,60.0
+KEN,Kenya,Kajiado,2018-02-01,-1.84,36.79,maize,60.0
+KEN,Kenya,Kajiado,2018-07-01,-1.84,36.79,maize,43.0
+KEN,Kenya,Kajiado,2018-08-01,-1.84,36.79,maize,40.0
+KEN,Kenya,Kajiado,2018-09-01,-1.84,36.79,maize,40.0
+KEN,Kenya,Kajiado,2018-10-01,-1.84,36.79,maize,45.0
+KEN,Kenya,Kajiado,2018-11-01,-1.84,36.79,maize,45.0
+KEN,Kenya,Kajiado,2019-01-01,-1.84,36.79,maize,43.0
+KEN,Kenya,Kajiado,2019-05-01,-1.84,36.79,maize,54.0
+KEN,Kenya,Kajiado,2019-07-01,-1.84,36.79,maize,54.0
+KEN,Kenya,Kajiado,2019-11-01,-1.84,36.79,maize,45.0
+KEN,Kenya,Kajiado,2019-12-01,-1.84,36.79,maize,46.0
+KEN,Kenya,Kajiado,2020-02-01,-1.84,36.79,maize,50.0
+KEN,Kenya,Kajiado,2020-04-01,-1.84,36.79,maize,54.0
+KEN,Kenya,Kajiado,2020-07-01,-1.84,36.79,maize,50.0
+KEN,Kenya,Kajiado,2020-09-01,-1.84,36.79,maize,53.0
+KEN,Kenya,Kajiado,2020-11-01,-1.84,36.79,maize,53.0
+KEN,Kenya,Kilifi,2015-01-01,-3.63,39.85,maize,33.9
+KEN,Kenya,Kilifi,2015-03-01,-3.63,39.85,maize,37.7
+KEN,Kenya,Kilifi,2015-05-01,-3.63,39.85,maize,36.0
+KEN,Kenya,Kilifi,2015-06-01,-3.63,39.85,maize,36.0
+KEN,Kenya,Kilifi,2015-07-01,-3.63,39.85,maize,34.0
+KEN,Kenya,Kilifi,2015-08-01,-3.63,39.85,maize,35.0
+KEN,Kenya,Kilifi,2015-09-01,-3.63,39.85,maize,35.0
+KEN,Kenya,Kilifi,2015-10-01,-3.63,39.85,maize,38.0
+KEN,Kenya,Kilifi,2015-12-01,-3.63,39.85,maize,37.0
+KEN,Kenya,Kilifi,2016-02-01,-3.63,39.85,maize,39.0
+KEN,Kenya,Kilifi,2016-06-01,-3.63,39.85,maize,44.0
+KEN,Kenya,Kilifi,2016-07-01,-3.63,39.85,maize,40.0
+KEN,Kenya,Kilifi,2016-10-01,-3.63,39.85,maize,42.0
+KEN,Kenya,Kilifi,2016-11-01,-3.63,39.85,maize,42.0
+KEN,Kenya,Kilifi,2017-01-01,-3.63,39.85,maize,40.0
+KEN,Kenya,Kilifi,2017-03-01,-3.63,39.85,maize,58.0
+KEN,Kenya,Kilifi,2017-05-01,-3.63,39.85,maize,87.9
+KEN,Kenya,Kilifi,2017-06-01,-3.63,39.85,maize,57.9
+KEN,Kenya,Kilifi,2017-08-01,-3.63,39.85,maize,47.8
+KEN,Kenya,Kilifi,2017-12-01,-3.63,39.85,maize,46.3
+KEN,Kenya,Kilifi,2018-01-01,-3.63,39.85,maize,47.8
+KEN,Kenya,Kilifi,2018-02-01,-3.63,39.85,maize,48.2
+KEN,Kenya,Kilifi,2018-03-01,-3.63,39.85,maize,47.5
+KEN,Kenya,Kilifi,2018-05-01,-3.63,39.85,maize,43.7
+KEN,Kenya,Kilifi,2018-07-01,-3.63,39.85,maize,39.6
+KEN,Kenya,Kilifi,2018-08-01,-3.63,39.85,maize,39.9
+KEN,Kenya,Kilifi,2018-10-01,-3.63,39.85,maize,37.8
+KEN,Kenya,Kilifi,2018-12-01,-3.63,39.85,maize,39.5
+KEN,Kenya,Kilifi,2019-01-01,-3.63,39.85,maize,41.1
+KEN,Kenya,Kilifi,2019-02-01,-3.63,39.85,maize,41.1
+KEN,Kenya,Kilifi,2019-04-01,-3.63,39.85,maize,45.1
+KEN,Kenya,Kilifi,2019-05-01,-3.63,39.85,maize,49.1
+KEN,Kenya,Kilifi,2019-07-01,-3.63,39.85,maize,47.9
+KEN,Kenya,Kilifi,2019-09-01,-3.63,39.85,maize,45.5
+KEN,Kenya,Kilifi,2019-10-01,-3.63,39.85,maize,47.9
+KEN,Kenya,Kilifi,2019-11-01,-3.63,39.85,maize,45.5
+KEN,Kenya,Kilifi,2019-12-01,-3.63,39.85,maize,47.3
+KEN,Kenya,Kilifi,2020-01-01,-3.63,39.85,maize,46.9
+KEN,Kenya,Kilifi,2020-02-01,-3.63,39.85,maize,45.7
+KEN,Kenya,Kilifi,2020-04-01,-3.63,39.85,maize,49.6
+KEN,Kenya,Kilifi,2020-06-01,-3.63,39.85,maize,43.7
+KEN,Kenya,Kilifi,2020-07-01,-3.63,39.85,maize,44.3
+KEN,Kenya,Kilifi,2020-08-01,-3.63,39.85,maize,41.7
+KEN,Kenya,Kilifi,2020-10-01,-3.63,39.85,maize,41.9
+KEN,Kenya,Kilifi,2020-12-01,-3.63,39.85,maize,37.6
+KEN,Kenya,Kitui,2007-02-01,-1.37,38.02,maize,17.0
+KEN,Kenya,Kitui,2007-03-01,-1.37,38.02,maize,8.0
+KEN,Kenya,Kitui,2007-04-01,-1.37,38.02,maize,8.0
+KEN,Kenya,Kitui,2007-05-01,-1.37,38.02,maize,8.0
+KEN,Kenya,Kitui,2007-06-01,-1.37,38.02,maize,9.0
+KEN,Kenya,Kitui,2007-10-01,-1.37,38.02,maize,9.0
+KEN,Kenya,Kitui,2007-12-01,-1.37,38.02,maize,14.0
+KEN,Kenya,Kitui,2008-01-01,-1.37,38.02,maize,16.0
+KEN,Kenya,Kitui,2008-03-01,-1.37,38.02,maize,15.0
+KEN,Kenya,Kitui,2008-07-01,-1.37,38.02,maize,27.0
+KEN,Kenya,Kitui,2008-09-01,-1.37,38.02,maize,30.0
+KEN,Kenya,Kitui,2008-10-01,-1.37,38.02,maize,34.0
+KEN,Kenya,Kitui,2009-01-01,-1.37,38.02,maize,30.0
+KEN,Kenya,Kitui,2009-02-01,-1.37,38.02,maize,35.0
+KEN,Kenya,Kitui,2009-03-01,-1.37,38.02,maize,35.0
+KEN,Kenya,Kitui,2009-04-01,-1.37,38.02,maize,35.0
+KEN,Kenya,Kitui,2009-06-01,-1.37,38.02,maize,36.0
+KEN,Kenya,Kitui,2009-07-01,-1.37,38.02,maize,33.0
+KEN,Kenya,Kitui,2009-10-01,-1.37,38.02,maize,30.0
+KEN,Kenya,Kitui,2009-12-01,-1.37,38.02,maize,30.0
+KEN,Kenya,Kitui,2010-01-01,-1.37,38.02,maize,30.0
+KEN,Kenya,Kitui,2010-02-01,-1.37,38.02,maize,20.0
+KEN,Kenya,Kitui,2010-03-01,-1.37,38.02,maize,16.0
+KEN,Kenya,Kitui,2010-04-01,-1.37,38.02,maize,13.0
+KEN,Kenya,Kitui,2010-05-01,-1.37,38.02,maize,13.0
+KEN,Kenya,Kitui,2010-07-01,-1.37,38.02,maize,15.0
+KEN,Kenya,Kitui,2010-08-01,-1.37,38.02,maize,13.0
+KEN,Kenya,Kitui,2010-09-01,-1.37,38.02,maize,13.0
+KEN,Kenya,Kitui,2010-10-01,-1.37,38.02,maize,14.0
+KEN,Kenya,Kitui,2010-11-01,-1.37,38.02,maize,18.0
+KEN,Kenya,Kitui,2010-12-01,-1.37,38.02,maize,16.0
+KEN,Kenya,Kitui,2011-01-01,-1.37,38.02,maize,17.0
+KEN,Kenya,Kitui,2011-02-01,-1.37,38.02,maize,17.0
+KEN,Kenya,Kitui,2011-03-01,-1.37,38.02,maize,22.0
+KEN,Kenya,Kitui,2011-04-01,-1.37,38.02,maize,30.0
+KEN,Kenya,Kitui,2011-06-01,-1.37,38.02,maize,46.0
+KEN,Kenya,Kitui,2011-07-01,-1.37,38.02,maize,45.0
+KEN,Kenya,Kitui,2011-08-01,-1.37,38.02,maize,39.0
+KEN,Kenya,Kitui,2011-09-01,-1.37,38.02,maize,41.0
+KEN,Kenya,Kitui,2011-11-01,-1.37,38.02,maize,41.63
+KEN,Kenya,Kitui,2011-12-01,-1.37,38.02,maize,42.55
+KEN,Kenya,Kitui,2012-03-01,-1.37,38.02,maize,37.0
+KEN,Kenya,Kitui,2012-04-01,-1.37,38.02,maize,37.0
+KEN,Kenya,Kitui,2012-05-01,-1.37,38.02,maize,41.0
+KEN,Kenya,Kitui,2012-06-01,-1.37,38.02,maize,41.0
+KEN,Kenya,Kitui,2012-07-01,-1.37,38.02,maize,41.0
+KEN,Kenya,Kitui,2012-08-01,-1.37,38.02,maize,42.0
+KEN,Kenya,Kitui,2012-09-01,-1.37,38.02,maize,40.0
+KEN,Kenya,Kitui,2012-10-01,-1.37,38.02,maize,40.0
+KEN,Kenya,Kitui,2012-12-01,-1.37,38.02,maize,37.0
+KEN,Kenya,Kitui,2013-02-01,-1.37,38.02,maize,33.0
+KEN,Kenya,Kitui,2013-03-01,-1.37,38.02,maize,30.0
+KEN,Kenya,Kitui,2013-04-01,-1.37,38.02,maize,34.0
+KEN,Kenya,Kitui,2013-05-01,-1.37,38.02,maize,31.0
+KEN,Kenya,Kitui,2013-06-01,-1.37,38.02,maize,33.0
+KEN,Kenya,Kitui,2013-07-01,-1.37,38.02,maize,32.0
+KEN,Kenya,Kitui,2013-08-01,-1.37,38.02,maize,33.0
+KEN,Kenya,Kitui,2013-10-01,-1.37,38.02,maize,37.0
+KEN,Kenya,Kitui,2013-11-01,-1.37,38.02,maize,38.0
+KEN,Kenya,Kitui,2013-12-01,-1.37,38.02,maize,38.0
+KEN,Kenya,Kitui,2014-01-01,-1.37,38.02,maize,37.0
+KEN,Kenya,Kitui,2014-02-01,-1.37,38.02,maize,35.0
+KEN,Kenya,Kitui,2014-03-01,-1.37,38.02,maize,36.0
+KEN,Kenya,Kitui,2014-04-01,-1.37,38.02,maize,36.0
+KEN,Kenya,Kitui,2014-06-01,-1.37,38.02,maize,38.0
+KEN,Kenya,Kitui,2014-07-01,-1.37,38.02,maize,39.0
+KEN,Kenya,Kitui,2014-08-01,-1.37,38.02,maize,36.0
+KEN,Kenya,Kitui,2014-12-01,-1.37,38.02,maize,30.0
+KEN,Kenya,Kitui,2015-01-01,-1.37,38.02,maize,29.0
+KEN,Kenya,Kitui,2015-02-01,-1.37,38.02,maize,29.0
+KEN,Kenya,Kitui,2015-03-01,-1.37,38.02,maize,30.0
+KEN,Kenya,Kitui,2015-06-01,-1.37,38.02,maize,35.0
+KEN,Kenya,Kitui,2015-07-01,-1.37,38.02,maize,37.0
+KEN,Kenya,Kitui,2015-09-01,-1.37,38.02,maize,33.0
+KEN,Kenya,Kitui,2015-10-01,-1.37,38.02,maize,34.0
+KEN,Kenya,Kitui,2015-11-01,-1.37,38.02,maize,33.0
+KEN,Kenya,Kitui,2015-12-01,-1.37,38.02,maize,33.0
+KEN,Kenya,Kitui,2016-01-01,-1.37,38.02,maize,31.0
+KEN,Kenya,Kitui,2016-02-01,-1.37,38.02,maize,31.0
+KEN,Kenya,Kitui,2016-03-01,-1.37,38.02,maize,29.0
+KEN,Kenya,Kitui,2016-05-01,-1.37,38.02,maize,28.0
+KEN,Kenya,Kitui,2016-06-01,-1.37,38.02,maize,28.0
+KEN,Kenya,Kitui,2016-07-01,-1.37,38.02,maize,31.0
+KEN,Kenya,Kitui,2016-08-01,-1.37,38.02,maize,33.0
+KEN,Kenya,Kitui,2016-09-01,-1.37,38.02,maize,34.0
+KEN,Kenya,Kitui,2016-10-01,-1.37,38.02,maize,34.0
+KEN,Kenya,Kitui,2016-11-01,-1.37,38.02,maize,35.0
+KEN,Kenya,Kitui,2016-12-01,-1.37,38.02,maize,35.0
+KEN,Kenya,Kitui,2017-01-01,-1.37,38.02,maize,38.0
+KEN,Kenya,Kitui,2017-04-01,-1.37,38.02,maize,54.0
+KEN,Kenya,Kitui,2017-05-01,-1.37,38.02,maize,58.0
+KEN,Kenya,Kitui,2017-07-01,-1.37,38.02,maize,58.0
+KEN,Kenya,Kitui,2017-08-01,-1.37,38.02,maize,45.0
+KEN,Kenya,Kitui,2017-09-01,-1.37,38.02,maize,41.0
+KEN,Kenya,Kitui,2017-10-01,-1.37,38.02,maize,37.0
+KEN,Kenya,Kitui,2017-11-01,-1.37,38.02,maize,37.0
+KEN,Kenya,Kitui,2017-12-01,-1.37,38.02,maize,35.0
+KEN,Kenya,Kitui,2018-02-01,-1.37,38.02,maize,36.0
+KEN,Kenya,Kitui,2018-03-01,-1.37,38.02,maize,34.0
+KEN,Kenya,Kitui,2018-06-01,-1.37,38.02,maize,31.0
+KEN,Kenya,Kitui,2018-08-01,-1.37,38.02,maize,30.0
+KEN,Kenya,Kitui,2018-12-01,-1.37,38.02,maize,27.9
+KEN,Kenya,Kitui,2019-01-01,-1.37,38.02,maize,29.0
+KEN,Kenya,Kitui,2019-02-01,-1.37,38.02,maize,27.0
+KEN,Kenya,Kitui,2019-04-01,-1.37,38.02,maize,34.0
+KEN,Kenya,Kitui,2019-05-01,-1.37,38.02,maize,42.0
+KEN,Kenya,Kitui,2019-11-01,-1.37,38.02,maize,43.6
+KEN,Kenya,Kitui,2019-12-01,-1.37,38.02,maize,44.6
+KEN,Kenya,Kitui,2020-01-01,-1.37,38.02,maize,38.0
+KEN,Kenya,Kitui,2020-04-01,-1.37,38.02,maize,32.0
+KEN,Kenya,Kitui,2020-05-01,-1.37,38.02,maize,34.0
+KEN,Kenya,Kitui,2020-06-01,-1.37,38.02,maize,33.0
+KEN,Kenya,Kitui,2020-07-01,-1.37,38.02,maize,34.0
+KEN,Kenya,Kitui,2020-11-01,-1.37,38.02,maize,35.0
+KEN,Kenya,Lodwar (Turkana),2007-02-01,3.12,35.6,maize,30.0
+KEN,Kenya,Lodwar (Turkana),2007-06-01,3.12,35.6,maize,30.0
+KEN,Kenya,Lodwar (Turkana),2007-07-01,3.12,35.6,maize,30.0
+KEN,Kenya,Lodwar (Turkana),2007-09-01,3.12,35.6,maize,28.0
+KEN,Kenya,Lodwar (Turkana),2008-02-01,3.12,35.6,maize,38.0
+KEN,Kenya,Lodwar (Turkana),2008-03-01,3.12,35.6,maize,35.0
+KEN,Kenya,Lodwar (Turkana),2008-08-01,3.12,35.6,maize,43.0
+KEN,Kenya,Lodwar (Turkana),2008-09-01,3.12,35.6,maize,45.0
+KEN,Kenya,Lodwar (Turkana),2008-10-01,3.12,35.6,maize,44.0
+KEN,Kenya,Lodwar (Turkana),2008-11-01,3.12,35.6,maize,42.0
+KEN,Kenya,Lodwar (Turkana),2008-12-01,3.12,35.6,maize,42.0
+KEN,Kenya,Lodwar (Turkana),2009-01-01,3.12,35.6,maize,49.0
+KEN,Kenya,Lodwar (Turkana),2009-02-01,3.12,35.6,maize,43.0
+KEN,Kenya,Lodwar (Turkana),2009-05-01,3.12,35.6,maize,46.0
+KEN,Kenya,Lodwar (Turkana),2009-06-01,3.12,35.6,maize,47.7
+KEN,Kenya,Lodwar (Turkana),2009-07-01,3.12,35.6,maize,52.0
+KEN,Kenya,Lodwar (Turkana),2009-08-01,3.12,35.6,maize,48.0
+KEN,Kenya,Lodwar (Turkana),2009-10-01,3.12,35.6,maize,51.0
+KEN,Kenya,Lodwar (Turkana),2009-12-01,3.12,35.6,maize,45.8
+KEN,Kenya,Lodwar (Turkana),2010-02-01,3.12,35.6,maize,45.7
+KEN,Kenya,Lodwar (Turkana),2010-04-01,3.12,35.6,maize,44.93
+KEN,Kenya,Lodwar (Turkana),2010-05-01,3.12,35.6,maize,46.0
+KEN,Kenya,Lodwar (Turkana),2010-06-01,3.12,35.6,maize,44.0
+KEN,Kenya,Lodwar (Turkana),2010-07-01,3.12,35.6,maize,43.61
+KEN,Kenya,Lodwar (Turkana),2010-08-01,3.12,35.6,maize,44.0
+KEN,Kenya,Lodwar (Turkana),2010-09-01,3.12,35.6,maize,46.29
+KEN,Kenya,Lodwar (Turkana),2011-03-01,3.12,35.6,maize,46.0
+KEN,Kenya,Lodwar (Turkana),2011-05-01,3.12,35.6,maize,60.0
+KEN,Kenya,Lodwar (Turkana),2011-07-01,3.12,35.6,maize,74.8
+KEN,Kenya,Lodwar (Turkana),2011-10-01,3.12,35.6,maize,64.3
+KEN,Kenya,Lodwar (Turkana),2011-11-01,3.12,35.6,maize,64.23
+KEN,Kenya,Lodwar (Turkana),2011-12-01,3.12,35.6,maize,64.58
+KEN,Kenya,Lodwar (Turkana),2012-01-01,3.12,35.6,maize,61.35
+KEN,Kenya,Lodwar (Turkana),2012-02-01,3.12,35.6,maize,56.0
+KEN,Kenya,Lodwar (Turkana),2012-04-01,3.12,35.6,maize,60.13
+KEN,Kenya,Lodwar (Turkana),2012-05-01,3.12,35.6,maize,58.75
+KEN,Kenya,Lodwar (Turkana),2012-06-01,3.12,35.6,maize,58.65
+KEN,Kenya,Lodwar (Turkana),2012-09-01,3.12,35.6,maize,66.0
+KEN,Kenya,Lodwar (Turkana),2012-10-01,3.12,35.6,maize,76.62
+KEN,Kenya,Lodwar (Turkana),2013-01-01,3.12,35.6,maize,75.8
+KEN,Kenya,Lodwar (Turkana),2013-04-01,3.12,35.6,maize,87.8
+KEN,Kenya,Lodwar (Turkana),2013-06-01,3.12,35.6,maize,86.35
+KEN,Kenya,Lodwar (Turkana),2013-07-01,3.12,35.6,maize,76.5
+KEN,Kenya,Lodwar (Turkana),2013-08-01,3.12,35.6,maize,76.04
+KEN,Kenya,Lodwar (Turkana),2013-09-01,3.12,35.6,maize,71.88
+KEN,Kenya,Lodwar (Turkana),2013-10-01,3.12,35.6,maize,74.17
+KEN,Kenya,Lodwar (Turkana),2013-12-01,3.12,35.6,maize,71.93
+KEN,Kenya,Lodwar (Turkana),2014-02-01,3.12,35.6,maize,78.05
+KEN,Kenya,Lodwar (Turkana),2014-04-01,3.12,35.6,maize,70.1
+KEN,Kenya,Lodwar (Turkana),2014-05-01,3.12,35.6,maize,75.02
+KEN,Kenya,Lodwar (Turkana),2014-08-01,3.12,35.6,maize,80.78
+KEN,Kenya,Lodwar (Turkana),2014-09-01,3.12,35.6,maize,71.55
+KEN,Kenya,Lodwar (Turkana),2014-10-01,3.12,35.6,maize,75.0
+KEN,Kenya,Lodwar (Turkana),2014-11-01,3.12,35.6,maize,72.0
+KEN,Kenya,Lodwar (Turkana),2015-01-01,3.12,35.6,maize,82.0
+KEN,Kenya,Lodwar (Turkana),2015-02-01,3.12,35.6,maize,74.0
+KEN,Kenya,Lodwar (Turkana),2015-04-01,3.12,35.6,maize,78.0
+KEN,Kenya,Lodwar (Turkana),2015-05-01,3.12,35.6,maize,69.0
+KEN,Kenya,Lodwar (Turkana),2015-06-01,3.12,35.6,maize,73.0
+KEN,Kenya,Lodwar (Turkana),2015-07-01,3.12,35.6,maize,75.0
+KEN,Kenya,Lodwar (Turkana),2016-01-01,3.12,35.6,maize,81.0
+KEN,Kenya,Lodwar (Turkana),2016-02-01,3.12,35.6,maize,75.0
+KEN,Kenya,Lodwar (Turkana),2016-03-01,3.12,35.6,maize,76.0
+KEN,Kenya,Lodwar (Turkana),2016-05-01,3.12,35.6,maize,84.0
+KEN,Kenya,Lodwar (Turkana),2016-07-01,3.12,35.6,maize,75.0
+KEN,Kenya,Lodwar (Turkana),2016-12-01,3.12,35.6,maize,77.0
+KEN,Kenya,Lodwar (Turkana),2017-01-01,3.12,35.6,maize,87.0
+KEN,Kenya,Lodwar (Turkana),2017-02-01,3.12,35.6,maize,82.0
+KEN,Kenya,Lodwar (Turkana),2017-04-01,3.12,35.6,maize,92.6
+KEN,Kenya,Lodwar (Turkana),2017-07-01,3.12,35.6,maize,91.0
+KEN,Kenya,Lodwar (Turkana),2017-08-01,3.12,35.6,maize,88.0
+KEN,Kenya,Lodwar (Turkana),2017-10-01,3.12,35.6,maize,81.0
+KEN,Kenya,Lodwar (Turkana),2017-12-01,3.12,35.6,maize,81.0
+KEN,Kenya,Lodwar (Turkana),2018-01-01,3.12,35.6,maize,82.0
+KEN,Kenya,Lodwar (Turkana),2018-02-01,3.12,35.6,maize,85.5
+KEN,Kenya,Lodwar (Turkana),2018-04-01,3.12,35.6,maize,85.0
+KEN,Kenya,Lodwar (Turkana),2018-06-01,3.12,35.6,maize,83.0
+KEN,Kenya,Lodwar (Turkana),2018-07-01,3.12,35.6,maize,81.0
+KEN,Kenya,Lodwar (Turkana),2018-09-01,3.12,35.6,maize,63.0
+KEN,Kenya,Lodwar (Turkana),2018-10-01,3.12,35.6,maize,61.0
+KEN,Kenya,Lodwar (Turkana),2018-11-01,3.12,35.6,maize,62.0
+KEN,Kenya,Lodwar (Turkana),2018-12-01,3.12,35.6,maize,60.0
+KEN,Kenya,Lodwar (Turkana),2019-02-01,3.12,35.6,maize,64.8
+KEN,Kenya,Lodwar (Turkana),2019-03-01,3.12,35.6,maize,61.0
+KEN,Kenya,Lodwar (Turkana),2019-04-01,3.12,35.6,maize,61.0
+KEN,Kenya,Lodwar (Turkana),2019-05-01,3.12,35.6,maize,66.0
+KEN,Kenya,Lodwar (Turkana),2019-06-01,3.12,35.6,maize,63.0
+KEN,Kenya,Lodwar (Turkana),2019-07-01,3.12,35.6,maize,66.7
+KEN,Kenya,Lodwar (Turkana),2019-08-01,3.12,35.6,maize,67.1
+KEN,Kenya,Lodwar (Turkana),2019-09-01,3.12,35.6,maize,66.3
+KEN,Kenya,Lodwar (Turkana),2019-10-01,3.12,35.6,maize,67.0
+KEN,Kenya,Lodwar (Turkana),2019-11-01,3.12,35.6,maize,64.0
+KEN,Kenya,Lodwar (Turkana),2019-12-01,3.12,35.6,maize,65.0
+KEN,Kenya,Lodwar (Turkana),2020-01-01,3.12,35.6,maize,64.0
+KEN,Kenya,Lodwar (Turkana),2020-02-01,3.12,35.6,maize,64.0
+KEN,Kenya,Lodwar (Turkana),2020-04-01,3.12,35.6,maize,60.0
+KEN,Kenya,Lodwar (Turkana),2020-05-01,3.12,35.6,maize,70.0
+KEN,Kenya,Lodwar (Turkana),2020-06-01,3.12,35.6,maize,69.0
+KEN,Kenya,Lodwar (Turkana),2020-11-01,3.12,35.6,maize,65.0
+KEN,Kenya,Lodwar (Turkana),2020-12-01,3.12,35.6,maize,65.0
+KEN,Kenya,Mandera,2007-01-01,3.94,41.86,maize,20.0
+KEN,Kenya,Mandera,2007-02-01,3.94,41.86,maize,23.0
+KEN,Kenya,Mandera,2007-03-01,3.94,41.86,maize,22.0
+KEN,Kenya,Mandera,2007-05-01,3.94,41.86,maize,33.0
+KEN,Kenya,Mandera,2007-06-01,3.94,41.86,maize,29.0
+KEN,Kenya,Mandera,2007-08-01,3.94,41.86,maize,30.0
+KEN,Kenya,Mandera,2007-09-01,3.94,41.86,maize,29.0
+KEN,Kenya,Mandera,2007-10-01,3.94,41.86,maize,31.0
+KEN,Kenya,Mandera,2007-11-01,3.94,41.86,maize,26.0
+KEN,Kenya,Mandera,2007-12-01,3.94,41.86,maize,31.0
+KEN,Kenya,Mandera,2008-01-01,3.94,41.86,maize,31.0
+KEN,Kenya,Mandera,2008-02-01,3.94,41.86,maize,29.0
+KEN,Kenya,Mandera,2008-04-01,3.94,41.86,maize,31.0
+KEN,Kenya,Mandera,2008-05-01,3.94,41.86,maize,34.0
+KEN,Kenya,Mandera,2008-06-01,3.94,41.86,maize,31.0
+KEN,Kenya,Mandera,2008-10-01,3.94,41.86,maize,35.0
+KEN,Kenya,Mandera,2008-11-01,3.94,41.86,maize,36.0
+KEN,Kenya,Mandera,2009-02-01,3.94,41.86,maize,35.0
+KEN,Kenya,Mandera,2009-04-01,3.94,41.86,maize,39.0
+KEN,Kenya,Mandera,2009-05-01,3.94,41.86,maize,40.0
+KEN,Kenya,Mandera,2009-07-01,3.94,41.86,maize,44.0
+KEN,Kenya,Mandera,2009-08-01,3.94,41.86,maize,44.0
+KEN,Kenya,Mandera,2009-09-01,3.94,41.86,maize,40.0
+KEN,Kenya,Mandera,2009-10-01,3.94,41.86,maize,41.0
+KEN,Kenya,Mandera,2009-11-01,3.94,41.86,maize,39.0
+KEN,Kenya,Mandera,2010-02-01,3.94,41.86,maize,39.0
+KEN,Kenya,Mandera,2010-03-01,3.94,41.86,maize,34.0
+KEN,Kenya,Mandera,2010-04-01,3.94,41.86,maize,33.0
+KEN,Kenya,Mandera,2010-07-01,3.94,41.86,maize,41.0
+KEN,Kenya,Mandera,2010-08-01,3.94,41.86,maize,44.0
+KEN,Kenya,Mandera,2010-09-01,3.94,41.86,maize,45.0
+KEN,Kenya,Mandera,2010-10-01,3.94,41.86,maize,45.0
+KEN,Kenya,Mandera,2010-12-01,3.94,41.86,maize,49.0
+KEN,Kenya,Mandera,2011-03-01,3.94,41.86,maize,52.0
+KEN,Kenya,Mandera,2011-06-01,3.94,41.86,maize,59.0
+KEN,Kenya,Mandera,2011-07-01,3.94,41.86,maize,63.0
+KEN,Kenya,Mandera,2011-08-01,3.94,41.86,maize,63.0
+KEN,Kenya,Mandera,2011-09-01,3.94,41.86,maize,65.0
+KEN,Kenya,Mandera,2011-10-01,3.94,41.86,maize,67.0
+KEN,Kenya,Mandera,2011-12-01,3.94,41.86,maize,60.0
+KEN,Kenya,Mandera,2012-01-01,3.94,41.86,maize,76.0
+KEN,Kenya,Mandera,2012-02-01,3.94,41.86,maize,76.0
+KEN,Kenya,Mandera,2012-03-01,3.94,41.86,maize,78.0
+KEN,Kenya,Mandera,2012-04-01,3.94,41.86,maize,78.24
+KEN,Kenya,Mandera,2012-05-01,3.94,41.86,maize,78.67
+KEN,Kenya,Mandera,2012-07-01,3.94,41.86,maize,80.0
+KEN,Kenya,Mandera,2012-09-01,3.94,41.86,maize,80.0
+KEN,Kenya,Mandera,2012-10-01,3.94,41.86,maize,79.0
+KEN,Kenya,Mandera,2012-11-01,3.94,41.86,maize,79.0
+KEN,Kenya,Mandera,2013-01-01,3.94,41.86,maize,78.0
+KEN,Kenya,Mandera,2013-02-01,3.94,41.86,maize,78.0
+KEN,Kenya,Mandera,2013-03-01,3.94,41.86,maize,79.0
+KEN,Kenya,Mandera,2013-04-01,3.94,41.86,maize,80.0
+KEN,Kenya,Mandera,2013-05-01,3.94,41.86,maize,80.0
+KEN,Kenya,Mandera,2013-11-01,3.94,41.86,maize,67.0
+KEN,Kenya,Mandera,2014-01-01,3.94,41.86,maize,60.0
+KEN,Kenya,Mandera,2014-03-01,3.94,41.86,maize,57.0
+KEN,Kenya,Mandera,2014-05-01,3.94,41.86,maize,56.0
+KEN,Kenya,Mandera,2014-07-01,3.94,41.86,maize,59.0
+KEN,Kenya,Mandera,2014-08-01,3.94,41.86,maize,61.0
+KEN,Kenya,Mandera,2014-09-01,3.94,41.86,maize,63.0
+KEN,Kenya,Mandera,2014-10-01,3.94,41.86,maize,66.0
+KEN,Kenya,Mandera,2014-11-01,3.94,41.86,maize,64.0
+KEN,Kenya,Mandera,2015-03-01,3.94,41.86,maize,68.0
+KEN,Kenya,Mandera,2015-04-01,3.94,41.86,maize,68.0
+KEN,Kenya,Mandera,2015-05-01,3.94,41.86,maize,65.0
+KEN,Kenya,Mandera,2015-06-01,3.94,41.86,maize,65.0
+KEN,Kenya,Mandera,2015-08-01,3.94,41.86,maize,68.0
+KEN,Kenya,Mandera,2015-09-01,3.94,41.86,maize,65.0
+KEN,Kenya,Mandera,2015-11-01,3.94,41.86,maize,66.0
+KEN,Kenya,Mandera,2015-12-01,3.94,41.86,maize,65.0
+KEN,Kenya,Mandera,2016-01-01,3.94,41.86,maize,60.0
+KEN,Kenya,Mandera,2016-02-01,3.94,41.86,maize,61.0
+KEN,Kenya,Mandera,2016-03-01,3.94,41.86,maize,62.0
+KEN,Kenya,Mandera,2016-05-01,3.94,41.86,maize,65.0
+KEN,Kenya,Mandera,2016-06-01,3.94,41.86,maize,66.0
+KEN,Kenya,Mandera,2016-07-01,3.94,41.86,maize,66.0
+KEN,Kenya,Mandera,2016-08-01,3.94,41.86,maize,64.0
+KEN,Kenya,Mandera,2016-09-01,3.94,41.86,maize,46.6
+KEN,Kenya,Mandera,2016-10-01,3.94,41.86,maize,63.0
+KEN,Kenya,Mandera,2016-12-01,3.94,41.86,maize,66.0
+KEN,Kenya,Mandera,2017-02-01,3.94,41.86,maize,64.0
+KEN,Kenya,Mandera,2017-03-01,3.94,41.86,maize,68.6
+KEN,Kenya,Mandera,2017-04-01,3.94,41.86,maize,65.0
+KEN,Kenya,Mandera,2017-05-01,3.94,41.86,maize,64.0
+KEN,Kenya,Mandera,2017-06-01,3.94,41.86,maize,66.0
+KEN,Kenya,Mandera,2017-07-01,3.94,41.86,maize,66.0
+KEN,Kenya,Mandera,2017-08-01,3.94,41.86,maize,67.0
+KEN,Kenya,Mandera,2017-10-01,3.94,41.86,maize,70.0
+KEN,Kenya,Mandera,2017-12-01,3.94,41.86,maize,67.0
+KEN,Kenya,Mandera,2018-03-01,3.94,41.86,maize,65.0
+KEN,Kenya,Mandera,2018-04-01,3.94,41.86,maize,63.0
+KEN,Kenya,Mandera,2018-05-01,3.94,41.86,maize,66.0
+KEN,Kenya,Mandera,2018-06-01,3.94,41.86,maize,64.0
+KEN,Kenya,Mandera,2018-08-01,3.94,41.86,maize,64.0
+KEN,Kenya,Mandera,2018-09-01,3.94,41.86,maize,67.0
+KEN,Kenya,Mandera,2018-10-01,3.94,41.86,maize,67.0
+KEN,Kenya,Mandera,2019-01-01,3.94,41.86,maize,68.0
+KEN,Kenya,Mandera,2019-02-01,3.94,41.86,maize,70.0
+KEN,Kenya,Mandera,2019-03-01,3.94,41.86,maize,75.0
+KEN,Kenya,Mandera,2019-05-01,3.94,41.86,maize,75.0
+KEN,Kenya,Mandera,2019-07-01,3.94,41.86,maize,76.9
+KEN,Kenya,Mandera,2019-09-01,3.94,41.86,maize,81.8
+KEN,Kenya,Mandera,2020-01-01,3.94,41.86,maize,80.0
+KEN,Kenya,Mandera,2020-02-01,3.94,41.86,maize,79.0
+KEN,Kenya,Mandera,2020-03-01,3.94,41.86,maize,77.0
+KEN,Kenya,Mandera,2020-05-01,3.94,41.86,maize,82.0
+KEN,Kenya,Mandera,2020-08-01,3.94,41.86,maize,82.0
+KEN,Kenya,Mandera,2020-09-01,3.94,41.86,maize,84.0
+KEN,Kenya,Mandera,2020-10-01,3.94,41.86,maize,82.0
+KEN,Kenya,Mandera,2020-11-01,3.94,41.86,maize,83.0
+KEN,Kenya,Marigat (Baringo),2015-01-01,0.46,35.96,maize,42.0
+KEN,Kenya,Marigat (Baringo),2015-03-01,0.46,35.96,maize,38.0
+KEN,Kenya,Marigat (Baringo),2015-04-01,0.46,35.96,maize,42.0
+KEN,Kenya,Marigat (Baringo),2015-06-01,0.46,35.96,maize,45.0
+KEN,Kenya,Marigat (Baringo),2015-07-01,0.46,35.96,maize,44.0
+KEN,Kenya,Marigat (Baringo),2015-08-01,0.46,35.96,maize,46.0
+KEN,Kenya,Marigat (Baringo),2015-09-01,0.46,35.96,maize,44.0
+KEN,Kenya,Marigat (Baringo),2015-10-01,0.46,35.96,maize,37.0
+KEN,Kenya,Marigat (Baringo),2015-12-01,0.46,35.96,maize,41.0
+KEN,Kenya,Marigat (Baringo),2016-02-01,0.46,35.96,maize,39.0
+KEN,Kenya,Marigat (Baringo),2016-03-01,0.46,35.96,maize,40.0
+KEN,Kenya,Marigat (Baringo),2016-05-01,0.46,35.96,maize,43.0
+KEN,Kenya,Marigat (Baringo),2016-06-01,0.46,35.96,maize,39.0
+KEN,Kenya,Marigat (Baringo),2016-07-01,0.46,35.96,maize,41.0
+KEN,Kenya,Marigat (Baringo),2016-08-01,0.46,35.96,maize,41.0
+KEN,Kenya,Marigat (Baringo),2016-09-01,0.46,35.96,maize,37.0
+KEN,Kenya,Marigat (Baringo),2016-10-01,0.46,35.96,maize,43.0
+KEN,Kenya,Marigat (Baringo),2016-12-01,0.46,35.96,maize,48.0
+KEN,Kenya,Marigat (Baringo),2017-01-01,0.46,35.96,maize,55.0
+KEN,Kenya,Marigat (Baringo),2017-05-01,0.46,35.96,maize,73.0
+KEN,Kenya,Marigat (Baringo),2017-06-01,0.46,35.96,maize,81.0
+KEN,Kenya,Marigat (Baringo),2017-09-01,0.46,35.96,maize,53.0
+KEN,Kenya,Marigat (Baringo),2017-10-01,0.46,35.96,maize,53.0
+KEN,Kenya,Marigat (Baringo),2017-12-01,0.46,35.96,maize,48.0
+KEN,Kenya,Marigat (Baringo),2018-02-01,0.46,35.96,maize,53.0
+KEN,Kenya,Marigat (Baringo),2018-03-01,0.46,35.96,maize,52.0
+KEN,Kenya,Marigat (Baringo),2018-04-01,0.46,35.96,maize,43.0
+KEN,Kenya,Marigat (Baringo),2018-05-01,0.46,35.96,maize,44.0
+KEN,Kenya,Marigat (Baringo),2018-07-01,0.46,35.96,maize,42.0
+KEN,Kenya,Marigat (Baringo),2018-08-01,0.46,35.96,maize,38.0
+KEN,Kenya,Marigat (Baringo),2018-10-01,0.46,35.96,maize,33.0
+KEN,Kenya,Marigat (Baringo),2018-11-01,0.46,35.96,maize,35.0
+KEN,Kenya,Marigat (Baringo),2019-04-01,0.46,35.96,maize,44.0
+KEN,Kenya,Marigat (Baringo),2019-06-01,0.46,35.96,maize,51.0
+KEN,Kenya,Marigat (Baringo),2019-07-01,0.46,35.96,maize,55.7
+KEN,Kenya,Marigat (Baringo),2019-08-01,0.46,35.96,maize,54.6
+KEN,Kenya,Marigat (Baringo),2019-09-01,0.46,35.96,maize,46.5
+KEN,Kenya,Marigat (Baringo),2019-11-01,0.46,35.96,maize,44.0
+KEN,Kenya,Marigat (Baringo),2019-12-01,0.46,35.96,maize,46.0
+KEN,Kenya,Marigat (Baringo),2020-01-01,0.46,35.96,maize,46.0
+KEN,Kenya,Marigat (Baringo),2020-03-01,0.46,35.96,maize,48.5
+KEN,Kenya,Marigat (Baringo),2020-04-01,0.46,35.96,maize,51.7
+KEN,Kenya,Marigat (Baringo),2020-05-01,0.46,35.96,maize,52.0
+KEN,Kenya,Marigat (Baringo),2020-06-01,0.46,35.96,maize,51.0
+KEN,Kenya,Marigat (Baringo),2020-09-01,0.46,35.96,maize,39.0
+KEN,Kenya,Marigat (Baringo),2020-10-01,0.46,35.96,maize,39.0
+KEN,Kenya,Marsabit,2007-01-01,2.33,37.98,maize,16.0
+KEN,Kenya,Marsabit,2007-03-01,2.33,37.98,maize,14.0
+KEN,Kenya,Marsabit,2007-06-01,2.33,37.98,maize,15.0
+KEN,Kenya,Marsabit,2007-07-01,2.33,37.98,maize,15.0
+KEN,Kenya,Marsabit,2007-09-01,2.33,37.98,maize,18.0
+KEN,Kenya,Marsabit,2007-10-01,2.33,37.98,maize,15.0
+KEN,Kenya,Marsabit,2007-11-01,2.33,37.98,maize,18.0
+KEN,Kenya,Marsabit,2007-12-01,2.33,37.98,maize,23.0
+KEN,Kenya,Marsabit,2008-02-01,2.33,37.98,maize,23.0
+KEN,Kenya,Marsabit,2008-03-01,2.33,37.98,maize,24.0
+KEN,Kenya,Marsabit,2008-06-01,2.33,37.98,maize,27.0
+KEN,Kenya,Marsabit,2008-07-01,2.33,37.98,maize,29.0
+KEN,Kenya,Marsabit,2008-08-01,2.33,37.98,maize,30.0
+KEN,Kenya,Marsabit,2008-10-01,2.33,37.98,maize,32.0
+KEN,Kenya,Marsabit,2008-12-01,2.33,37.98,maize,42.0
+KEN,Kenya,Marsabit,2009-02-01,2.33,37.98,maize,42.0
+KEN,Kenya,Marsabit,2009-03-01,2.33,37.98,maize,42.0
+KEN,Kenya,Marsabit,2009-04-01,2.33,37.98,maize,44.0
+KEN,Kenya,Marsabit,2009-05-01,2.33,37.98,maize,46.0
+KEN,Kenya,Marsabit,2009-06-01,2.33,37.98,maize,45.0
+KEN,Kenya,Marsabit,2009-07-01,2.33,37.98,maize,47.5
+KEN,Kenya,Marsabit,2009-09-01,2.33,37.98,maize,43.0
+KEN,Kenya,Marsabit,2009-11-01,2.33,37.98,maize,43.0
+KEN,Kenya,Marsabit,2010-01-01,2.33,37.98,maize,42.5
+KEN,Kenya,Marsabit,2010-02-01,2.33,37.98,maize,42.5
+KEN,Kenya,Marsabit,2010-03-01,2.33,37.98,maize,38.0
+KEN,Kenya,Marsabit,2010-04-01,2.33,37.98,maize,33.0
+KEN,Kenya,Marsabit,2010-05-01,2.33,37.98,maize,32.5
+KEN,Kenya,Marsabit,2010-08-01,2.33,37.98,maize,32.0
+KEN,Kenya,Marsabit,2010-09-01,2.33,37.98,maize,32.0
+KEN,Kenya,Marsabit,2010-10-01,2.33,37.98,maize,30.0
+KEN,Kenya,Marsabit,2010-11-01,2.33,37.98,maize,32.0
+KEN,Kenya,Marsabit,2011-01-01,2.33,37.98,maize,38.0
+KEN,Kenya,Marsabit,2011-02-01,2.33,37.98,maize,36.0
+KEN,Kenya,Marsabit,2011-03-01,2.33,37.98,maize,36.0
+KEN,Kenya,Marsabit,2011-05-01,2.33,37.98,maize,44.6
+KEN,Kenya,Marsabit,2011-07-01,2.33,37.98,maize,53.0
+KEN,Kenya,Marsabit,2011-08-01,2.33,37.98,maize,59.16
+KEN,Kenya,Marsabit,2012-02-01,2.33,37.98,maize,44.1
+KEN,Kenya,Marsabit,2012-04-01,2.33,37.98,maize,50.54
+KEN,Kenya,Marsabit,2012-05-01,2.33,37.98,maize,44.5
+KEN,Kenya,Marsabit,2012-06-01,2.33,37.98,maize,52.94
+KEN,Kenya,Marsabit,2012-07-01,2.33,37.98,maize,50.12
+KEN,Kenya,Marsabit,2012-08-01,2.33,37.98,maize,51.6
+KEN,Kenya,Marsabit,2012-09-01,2.33,37.98,maize,51.2
+KEN,Kenya,Marsabit,2012-10-01,2.33,37.98,maize,51.7
+KEN,Kenya,Marsabit,2012-11-01,2.33,37.98,maize,51.8
+KEN,Kenya,Marsabit,2013-01-01,2.33,37.98,maize,53.4
+KEN,Kenya,Marsabit,2013-02-01,2.33,37.98,maize,47.5
+KEN,Kenya,Marsabit,2013-04-01,2.33,37.98,maize,47.6
+KEN,Kenya,Marsabit,2013-06-01,2.33,37.98,maize,45.0
+KEN,Kenya,Marsabit,2013-08-01,2.33,37.98,maize,50.4
+KEN,Kenya,Marsabit,2013-09-01,2.33,37.98,maize,43.75
+KEN,Kenya,Marsabit,2013-10-01,2.33,37.98,maize,52.38
+KEN,Kenya,Marsabit,2013-12-01,2.33,37.98,maize,56.77
+KEN,Kenya,Marsabit,2014-01-01,2.33,37.98,maize,53.36
+KEN,Kenya,Marsabit,2014-03-01,2.33,37.98,maize,48.16
+KEN,Kenya,Marsabit,2014-07-01,2.33,37.98,maize,49.6
+KEN,Kenya,Marsabit,2014-09-01,2.33,37.98,maize,49.1
+KEN,Kenya,Marsabit,2014-11-01,2.33,37.98,maize,50.7
+KEN,Kenya,Marsabit,2014-12-01,2.33,37.98,maize,48.8
+KEN,Kenya,Marsabit,2015-01-01,2.33,37.98,maize,48.9
+KEN,Kenya,Marsabit,2015-02-01,2.33,37.98,maize,52.1
+KEN,Kenya,Marsabit,2015-03-01,2.33,37.98,maize,49.4
+KEN,Kenya,Marsabit,2015-05-01,2.33,37.98,maize,48.8
+KEN,Kenya,Marsabit,2015-06-01,2.33,37.98,maize,49.2
+KEN,Kenya,Marsabit,2015-08-01,2.33,37.98,maize,50.3
+KEN,Kenya,Marsabit,2015-09-01,2.33,37.98,maize,51.4
+KEN,Kenya,Marsabit,2015-12-01,2.33,37.98,maize,51.2
+KEN,Kenya,Marsabit,2016-01-01,2.33,37.98,maize,48.0
+KEN,Kenya,Marsabit,2016-05-01,2.33,37.98,maize,43.0
+KEN,Kenya,Marsabit,2016-06-01,2.33,37.98,maize,43.9
+KEN,Kenya,Marsabit,2016-07-01,2.33,37.98,maize,42.4
+KEN,Kenya,Marsabit,2016-08-01,2.33,37.98,maize,42.7
+KEN,Kenya,Marsabit,2016-10-01,2.33,37.98,maize,46.5
+KEN,Kenya,Marsabit,2016-11-01,2.33,37.98,maize,45.8
+KEN,Kenya,Marsabit,2016-12-01,2.33,37.98,maize,45.5
+KEN,Kenya,Marsabit,2017-01-01,2.33,37.98,maize,46.7
+KEN,Kenya,Marsabit,2017-02-01,2.33,37.98,maize,47.0
+KEN,Kenya,Marsabit,2017-04-01,2.33,37.98,maize,52.9
+KEN,Kenya,Marsabit,2017-05-01,2.33,37.98,maize,47.0
+KEN,Kenya,Marsabit,2017-06-01,2.33,37.98,maize,49.0
+KEN,Kenya,Marsabit,2017-07-01,2.33,37.98,maize,51.0
+KEN,Kenya,Marsabit,2017-09-01,2.33,37.98,maize,53.0
+KEN,Kenya,Marsabit,2017-11-01,2.33,37.98,maize,48.0
+KEN,Kenya,Marsabit,2017-12-01,2.33,37.98,maize,50.0
+KEN,Kenya,Marsabit,2018-01-01,2.33,37.98,maize,52.0
+KEN,Kenya,Marsabit,2018-02-01,2.33,37.98,maize,53.0
+KEN,Kenya,Marsabit,2018-03-01,2.33,37.98,maize,52.0
+KEN,Kenya,Marsabit,2018-04-01,2.33,37.98,maize,53.0
+KEN,Kenya,Marsabit,2018-06-01,2.33,37.98,maize,45.0
+KEN,Kenya,Marsabit,2018-07-01,2.33,37.98,maize,41.0
+KEN,Kenya,Marsabit,2018-08-01,2.33,37.98,maize,39.0
+KEN,Kenya,Marsabit,2018-09-01,2.33,37.98,maize,41.0
+KEN,Kenya,Marsabit,2018-10-01,2.33,37.98,maize,42.0
+KEN,Kenya,Marsabit,2018-11-01,2.33,37.98,maize,44.0
+KEN,Kenya,Marsabit,2018-12-01,2.33,37.98,maize,43.0
+KEN,Kenya,Marsabit,2019-02-01,2.33,37.98,maize,44.0
+KEN,Kenya,Marsabit,2019-05-01,2.33,37.98,maize,50.0
+KEN,Kenya,Marsabit,2019-08-01,2.33,37.98,maize,46.8
+KEN,Kenya,Marsabit,2020-03-01,2.33,37.98,maize,43.0
+KEN,Kenya,Marsabit,2020-05-01,2.33,37.98,maize,48.0
+KEN,Kenya,Marsabit,2020-07-01,2.33,37.98,maize,47.0
+KEN,Kenya,Marsabit,2020-09-01,2.33,37.98,maize,45.0
+KEN,Kenya,Marsabit,2020-10-01,2.33,37.98,maize,44.0
+KEN,Kenya,Marsabit,2020-11-01,2.33,37.98,maize,44.0
+KEN,Kenya,Marsabit,2020-12-01,2.33,37.98,maize,47.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-01-01,0.52,35.28,sorghum,1340.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-02-01,0.52,35.28,sorghum,1189.47
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-03-01,0.52,35.28,sorghum,1208.33
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-04-01,0.52,35.28,sorghum,1166.67
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-05-01,0.52,35.28,sorghum,1555.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-06-01,0.52,35.28,sorghum,1359.08
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-07-01,0.52,35.28,sorghum,1389.52
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-08-01,0.52,35.28,sorghum,1405.88
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-09-01,0.52,35.28,sorghum,1857.14
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-10-01,0.52,35.28,sorghum,1518.75
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-11-01,0.52,35.28,sorghum,1200.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-12-01,0.52,35.28,sorghum,1250.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2008-01-01,0.52,35.28,sorghum,1400.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2008-02-01,0.52,35.28,sorghum,1500.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2008-04-01,0.52,35.28,sorghum,1666.67
+KEN,Kenya,Eldoret town (Uasin Gishu),2008-05-01,0.52,35.28,sorghum,1555.56
+KEN,Kenya,Eldoret town (Uasin Gishu),2008-06-01,0.52,35.28,sorghum,1737.5
+KEN,Kenya,Eldoret town (Uasin Gishu),2008-07-01,0.52,35.28,sorghum,2150.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2008-12-01,0.52,35.28,sorghum,1633.33
+KEN,Kenya,Eldoret town (Uasin Gishu),2009-01-01,0.52,35.28,sorghum,1917.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2009-02-01,0.52,35.28,sorghum,2021.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2009-03-01,0.52,35.28,sorghum,2495.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2009-05-01,0.52,35.28,sorghum,2780.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2009-06-01,0.52,35.28,sorghum,2913.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2009-07-01,0.52,35.28,sorghum,3141.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2009-10-01,0.52,35.28,sorghum,3168.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2009-11-01,0.52,35.28,sorghum,3600.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2009-12-01,0.52,35.28,sorghum,4000.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2010-01-01,0.52,35.28,sorghum,3360.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2010-02-01,0.52,35.28,sorghum,3106.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2010-04-01,0.52,35.28,sorghum,3776.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2010-06-01,0.52,35.28,sorghum,3765.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2010-07-01,0.52,35.28,sorghum,3730.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2010-08-01,0.52,35.28,sorghum,3450.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2010-09-01,0.52,35.28,sorghum,4733.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2010-10-01,0.52,35.28,sorghum,1867.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2010-12-01,0.52,35.28,sorghum,1808.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2011-01-01,0.52,35.28,sorghum,1700.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2011-02-01,0.52,35.28,sorghum,1800.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2011-03-01,0.52,35.28,sorghum,3257.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2011-04-01,0.52,35.28,sorghum,2655.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2011-05-01,0.52,35.28,sorghum,2660.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2011-07-01,0.52,35.28,sorghum,4669.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2011-10-01,0.52,35.28,sorghum,5400.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2011-11-01,0.52,35.28,sorghum,4608.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2011-12-01,0.52,35.28,sorghum,3690.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2012-02-01,0.52,35.28,sorghum,3600.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2012-03-01,0.52,35.28,sorghum,3600.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2012-04-01,0.52,35.28,sorghum,3758.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2012-05-01,0.52,35.28,sorghum,6770.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2012-06-01,0.52,35.28,sorghum,5693.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2012-10-01,0.52,35.28,sorghum,4500.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2013-03-01,0.52,35.28,sorghum,3604.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2013-05-01,0.52,35.28,sorghum,4608.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2013-06-01,0.52,35.28,sorghum,4568.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2013-07-01,0.52,35.28,sorghum,4500.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2013-10-01,0.52,35.28,sorghum,6686.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2013-11-01,0.52,35.28,sorghum,7195.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2013-12-01,0.52,35.28,sorghum,7200.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2014-01-01,0.52,35.28,sorghum,7200.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2014-02-01,0.52,35.28,sorghum,5712.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2014-04-01,0.52,35.28,sorghum,4950.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2014-05-01,0.52,35.28,sorghum,5871.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2014-06-01,0.52,35.28,sorghum,6750.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2014-07-01,0.52,35.28,sorghum,6042.86
+KEN,Kenya,Eldoret town (Uasin Gishu),2014-09-01,0.52,35.28,sorghum,5850.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-01-01,0.52,35.28,sorghum,5835.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-02-01,0.52,35.28,sorghum,7200.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-03-01,0.52,35.28,sorghum,6675.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-06-01,0.52,35.28,sorghum,4669.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-08-01,0.52,35.28,sorghum,4950.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-09-01,0.52,35.28,sorghum,4930.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-10-01,0.52,35.28,sorghum,4818.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-11-01,0.52,35.28,sorghum,4500.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-12-01,0.52,35.28,sorghum,5478.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2016-01-01,0.52,35.28,sorghum,5850.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2016-03-01,0.52,35.28,sorghum,5850.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2016-05-01,0.52,35.28,sorghum,4950.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2016-06-01,0.52,35.28,sorghum,4950.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2016-07-01,0.52,35.28,sorghum,4950.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2016-09-01,0.52,35.28,sorghum,4950.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2016-10-01,0.52,35.28,sorghum,4950.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2016-11-01,0.52,35.28,sorghum,4950.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2016-12-01,0.52,35.28,sorghum,5175.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2017-01-01,0.52,35.28,sorghum,5670.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2017-07-01,0.52,35.28,sorghum,6840.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2017-08-01,0.52,35.28,sorghum,6300.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2017-09-01,0.52,35.28,sorghum,6300.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2017-10-01,0.52,35.28,sorghum,7340.62
+KEN,Kenya,Eldoret town (Uasin Gishu),2018-03-01,0.52,35.28,sorghum,6300.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2018-05-01,0.52,35.28,sorghum,6210.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2018-08-01,0.52,35.28,sorghum,5616.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2018-09-01,0.52,35.28,sorghum,5850.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2018-10-01,0.52,35.28,sorghum,5850.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2018-12-01,0.52,35.28,sorghum,6240.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2019-03-01,0.52,35.28,sorghum,5400.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2019-04-01,0.52,35.28,sorghum,5400.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2019-07-01,0.52,35.28,sorghum,5400.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2019-08-01,0.52,35.28,sorghum,5400.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2019-11-01,0.52,35.28,sorghum,5400.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2020-01-01,0.52,35.28,sorghum,5400.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2020-02-01,0.52,35.28,sorghum,5400.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2020-03-01,0.52,35.28,sorghum,5400.0
+KEN,Kenya,Kisumu,2007-01-01,-0.1,34.75,sorghum,1400.0
+KEN,Kenya,Kisumu,2007-02-01,-0.1,34.75,sorghum,2510.0
+KEN,Kenya,Kisumu,2007-03-01,-0.1,34.75,sorghum,2021.74
+KEN,Kenya,Kisumu,2007-04-01,-0.1,34.75,sorghum,1583.33
+KEN,Kenya,Kisumu,2007-05-01,-0.1,34.75,sorghum,1438.1
+KEN,Kenya,Kisumu,2007-06-01,-0.1,34.75,sorghum,1400.0
+KEN,Kenya,Kisumu,2007-07-01,-0.1,34.75,sorghum,1400.0
+KEN,Kenya,Kisumu,2007-09-01,-0.1,34.75,sorghum,1516.67
+KEN,Kenya,Kisumu,2007-10-01,-0.1,34.75,sorghum,1500.0
+KEN,Kenya,Kisumu,2007-11-01,-0.1,34.75,sorghum,1426.67
+KEN,Kenya,Kisumu,2007-12-01,-0.1,34.75,sorghum,1514.29
+KEN,Kenya,Kisumu,2008-03-01,-0.1,34.75,sorghum,2000.0
+KEN,Kenya,Kisumu,2008-04-01,-0.1,34.75,sorghum,1983.33
+KEN,Kenya,Kisumu,2008-05-01,-0.1,34.75,sorghum,2200.0
+KEN,Kenya,Kisumu,2008-06-01,-0.1,34.75,sorghum,2050.0
+KEN,Kenya,Kisumu,2008-08-01,-0.1,34.75,sorghum,2400.0
+KEN,Kenya,Kisumu,2008-11-01,-0.1,34.75,sorghum,2505.0
+KEN,Kenya,Kisumu,2008-12-01,-0.1,34.75,sorghum,2441.67
+KEN,Kenya,Kisumu,2009-01-01,-0.1,34.75,sorghum,2770.0
+KEN,Kenya,Kisumu,2009-02-01,-0.1,34.75,sorghum,2800.0
+KEN,Kenya,Kisumu,2009-04-01,-0.1,34.75,sorghum,2480.0
+KEN,Kenya,Kisumu,2009-05-01,-0.1,34.75,sorghum,2800.0
+KEN,Kenya,Kisumu,2009-07-01,-0.1,34.75,sorghum,1590.0
+KEN,Kenya,Kisumu,2009-08-01,-0.1,34.75,sorghum,2467.0
+KEN,Kenya,Kisumu,2009-09-01,-0.1,34.75,sorghum,2467.0
+KEN,Kenya,Kisumu,2009-10-01,-0.1,34.75,sorghum,2400.0
+KEN,Kenya,Kisumu,2009-11-01,-0.1,34.75,sorghum,2240.0
+KEN,Kenya,Kisumu,2010-01-01,-0.1,34.75,sorghum,2633.0
+KEN,Kenya,Kisumu,2010-03-01,-0.1,34.75,sorghum,2700.0
+KEN,Kenya,Kisumu,2010-07-01,-0.1,34.75,sorghum,2249.0
+KEN,Kenya,Kisumu,2010-08-01,-0.1,34.75,sorghum,2307.0
+KEN,Kenya,Kisumu,2010-09-01,-0.1,34.75,sorghum,2843.0
+KEN,Kenya,Kisumu,2010-10-01,-0.1,34.75,sorghum,2189.0
+KEN,Kenya,Kisumu,2010-11-01,-0.1,34.75,sorghum,2250.0
+KEN,Kenya,Kisumu,2011-01-01,-0.1,34.75,sorghum,2438.0
+KEN,Kenya,Kisumu,2011-02-01,-0.1,34.75,sorghum,2467.0
+KEN,Kenya,Kisumu,2011-03-01,-0.1,34.75,sorghum,2714.0
+KEN,Kenya,Kisumu,2011-04-01,-0.1,34.75,sorghum,3200.0
+KEN,Kenya,Kisumu,2011-06-01,-0.1,34.75,sorghum,4370.0
+KEN,Kenya,Kisumu,2011-08-01,-0.1,34.75,sorghum,3620.0
+KEN,Kenya,Kisumu,2011-10-01,-0.1,34.75,sorghum,3600.0
+KEN,Kenya,Kisumu,2011-11-01,-0.1,34.75,sorghum,3600.0
+KEN,Kenya,Kisumu,2012-02-01,-0.1,34.75,sorghum,3400.0
+KEN,Kenya,Kisumu,2012-05-01,-0.1,34.75,sorghum,4000.0
+KEN,Kenya,Kisumu,2012-09-01,-0.1,34.75,sorghum,3074.0
+KEN,Kenya,Kisumu,2012-10-01,-0.1,34.75,sorghum,3200.0
+KEN,Kenya,Kisumu,2013-03-01,-0.1,34.75,sorghum,3728.0
+KEN,Kenya,Kisumu,2013-04-01,-0.1,34.75,sorghum,4000.0
+KEN,Kenya,Kisumu,2013-05-01,-0.1,34.75,sorghum,4002.0
+KEN,Kenya,Kisumu,2013-06-01,-0.1,34.75,sorghum,3600.0
+KEN,Kenya,Kisumu,2013-07-01,-0.1,34.75,sorghum,3440.0
+KEN,Kenya,Kisumu,2013-08-01,-0.1,34.75,sorghum,3400.0
+KEN,Kenya,Kisumu,2013-09-01,-0.1,34.75,sorghum,3550.0
+KEN,Kenya,Kisumu,2013-11-01,-0.1,34.75,sorghum,3600.0
+KEN,Kenya,Kisumu,2013-12-01,-0.1,34.75,sorghum,3600.0
+KEN,Kenya,Kisumu,2014-05-01,-0.1,34.75,sorghum,3600.0
+KEN,Kenya,Kisumu,2014-07-01,-0.1,34.75,sorghum,3600.0
+KEN,Kenya,Kisumu,2014-08-01,-0.1,34.75,sorghum,3312.5
+KEN,Kenya,Kisumu,2014-09-01,-0.1,34.75,sorghum,3392.0
+KEN,Kenya,Kisumu,2014-10-01,-0.1,34.75,sorghum,3400.0
+KEN,Kenya,Kisumu,2014-11-01,-0.1,34.75,sorghum,3400.0
+KEN,Kenya,Kisumu,2015-03-01,-0.1,34.75,sorghum,3600.0
+KEN,Kenya,Kisumu,2015-05-01,-0.1,34.75,sorghum,3600.0
+KEN,Kenya,Kisumu,2015-06-01,-0.1,34.75,sorghum,3600.0
+KEN,Kenya,Kisumu,2015-07-01,-0.1,34.75,sorghum,3566.67
+KEN,Kenya,Kisumu,2015-08-01,-0.1,34.75,sorghum,3300.0
+KEN,Kenya,Kisumu,2015-09-01,-0.1,34.75,sorghum,3115.0
+KEN,Kenya,Kisumu,2015-11-01,-0.1,34.75,sorghum,3400.0
+KEN,Kenya,Kisumu,2016-01-01,-0.1,34.75,sorghum,3200.0
+KEN,Kenya,Kisumu,2016-02-01,-0.1,34.75,sorghum,3075.0
+KEN,Kenya,Kisumu,2016-03-01,-0.1,34.75,sorghum,3200.0
+KEN,Kenya,Kisumu,2016-07-01,-0.1,34.75,sorghum,3200.0
+KEN,Kenya,Kisumu,2016-09-01,-0.1,34.75,sorghum,3200.0
+KEN,Kenya,Kisumu,2016-11-01,-0.1,34.75,sorghum,3600.0
+KEN,Kenya,Kisumu,2017-02-01,-0.1,34.75,sorghum,4360.0
+KEN,Kenya,Kisumu,2017-03-01,-0.1,34.75,sorghum,4656.0
+KEN,Kenya,Kisumu,2017-04-01,-0.1,34.75,sorghum,5100.0
+KEN,Kenya,Kisumu,2017-05-01,-0.1,34.75,sorghum,5200.0
+KEN,Kenya,Kisumu,2017-07-01,-0.1,34.75,sorghum,5100.0
+KEN,Kenya,Kisumu,2017-08-01,-0.1,34.75,sorghum,4800.0
+KEN,Kenya,Kisumu,2017-09-01,-0.1,34.75,sorghum,4992.0
+KEN,Kenya,Kisumu,2017-10-01,-0.1,34.75,sorghum,4960.0
+KEN,Kenya,Kisumu,2017-11-01,-0.1,34.75,sorghum,4736.0
+KEN,Kenya,Kisumu,2017-12-01,-0.1,34.75,sorghum,4250.0
+KEN,Kenya,Kisumu,2018-06-01,-0.1,34.75,sorghum,4100.0
+KEN,Kenya,Kisumu,2018-08-01,-0.1,34.75,sorghum,3200.0
+KEN,Kenya,Kisumu,2018-09-01,-0.1,34.75,sorghum,3237.5
+KEN,Kenya,Kisumu,2018-10-01,-0.1,34.75,sorghum,3500.0
+KEN,Kenya,Kisumu,2018-11-01,-0.1,34.75,sorghum,3030.0
+KEN,Kenya,Kisumu,2018-12-01,-0.1,34.75,sorghum,3000.0
+KEN,Kenya,Kisumu,2019-01-01,-0.1,34.75,sorghum,2850.0
+KEN,Kenya,Kisumu,2019-02-01,-0.1,34.75,sorghum,3000.0
+KEN,Kenya,Kisumu,2019-03-01,-0.1,34.75,sorghum,3120.0
+KEN,Kenya,Kisumu,2019-04-01,-0.1,34.75,sorghum,3425.0
+KEN,Kenya,Kisumu,2019-06-01,-0.1,34.75,sorghum,4000.0
+KEN,Kenya,Kisumu,2019-07-01,-0.1,34.75,sorghum,4000.0
+KEN,Kenya,Kitui,2007-07-01,-1.37,38.02,sorghum,1100.0
+KEN,Kenya,Kitui,2007-08-01,-1.37,38.02,sorghum,2525.0
+KEN,Kenya,Kitui,2007-12-01,-1.37,38.02,sorghum,1200.0
+KEN,Kenya,Kitui,2008-02-01,-1.37,38.02,sorghum,1800.0
+KEN,Kenya,Kitui,2008-03-01,-1.37,38.02,sorghum,1200.0
+KEN,Kenya,Kitui,2008-04-01,-1.37,38.02,sorghum,1466.67
+KEN,Kenya,Kitui,2008-05-01,-1.37,38.02,sorghum,1200.0
+KEN,Kenya,Kitui,2008-09-01,-1.37,38.02,sorghum,2000.0
+KEN,Kenya,Kitui,2008-11-01,-1.37,38.02,sorghum,2800.0
+KEN,Kenya,Kitui,2008-12-01,-1.37,38.02,sorghum,2800.0
+KEN,Kenya,Kitui,2009-01-01,-1.37,38.02,sorghum,3050.0
+KEN,Kenya,Kitui,2009-02-01,-1.37,38.02,sorghum,3700.0
+KEN,Kenya,Kitui,2009-05-01,-1.37,38.02,sorghum,3213.0
+KEN,Kenya,Kitui,2009-06-01,-1.37,38.02,sorghum,2750.0
+KEN,Kenya,Kitui,2009-09-01,-1.37,38.02,sorghum,2800.0
+KEN,Kenya,Kitui,2010-01-01,-1.37,38.02,sorghum,2800.0
+KEN,Kenya,Kitui,2010-03-01,-1.37,38.02,sorghum,1400.0
+KEN,Kenya,Kitui,2010-04-01,-1.37,38.02,sorghum,1933.0
+KEN,Kenya,Kitui,2010-05-01,-1.37,38.02,sorghum,2700.0
+KEN,Kenya,Kitui,2010-10-01,-1.37,38.02,sorghum,1800.0
+KEN,Kenya,Kitui,2010-12-01,-1.37,38.02,sorghum,2700.0
+KEN,Kenya,Kitui,2011-02-01,-1.37,38.02,sorghum,2700.0
+KEN,Kenya,Kitui,2011-04-01,-1.37,38.02,sorghum,2700.0
+KEN,Kenya,Kitui,2011-05-01,-1.37,38.02,sorghum,2700.0
+KEN,Kenya,Kitui,2011-06-01,-1.37,38.02,sorghum,2700.0
+KEN,Kenya,Kitui,2011-09-01,-1.37,38.02,sorghum,3600.0
+KEN,Kenya,Kitui,2011-10-01,-1.37,38.02,sorghum,4500.0
+KEN,Kenya,Kitui,2012-04-01,-1.37,38.02,sorghum,2700.0
+KEN,Kenya,Kitui,2012-05-01,-1.37,38.02,sorghum,2700.0
+KEN,Kenya,Kitui,2012-06-01,-1.37,38.02,sorghum,3300.0
+KEN,Kenya,Kitui,2012-08-01,-1.37,38.02,sorghum,4500.0
+KEN,Kenya,Kitui,2012-10-01,-1.37,38.02,sorghum,4500.0
+KEN,Kenya,Kitui,2012-11-01,-1.37,38.02,sorghum,4500.0
+KEN,Kenya,Kitui,2012-12-01,-1.37,38.02,sorghum,4500.0
+KEN,Kenya,Kitui,2013-01-01,-1.37,38.02,sorghum,4500.0
+KEN,Kenya,Kitui,2013-02-01,-1.37,38.02,sorghum,4100.0
+KEN,Kenya,Kitui,2013-03-01,-1.37,38.02,sorghum,3650.0
+KEN,Kenya,Kitui,2013-04-01,-1.37,38.02,sorghum,2200.0
+KEN,Kenya,Kitui,2013-06-01,-1.37,38.02,sorghum,2200.0
+KEN,Kenya,Kitui,2013-07-01,-1.37,38.02,sorghum,2200.0
+KEN,Kenya,Kitui,2013-08-01,-1.37,38.02,sorghum,2200.0
+KEN,Kenya,Kitui,2013-09-01,-1.37,38.02,sorghum,3200.0
+KEN,Kenya,Kitui,2013-10-01,-1.37,38.02,sorghum,3467.0
+KEN,Kenya,Kitui,2014-01-01,-1.37,38.02,sorghum,3600.0
+KEN,Kenya,Kitui,2014-03-01,-1.37,38.02,sorghum,3600.0
+KEN,Kenya,Kitui,2014-05-01,-1.37,38.02,sorghum,3600.0
+KEN,Kenya,Kitui,2014-07-01,-1.37,38.02,sorghum,3600.0
+KEN,Kenya,Kitui,2014-08-01,-1.37,38.02,sorghum,3600.0
+KEN,Kenya,Kitui,2014-09-01,-1.37,38.02,sorghum,3600.0
+KEN,Kenya,Kitui,2015-03-01,-1.37,38.02,sorghum,4050.0
+KEN,Kenya,Kitui,2015-09-01,-1.37,38.02,sorghum,5000.0
+KEN,Kenya,Kitui,2016-02-01,-1.37,38.02,sorghum,4050.0
+KEN,Kenya,Kitui,2016-03-01,-1.37,38.02,sorghum,3600.0
+KEN,Kenya,Kitui,2016-07-01,-1.37,38.02,sorghum,4050.0
+KEN,Kenya,Kitui,2016-09-01,-1.37,38.02,sorghum,4500.0
+KEN,Kenya,Kitui,2016-10-01,-1.37,38.02,sorghum,4500.0
+KEN,Kenya,Kitui,2016-11-01,-1.37,38.02,sorghum,4500.0
+KEN,Kenya,Kitui,2016-12-01,-1.37,38.02,sorghum,4500.0
+KEN,Kenya,Kitui,2017-01-01,-1.37,38.02,sorghum,4500.0
+KEN,Kenya,Kitui,2017-02-01,-1.37,38.02,sorghum,4875.0
+KEN,Kenya,Kitui,2017-03-01,-1.37,38.02,sorghum,5175.0
+KEN,Kenya,Kitui,2017-04-01,-1.37,38.02,sorghum,6800.0
+KEN,Kenya,Kitui,2017-05-01,-1.37,38.02,sorghum,6800.0
+KEN,Kenya,Kitui,2017-06-01,-1.37,38.02,sorghum,6800.0
+KEN,Kenya,Kitui,2017-07-01,-1.37,38.02,sorghum,6800.0
+KEN,Kenya,Kitui,2017-11-01,-1.37,38.02,sorghum,6300.0
+KEN,Kenya,Kitui,2017-12-01,-1.37,38.02,sorghum,6300.0
+KEN,Kenya,Kitui,2018-02-01,-1.37,38.02,sorghum,6900.0
+KEN,Kenya,Kitui,2018-03-01,-1.37,38.02,sorghum,7200.0
+KEN,Kenya,Kitui,2018-06-01,-1.37,38.02,sorghum,5625.0
+KEN,Kenya,Kitui,2018-07-01,-1.37,38.02,sorghum,5400.0
+KEN,Kenya,Kitui,2018-08-01,-1.37,38.02,sorghum,5400.0
+KEN,Kenya,Kitui,2018-11-01,-1.37,38.02,sorghum,5400.0
+KEN,Kenya,Kitui,2018-12-01,-1.37,38.02,sorghum,5400.0
+KEN,Kenya,Kitui,2019-01-01,-1.37,38.02,sorghum,5400.0
+KEN,Kenya,Kitui,2019-03-01,-1.37,38.02,sorghum,5400.0
+KEN,Kenya,Kitui,2019-06-01,-1.37,38.02,sorghum,4500.0
+KEN,Kenya,Kitui,2019-08-01,-1.37,38.02,sorghum,4500.0
+KEN,Kenya,Kitui,2019-10-01,-1.37,38.02,sorghum,4500.0
+KEN,Kenya,Kitui,2019-11-01,-1.37,38.02,sorghum,4500.0
+KEN,Kenya,Kitui,2019-12-01,-1.37,38.02,sorghum,4500.0
+KEN,Kenya,Kitui,2020-01-01,-1.37,38.02,sorghum,5925.0
+KEN,Kenya,Mombasa,2012-02-01,-4.05,39.67,sorghum,3938.0
+KEN,Kenya,Nairobi,2007-02-01,-1.28,36.82,sorghum,1670.0
+KEN,Kenya,Nairobi,2007-03-01,-1.28,36.82,sorghum,1724.0
+KEN,Kenya,Nairobi,2007-04-01,-1.28,36.82,sorghum,1721.05
+KEN,Kenya,Nairobi,2007-05-01,-1.28,36.82,sorghum,1619.05
+KEN,Kenya,Nairobi,2007-06-01,-1.28,36.82,sorghum,1570.59
+KEN,Kenya,Nairobi,2007-08-01,-1.28,36.82,sorghum,1943.48
+KEN,Kenya,Nairobi,2007-10-01,-1.28,36.82,sorghum,1581.82
+KEN,Kenya,Nairobi,2008-02-01,-1.28,36.82,sorghum,1820.0
+KEN,Kenya,Nairobi,2008-03-01,-1.28,36.82,sorghum,2865.0
+KEN,Kenya,Nairobi,2008-04-01,-1.28,36.82,sorghum,2518.18
+KEN,Kenya,Nairobi,2008-06-01,-1.28,36.82,sorghum,2535.0
+KEN,Kenya,Nairobi,2008-09-01,-1.28,36.82,sorghum,2330.0
+KEN,Kenya,Nairobi,2008-10-01,-1.28,36.82,sorghum,2716.67
+KEN,Kenya,Nairobi,2008-11-01,-1.28,36.82,sorghum,2862.5
+KEN,Kenya,Nairobi,2008-12-01,-1.28,36.82,sorghum,3256.25
+KEN,Kenya,Nairobi,2009-01-01,-1.28,36.82,sorghum,3015.0
+KEN,Kenya,Nairobi,2009-02-01,-1.28,36.82,sorghum,3075.0
+KEN,Kenya,Nairobi,2009-03-01,-1.28,36.82,sorghum,2800.0
+KEN,Kenya,Nairobi,2009-04-01,-1.28,36.82,sorghum,2800.0
+KEN,Kenya,Nairobi,2009-05-01,-1.28,36.82,sorghum,2800.0
+KEN,Kenya,Nairobi,2009-07-01,-1.28,36.82,sorghum,2800.0
+KEN,Kenya,Nairobi,2009-08-01,-1.28,36.82,sorghum,2800.0
+KEN,Kenya,Nairobi,2009-09-01,-1.28,36.82,sorghum,2800.0
+KEN,Kenya,Nairobi,2009-10-01,-1.28,36.82,sorghum,2758.0
+KEN,Kenya,Nairobi,2009-11-01,-1.28,36.82,sorghum,2700.0
+KEN,Kenya,Nairobi,2010-02-01,-1.28,36.82,sorghum,2738.0
+KEN,Kenya,Nairobi,2010-03-01,-1.28,36.82,sorghum,2900.0
+KEN,Kenya,Nairobi,2010-04-01,-1.28,36.82,sorghum,2935.0
+KEN,Kenya,Nairobi,2010-05-01,-1.28,36.82,sorghum,3000.0
+KEN,Kenya,Nairobi,2010-07-01,-1.28,36.82,sorghum,3054.0
+KEN,Kenya,Nairobi,2010-09-01,-1.28,36.82,sorghum,2904.0
+KEN,Kenya,Nairobi,2010-10-01,-1.28,36.82,sorghum,2885.0
+KEN,Kenya,Nairobi,2010-12-01,-1.28,36.82,sorghum,2764.0
+KEN,Kenya,Nairobi,2011-01-01,-1.28,36.82,sorghum,2888.0
+KEN,Kenya,Nairobi,2011-02-01,-1.28,36.82,sorghum,2990.0
+KEN,Kenya,Nairobi,2011-06-01,-1.28,36.82,sorghum,3275.0
+KEN,Kenya,Nairobi,2011-07-01,-1.28,36.82,sorghum,3720.0
+KEN,Kenya,Nairobi,2011-08-01,-1.28,36.82,sorghum,3790.0
+KEN,Kenya,Nairobi,2011-09-01,-1.28,36.82,sorghum,3600.0
+KEN,Kenya,Nairobi,2011-12-01,-1.28,36.82,sorghum,3645.0
+KEN,Kenya,Nairobi,2012-02-01,-1.28,36.82,sorghum,3800.0
+KEN,Kenya,Nairobi,2012-03-01,-1.28,36.82,sorghum,3545.0
+KEN,Kenya,Nairobi,2012-05-01,-1.28,36.82,sorghum,3500.0
+KEN,Kenya,Nairobi,2012-07-01,-1.28,36.82,sorghum,3600.0
+KEN,Kenya,Nairobi,2012-08-01,-1.28,36.82,sorghum,3000.0
+KEN,Kenya,Nairobi,2012-09-01,-1.28,36.82,sorghum,3700.0
+KEN,Kenya,Nairobi,2013-03-01,-1.28,36.82,sorghum,5500.0
+KEN,Kenya,Nairobi,2013-04-01,-1.28,36.82,sorghum,4420.0
+KEN,Kenya,Nairobi,2013-06-01,-1.28,36.82,sorghum,3880.0
+KEN,Kenya,Nairobi,2013-07-01,-1.28,36.82,sorghum,3420.0
+KEN,Kenya,Nairobi,2013-08-01,-1.28,36.82,sorghum,4050.0
+KEN,Kenya,Nairobi,2013-10-01,-1.28,36.82,sorghum,3471.0
+KEN,Kenya,Nairobi,2013-11-01,-1.28,36.82,sorghum,3412.0
+KEN,Kenya,Nairobi,2013-12-01,-1.28,36.82,sorghum,3415.0
+KEN,Kenya,Nairobi,2014-03-01,-1.28,36.82,sorghum,3668.75
+KEN,Kenya,Nairobi,2014-04-01,-1.28,36.82,sorghum,3800.0
+KEN,Kenya,Nairobi,2014-06-01,-1.28,36.82,sorghum,4013.0
+KEN,Kenya,Nairobi,2014-07-01,-1.28,36.82,sorghum,4185.71
+KEN,Kenya,Nairobi,2014-09-01,-1.28,36.82,sorghum,3912.0
+KEN,Kenya,Nairobi,2014-10-01,-1.28,36.82,sorghum,3626.67
+KEN,Kenya,Nairobi,2014-11-01,-1.28,36.82,sorghum,3685.0
+KEN,Kenya,Nairobi,2014-12-01,-1.28,36.82,sorghum,3742.86
+KEN,Kenya,Nairobi,2015-01-01,-1.28,36.82,sorghum,3674.0
+KEN,Kenya,Nairobi,2015-02-01,-1.28,36.82,sorghum,3710.0
+KEN,Kenya,Nairobi,2015-03-01,-1.28,36.82,sorghum,3890.0
+KEN,Kenya,Nairobi,2015-05-01,-1.28,36.82,sorghum,3712.0
+KEN,Kenya,Nairobi,2015-06-01,-1.28,36.82,sorghum,3675.0
+KEN,Kenya,Nairobi,2015-07-01,-1.28,36.82,sorghum,3516.67
+KEN,Kenya,Nairobi,2015-08-01,-1.28,36.82,sorghum,3550.0
+KEN,Kenya,Nairobi,2015-10-01,-1.28,36.82,sorghum,3630.0
+KEN,Kenya,Nairobi,2015-11-01,-1.28,36.82,sorghum,3478.0
+KEN,Kenya,Nairobi,2015-12-01,-1.28,36.82,sorghum,3388.0
+KEN,Kenya,Nairobi,2016-01-01,-1.28,36.82,sorghum,3255.0
+KEN,Kenya,Nairobi,2016-02-01,-1.28,36.82,sorghum,3075.0
+KEN,Kenya,Nairobi,2016-05-01,-1.28,36.82,sorghum,3498.0
+KEN,Kenya,Nairobi,2016-06-01,-1.28,36.82,sorghum,3354.0
+KEN,Kenya,Nairobi,2016-08-01,-1.28,36.82,sorghum,3316.0
+KEN,Kenya,Nairobi,2016-09-01,-1.28,36.82,sorghum,3302.0
+KEN,Kenya,Nairobi,2016-10-01,-1.28,36.82,sorghum,3405.0
+KEN,Kenya,Nairobi,2016-11-01,-1.28,36.82,sorghum,3560.0
+KEN,Kenya,Nairobi,2016-12-01,-1.28,36.82,sorghum,3700.0
+KEN,Kenya,Nairobi,2017-01-01,-1.28,36.82,sorghum,3716.0
+KEN,Kenya,Nairobi,2017-02-01,-1.28,36.82,sorghum,3735.0
+KEN,Kenya,Nairobi,2017-03-01,-1.28,36.82,sorghum,3976.0
+KEN,Kenya,Nairobi,2017-04-01,-1.28,36.82,sorghum,5027.5
+KEN,Kenya,Nairobi,2017-05-01,-1.28,36.82,sorghum,5276.0
+KEN,Kenya,Nairobi,2017-07-01,-1.28,36.82,sorghum,5255.0
+KEN,Kenya,Nairobi,2017-08-01,-1.28,36.82,sorghum,4886.0
+KEN,Kenya,Nairobi,2017-09-01,-1.28,36.82,sorghum,5256.0
+KEN,Kenya,Nairobi,2017-10-01,-1.28,36.82,sorghum,5191.25
+KEN,Kenya,Nairobi,2017-11-01,-1.28,36.82,sorghum,5600.0
+KEN,Kenya,Nairobi,2017-12-01,-1.28,36.82,sorghum,4433.33
+KEN,Kenya,Nairobi,2018-01-01,-1.28,36.82,sorghum,4006.0
+KEN,Kenya,Nairobi,2018-02-01,-1.28,36.82,sorghum,4230.0
+KEN,Kenya,Nairobi,2018-06-01,-1.28,36.82,sorghum,3910.0
+KEN,Kenya,Nairobi,2018-07-01,-1.28,36.82,sorghum,4010.0
+KEN,Kenya,Nairobi,2018-08-01,-1.28,36.82,sorghum,3821.0
+KEN,Kenya,Nairobi,2018-09-01,-1.28,36.82,sorghum,3620.0
+KEN,Kenya,Nairobi,2018-12-01,-1.28,36.82,sorghum,3600.0
+KEN,Kenya,Nairobi,2019-01-01,-1.28,36.82,sorghum,3468.0
+KEN,Kenya,Nairobi,2019-02-01,-1.28,36.82,sorghum,3437.5
+KEN,Kenya,Nairobi,2019-03-01,-1.28,36.82,sorghum,3600.0
+KEN,Kenya,Nairobi,2019-05-01,-1.28,36.82,sorghum,4176.0
+KEN,Kenya,Nairobi,2019-06-01,-1.28,36.82,sorghum,4015.0
+KEN,Kenya,Nairobi,2019-07-01,-1.28,36.82,sorghum,6712.0
+KEN,Kenya,Nairobi,2019-08-01,-1.28,36.82,sorghum,6850.0
+KEN,Kenya,Nairobi,2019-10-01,-1.28,36.82,sorghum,6500.0
+KEN,Kenya,Nairobi,2019-11-01,-1.28,36.82,sorghum,6350.0
+KEN,Kenya,Nairobi,2019-12-01,-1.28,36.82,sorghum,5860.0
+KEN,Kenya,Nairobi,2020-02-01,-1.28,36.82,sorghum,5300.0
+KEN,Kenya,Nairobi,2020-03-01,-1.28,36.82,sorghum,5300.0
+KEN,Kenya,Nakuru,2015-02-01,-0.28,36.07,sorghum,3150.0
+KEN,Kenya,Nakuru,2015-07-01,-0.28,36.07,sorghum,3550.0
+KEN,Kenya,Nakuru,2015-08-01,-0.28,36.07,sorghum,2700.0
+KEN,Kenya,Nakuru,2015-09-01,-0.28,36.07,sorghum,2856.25
+KEN,Kenya,Nakuru,2015-10-01,-0.28,36.07,sorghum,3279.0
+KEN,Kenya,Nakuru,2015-11-01,-0.28,36.07,sorghum,3150.0
+KEN,Kenya,Nakuru,2015-12-01,-0.28,36.07,sorghum,3150.0
+KEN,Kenya,Nakuru,2016-05-01,-0.28,36.07,sorghum,2825.0
+KEN,Kenya,Nakuru,2016-08-01,-0.28,36.07,sorghum,2844.0
+KEN,Kenya,Nakuru,2016-11-01,-0.28,36.07,sorghum,3570.0
+KEN,Kenya,Nakuru,2016-12-01,-0.28,36.07,sorghum,3600.0
+KEN,Kenya,Nakuru,2017-01-01,-0.28,36.07,sorghum,3600.0
+KEN,Kenya,Nakuru,2017-03-01,-0.28,36.07,sorghum,3776.0
+KEN,Kenya,Nakuru,2017-05-01,-0.28,36.07,sorghum,5000.0
+KEN,Kenya,Nakuru,2017-06-01,-0.28,36.07,sorghum,5000.0
+KEN,Kenya,Nakuru,2017-07-01,-0.28,36.07,sorghum,5000.0
+KEN,Kenya,Nakuru,2018-02-01,-0.28,36.07,sorghum,2700.0
+KEN,Kenya,Nakuru,2018-03-01,-0.28,36.07,sorghum,3080.0
+KEN,Kenya,Nakuru,2018-05-01,-0.28,36.07,sorghum,3340.0
+KEN,Kenya,Nakuru,2018-06-01,-0.28,36.07,sorghum,3566.88
+KEN,Kenya,Nakuru,2018-07-01,-0.28,36.07,sorghum,3465.0
+KEN,Kenya,Nakuru,2018-11-01,-0.28,36.07,sorghum,3500.0
+KEN,Kenya,Nakuru,2018-12-01,-0.28,36.07,sorghum,3500.0
+KEN,Kenya,Nakuru,2019-05-01,-0.28,36.07,sorghum,4860.0
+KEN,Kenya,Nakuru,2019-06-01,-0.28,36.07,sorghum,5000.0
+KEN,Kenya,Nakuru,2019-09-01,-0.28,36.07,sorghum,4000.0
+KEN,Kenya,Nakuru,2019-10-01,-0.28,36.07,sorghum,3900.0
+KEN,Kenya,Nakuru,2019-11-01,-0.28,36.07,sorghum,3500.0
+KEN,Kenya,Nakuru,2019-12-01,-0.28,36.07,sorghum,3500.0
+KEN,Kenya,Nakuru,2020-01-01,-0.28,36.07,sorghum,3556.25
+KEN,Kenya,Nakuru,2020-02-01,-0.28,36.07,sorghum,3300.0
+KEN,Kenya,Nakuru,2020-03-01,-0.28,36.07,sorghum,2700.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-01-01,0.52,35.28,potatoes,675.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-04-01,0.52,35.28,potatoes,759.25
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-05-01,0.52,35.28,potatoes,830.68
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-06-01,0.52,35.28,potatoes,666.66
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-10-01,0.52,35.28,potatoes,850.69
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-11-01,0.52,35.28,potatoes,879.08
+KEN,Kenya,Eldoret town (Uasin Gishu),2007-12-01,0.52,35.28,potatoes,923.61
+KEN,Kenya,Eldoret town (Uasin Gishu),2008-01-01,0.52,35.28,potatoes,1111.1
+KEN,Kenya,Eldoret town (Uasin Gishu),2008-02-01,0.52,35.28,potatoes,711.11
+KEN,Kenya,Eldoret town (Uasin Gishu),2008-04-01,0.52,35.28,potatoes,1152.05
+KEN,Kenya,Eldoret town (Uasin Gishu),2008-05-01,0.52,35.28,potatoes,1102.33
+KEN,Kenya,Eldoret town (Uasin Gishu),2008-06-01,0.52,35.28,potatoes,640.74
+KEN,Kenya,Eldoret town (Uasin Gishu),2008-07-01,0.52,35.28,potatoes,420.13
+KEN,Kenya,Eldoret town (Uasin Gishu),2008-08-01,0.52,35.28,potatoes,391.97
+KEN,Kenya,Eldoret town (Uasin Gishu),2008-09-01,0.52,35.28,potatoes,456.94
+KEN,Kenya,Eldoret town (Uasin Gishu),2008-11-01,0.52,35.28,potatoes,837.95
+KEN,Kenya,Eldoret town (Uasin Gishu),2008-12-01,0.52,35.28,potatoes,833.33
+KEN,Kenya,Eldoret town (Uasin Gishu),2009-01-01,0.52,35.28,potatoes,958.33
+KEN,Kenya,Eldoret town (Uasin Gishu),2009-02-01,0.52,35.28,potatoes,879.24
+KEN,Kenya,Eldoret town (Uasin Gishu),2009-03-01,0.52,35.28,potatoes,1256.17
+KEN,Kenya,Eldoret town (Uasin Gishu),2009-05-01,0.52,35.28,potatoes,1766.66
+KEN,Kenya,Eldoret town (Uasin Gishu),2009-07-01,0.52,35.28,potatoes,435.56
+KEN,Kenya,Eldoret town (Uasin Gishu),2009-08-01,0.52,35.28,potatoes,571.1
+KEN,Kenya,Eldoret town (Uasin Gishu),2009-10-01,0.52,35.28,potatoes,1173.88
+KEN,Kenya,Eldoret town (Uasin Gishu),2009-11-01,0.52,35.28,potatoes,1363.88
+KEN,Kenya,Eldoret town (Uasin Gishu),2010-01-01,0.52,35.28,potatoes,740.55
+KEN,Kenya,Eldoret town (Uasin Gishu),2010-02-01,0.52,35.28,potatoes,490.55
+KEN,Kenya,Eldoret town (Uasin Gishu),2010-04-01,0.52,35.28,potatoes,517.77
+KEN,Kenya,Eldoret town (Uasin Gishu),2010-07-01,0.52,35.28,potatoes,1053.32
+KEN,Kenya,Eldoret town (Uasin Gishu),2010-09-01,0.52,35.28,potatoes,1011.66
+KEN,Kenya,Eldoret town (Uasin Gishu),2010-12-01,0.52,35.28,potatoes,951.1
+KEN,Kenya,Eldoret town (Uasin Gishu),2011-02-01,0.52,35.28,potatoes,1226.11
+KEN,Kenya,Eldoret town (Uasin Gishu),2011-03-01,0.52,35.28,potatoes,1918.88
+KEN,Kenya,Eldoret town (Uasin Gishu),2011-04-01,0.52,35.28,potatoes,2088.88
+KEN,Kenya,Eldoret town (Uasin Gishu),2011-05-01,0.52,35.28,potatoes,2000.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2011-07-01,0.52,35.28,potatoes,555.55
+KEN,Kenya,Eldoret town (Uasin Gishu),2011-10-01,0.52,35.28,potatoes,1077.77
+KEN,Kenya,Eldoret town (Uasin Gishu),2011-11-01,0.52,35.28,potatoes,1282.21
+KEN,Kenya,Eldoret town (Uasin Gishu),2012-01-01,0.52,35.28,potatoes,1388.88
+KEN,Kenya,Eldoret town (Uasin Gishu),2012-03-01,0.52,35.28,potatoes,1555.55
+KEN,Kenya,Eldoret town (Uasin Gishu),2012-04-01,0.52,35.28,potatoes,2022.22
+KEN,Kenya,Eldoret town (Uasin Gishu),2012-06-01,0.52,35.28,potatoes,1686.11
+KEN,Kenya,Eldoret town (Uasin Gishu),2012-07-01,0.52,35.28,potatoes,950.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2012-12-01,0.52,35.28,potatoes,1826.11
+KEN,Kenya,Eldoret town (Uasin Gishu),2013-01-01,0.52,35.28,potatoes,1136.66
+KEN,Kenya,Eldoret town (Uasin Gishu),2013-03-01,0.52,35.28,potatoes,1063.32
+KEN,Kenya,Eldoret town (Uasin Gishu),2013-04-01,0.52,35.28,potatoes,1158.33
+KEN,Kenya,Eldoret town (Uasin Gishu),2013-06-01,0.52,35.28,potatoes,1291.66
+KEN,Kenya,Eldoret town (Uasin Gishu),2013-07-01,0.52,35.28,potatoes,1253.32
+KEN,Kenya,Eldoret town (Uasin Gishu),2013-08-01,0.52,35.28,potatoes,1212.77
+KEN,Kenya,Eldoret town (Uasin Gishu),2013-09-01,0.52,35.28,potatoes,1213.88
+KEN,Kenya,Eldoret town (Uasin Gishu),2013-10-01,0.52,35.28,potatoes,1528.88
+KEN,Kenya,Eldoret town (Uasin Gishu),2013-11-01,0.52,35.28,potatoes,1550.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2013-12-01,0.52,35.28,potatoes,1871.66
+KEN,Kenya,Eldoret town (Uasin Gishu),2014-01-01,0.52,35.28,potatoes,1624.44
+KEN,Kenya,Eldoret town (Uasin Gishu),2014-02-01,0.52,35.28,potatoes,1604.44
+KEN,Kenya,Eldoret town (Uasin Gishu),2014-04-01,0.52,35.28,potatoes,2019.44
+KEN,Kenya,Eldoret town (Uasin Gishu),2014-05-01,0.52,35.28,potatoes,2073.88
+KEN,Kenya,Eldoret town (Uasin Gishu),2014-07-01,0.52,35.28,potatoes,1209.52
+KEN,Kenya,Eldoret town (Uasin Gishu),2014-08-01,0.52,35.28,potatoes,1240.96
+KEN,Kenya,Eldoret town (Uasin Gishu),2014-10-01,0.52,35.28,potatoes,1329.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2014-11-01,0.52,35.28,potatoes,1465.74
+KEN,Kenya,Eldoret town (Uasin Gishu),2014-12-01,0.52,35.28,potatoes,1357.14
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-01-01,0.52,35.28,potatoes,1427.22
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-02-01,0.52,35.28,potatoes,1456.11
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-03-01,0.52,35.28,potatoes,1279.81
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-04-01,0.52,35.28,potatoes,1212.27
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-05-01,0.52,35.28,potatoes,1449.09
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-06-01,0.52,35.28,potatoes,1250.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-07-01,0.52,35.28,potatoes,772.72
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-09-01,0.52,35.28,potatoes,1200.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-10-01,0.52,35.28,potatoes,1731.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2015-12-01,0.52,35.28,potatoes,1944.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2016-01-01,0.52,35.28,potatoes,1970.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2016-02-01,0.52,35.28,potatoes,1693.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2016-03-01,0.52,35.28,potatoes,1522.33
+KEN,Kenya,Eldoret town (Uasin Gishu),2016-06-01,0.52,35.28,potatoes,1421.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2016-10-01,0.52,35.28,potatoes,1523.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2016-11-01,0.52,35.28,potatoes,1750.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2017-01-01,0.52,35.28,potatoes,1766.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2017-02-01,0.52,35.28,potatoes,1862.5
+KEN,Kenya,Eldoret town (Uasin Gishu),2017-03-01,0.52,35.28,potatoes,2064.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2017-05-01,0.52,35.28,potatoes,2700.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2017-06-01,0.52,35.28,potatoes,2360.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2017-07-01,0.52,35.28,potatoes,1830.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2017-08-01,0.52,35.28,potatoes,1888.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2017-10-01,0.52,35.28,potatoes,1727.5
+KEN,Kenya,Eldoret town (Uasin Gishu),2017-11-01,0.52,35.28,potatoes,1650.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2017-12-01,0.52,35.28,potatoes,1650.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2018-01-01,0.52,35.28,potatoes,1866.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2018-03-01,0.52,35.28,potatoes,2025.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2018-05-01,0.52,35.28,potatoes,1781.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2018-06-01,0.52,35.28,potatoes,1590.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2018-07-01,0.52,35.28,potatoes,1455.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2018-08-01,0.52,35.28,potatoes,2065.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2018-10-01,0.52,35.28,potatoes,2550.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2018-12-01,0.52,35.28,potatoes,1470.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2019-01-01,0.52,35.28,potatoes,1215.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2019-02-01,0.52,35.28,potatoes,1247.5
+KEN,Kenya,Eldoret town (Uasin Gishu),2019-03-01,0.52,35.28,potatoes,1624.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2019-04-01,0.52,35.28,potatoes,2736.25
+KEN,Kenya,Eldoret town (Uasin Gishu),2019-05-01,0.52,35.28,potatoes,2838.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2019-06-01,0.52,35.28,potatoes,2300.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2019-07-01,0.52,35.28,potatoes,1160.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2019-08-01,0.52,35.28,potatoes,872.5
+KEN,Kenya,Eldoret town (Uasin Gishu),2019-09-01,0.52,35.28,potatoes,1250.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2019-10-01,0.52,35.28,potatoes,1513.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2019-11-01,0.52,35.28,potatoes,1955.0
+KEN,Kenya,Eldoret town (Uasin Gishu),2020-02-01,0.52,35.28,potatoes,1852.5
+KEN,Kenya,Eldoret town (Uasin Gishu),2020-03-01,0.52,35.28,potatoes,1813.33
+KEN,Kenya,Kisumu,2007-01-01,-0.1,34.75,potatoes,850.42
+KEN,Kenya,Kisumu,2007-02-01,-0.1,34.75,potatoes,807.18
+KEN,Kenya,Kisumu,2007-03-01,-0.1,34.75,potatoes,830.91
+KEN,Kenya,Kisumu,2007-04-01,-0.1,34.75,potatoes,901.95
+KEN,Kenya,Kisumu,2007-05-01,-0.1,34.75,potatoes,929.16
+KEN,Kenya,Kisumu,2007-06-01,-0.1,34.75,potatoes,867.52
+KEN,Kenya,Kisumu,2007-07-01,-0.1,34.75,potatoes,811.11
+KEN,Kenya,Kisumu,2007-08-01,-0.1,34.75,potatoes,850.0
+KEN,Kenya,Kisumu,2007-09-01,-0.1,34.75,potatoes,920.63
+KEN,Kenya,Kisumu,2007-11-01,-0.1,34.75,potatoes,1015.87
+KEN,Kenya,Kisumu,2007-12-01,-0.1,34.75,potatoes,1074.07
+KEN,Kenya,Kisumu,2008-02-01,-0.1,34.75,potatoes,1277.78
+KEN,Kenya,Kisumu,2008-04-01,-0.1,34.75,potatoes,1820.98
+KEN,Kenya,Kisumu,2008-05-01,-0.1,34.75,potatoes,2019.6
+KEN,Kenya,Kisumu,2008-06-01,-0.1,34.75,potatoes,1290.27
+KEN,Kenya,Kisumu,2008-07-01,-0.1,34.75,potatoes,888.88
+KEN,Kenya,Kisumu,2008-08-01,-0.1,34.75,potatoes,969.69
+KEN,Kenya,Kisumu,2008-09-01,-0.1,34.75,potatoes,956.93
+KEN,Kenya,Kisumu,2008-10-01,-0.1,34.75,potatoes,1194.43
+KEN,Kenya,Kisumu,2008-11-01,-0.1,34.75,potatoes,1170.37
+KEN,Kenya,Kisumu,2008-12-01,-0.1,34.75,potatoes,1064.81
+KEN,Kenya,Kisumu,2009-01-01,-0.1,34.75,potatoes,988.88
+KEN,Kenya,Kisumu,2009-02-01,-0.1,34.75,potatoes,1466.66
+KEN,Kenya,Kisumu,2009-03-01,-0.1,34.75,potatoes,1541.66
+KEN,Kenya,Kisumu,2009-04-01,-0.1,34.75,potatoes,1800.0
+KEN,Kenya,Kisumu,2009-07-01,-0.1,34.75,potatoes,1033.33
+KEN,Kenya,Kisumu,2009-08-01,-0.1,34.75,potatoes,763.88
+KEN,Kenya,Kisumu,2009-09-01,-0.1,34.75,potatoes,898.33
+KEN,Kenya,Kisumu,2009-11-01,-0.1,34.75,potatoes,1507.21
+KEN,Kenya,Kisumu,2009-12-01,-0.1,34.75,potatoes,1566.66
+KEN,Kenya,Kisumu,2010-01-01,-0.1,34.75,potatoes,1360.0
+KEN,Kenya,Kisumu,2010-06-01,-0.1,34.75,potatoes,1289.44
+KEN,Kenya,Kisumu,2010-09-01,-0.1,34.75,potatoes,1775.0
+KEN,Kenya,Kisumu,2010-11-01,-0.1,34.75,potatoes,1919.44
+KEN,Kenya,Kisumu,2011-03-01,-0.1,34.75,potatoes,2180.55
+KEN,Kenya,Kisumu,2011-04-01,-0.1,34.75,potatoes,2362.77
+KEN,Kenya,Kisumu,2011-05-01,-0.1,34.75,potatoes,2473.33
+KEN,Kenya,Kisumu,2011-06-01,-0.1,34.75,potatoes,1944.43
+KEN,Kenya,Kisumu,2011-08-01,-0.1,34.75,potatoes,1458.32
+KEN,Kenya,Kisumu,2011-09-01,-0.1,34.75,potatoes,1838.88
+KEN,Kenya,Kisumu,2011-10-01,-0.1,34.75,potatoes,2212.77
+KEN,Kenya,Kisumu,2011-11-01,-0.1,34.75,potatoes,2499.99
+KEN,Kenya,Kisumu,2011-12-01,-0.1,34.75,potatoes,2299.99
+KEN,Kenya,Kisumu,2012-01-01,-0.1,34.75,potatoes,2666.66
+KEN,Kenya,Kisumu,2012-03-01,-0.1,34.75,potatoes,3000.0
+KEN,Kenya,Kisumu,2012-04-01,-0.1,34.75,potatoes,2972.21
+KEN,Kenya,Kisumu,2012-05-01,-0.1,34.75,potatoes,2944.44
+KEN,Kenya,Kisumu,2012-06-01,-0.1,34.75,potatoes,2398.33
+KEN,Kenya,Kisumu,2012-07-01,-0.1,34.75,potatoes,2111.1
+KEN,Kenya,Kisumu,2012-08-01,-0.1,34.75,potatoes,2000.0
+KEN,Kenya,Kisumu,2013-01-01,-0.1,34.75,potatoes,2059.99
+KEN,Kenya,Kisumu,2013-02-01,-0.1,34.75,potatoes,1736.11
+KEN,Kenya,Kisumu,2013-04-01,-0.1,34.75,potatoes,1864.44
+KEN,Kenya,Kisumu,2013-06-01,-0.1,34.75,potatoes,1944.43
+KEN,Kenya,Kisumu,2013-07-01,-0.1,34.75,potatoes,1944.43
+KEN,Kenya,Kisumu,2013-08-01,-0.1,34.75,potatoes,1944.43
+KEN,Kenya,Kisumu,2013-09-01,-0.1,34.75,potatoes,1927.77
+KEN,Kenya,Kisumu,2013-10-01,-0.1,34.75,potatoes,1944.43
+KEN,Kenya,Kisumu,2013-11-01,-0.1,34.75,potatoes,2033.33
+KEN,Kenya,Kisumu,2013-12-01,-0.1,34.75,potatoes,1944.43
+KEN,Kenya,Kisumu,2014-01-01,-0.1,34.75,potatoes,1944.43
+KEN,Kenya,Kisumu,2014-02-01,-0.1,34.75,potatoes,1944.43
+KEN,Kenya,Kisumu,2014-03-01,-0.1,34.75,potatoes,2125.0
+KEN,Kenya,Kisumu,2014-04-01,-0.1,34.75,potatoes,2155.55
+KEN,Kenya,Kisumu,2014-05-01,-0.1,34.75,potatoes,2383.33
+KEN,Kenya,Kisumu,2014-06-01,-0.1,34.75,potatoes,2170.55
+KEN,Kenya,Kisumu,2014-07-01,-0.1,34.75,potatoes,1968.26
+KEN,Kenya,Kisumu,2014-08-01,-0.1,34.75,potatoes,1756.93
+KEN,Kenya,Kisumu,2014-09-01,-0.1,34.75,potatoes,1666.66
+KEN,Kenya,Kisumu,2014-11-01,-0.1,34.75,potatoes,1819.44
+KEN,Kenya,Kisumu,2014-12-01,-0.1,34.75,potatoes,1619.04
+KEN,Kenya,Kisumu,2015-01-01,-0.1,34.75,potatoes,1483.33
+KEN,Kenya,Kisumu,2015-02-01,-0.1,34.75,potatoes,1613.88
+KEN,Kenya,Kisumu,2015-04-01,-0.1,34.75,potatoes,1894.09
+KEN,Kenya,Kisumu,2015-07-01,-0.1,34.75,potatoes,1196.96
+KEN,Kenya,Kisumu,2015-08-01,-0.1,34.75,potatoes,2100.0
+KEN,Kenya,Kisumu,2015-09-01,-0.1,34.75,potatoes,2772.5
+KEN,Kenya,Kisumu,2015-10-01,-0.1,34.75,potatoes,3505.0
+KEN,Kenya,Kisumu,2015-12-01,-0.1,34.75,potatoes,3784.0
+KEN,Kenya,Kisumu,2016-01-01,-0.1,34.75,potatoes,2840.0
+KEN,Kenya,Kisumu,2016-03-01,-0.1,34.75,potatoes,2858.0
+KEN,Kenya,Kisumu,2016-05-01,-0.1,34.75,potatoes,3480.0
+KEN,Kenya,Kisumu,2016-07-01,-0.1,34.75,potatoes,3371.25
+KEN,Kenya,Kisumu,2016-08-01,-0.1,34.75,potatoes,3290.67
+KEN,Kenya,Kisumu,2016-09-01,-0.1,34.75,potatoes,3328.0
+KEN,Kenya,Kisumu,2016-10-01,-0.1,34.75,potatoes,3543.75
+KEN,Kenya,Kisumu,2016-11-01,-0.1,34.75,potatoes,2755.0
+KEN,Kenya,Kisumu,2017-01-01,-0.1,34.75,potatoes,3274.0
+KEN,Kenya,Kisumu,2017-02-01,-0.1,34.75,potatoes,3015.0
+KEN,Kenya,Kisumu,2017-04-01,-0.1,34.75,potatoes,3267.5
+KEN,Kenya,Kisumu,2017-05-01,-0.1,34.75,potatoes,3029.0
+KEN,Kenya,Kisumu,2017-08-01,-0.1,34.75,potatoes,1580.0
+KEN,Kenya,Kisumu,2017-10-01,-0.1,34.75,potatoes,1150.0
+KEN,Kenya,Kisumu,2017-12-01,-0.1,34.75,potatoes,1413.75
+KEN,Kenya,Kisumu,2018-02-01,-0.1,34.75,potatoes,1520.0
+KEN,Kenya,Kisumu,2018-04-01,-0.1,34.75,potatoes,2045.0
+KEN,Kenya,Kisumu,2018-05-01,-0.1,34.75,potatoes,1518.0
+KEN,Kenya,Kisumu,2018-07-01,-0.1,34.75,potatoes,1455.0
+KEN,Kenya,Kisumu,2018-10-01,-0.1,34.75,potatoes,2065.0
+KEN,Kenya,Kisumu,2018-11-01,-0.1,34.75,potatoes,2145.0
+KEN,Kenya,Kisumu,2018-12-01,-0.1,34.75,potatoes,1782.5
+KEN,Kenya,Kisumu,2019-01-01,-0.1,34.75,potatoes,1494.0
+KEN,Kenya,Kisumu,2019-03-01,-0.1,34.75,potatoes,1848.0
+KEN,Kenya,Kisumu,2019-04-01,-0.1,34.75,potatoes,2722.5
+KEN,Kenya,Kisumu,2019-07-01,-0.1,34.75,potatoes,2490.0
+KEN,Kenya,Kisumu,2019-08-01,-0.1,34.75,potatoes,2400.0
+KEN,Kenya,Kisumu,2019-10-01,-0.1,34.75,potatoes,2400.0
+KEN,Kenya,Kitui,2007-07-01,-1.37,38.02,potatoes,1152.77
+KEN,Kenya,Kitui,2007-08-01,-1.37,38.02,potatoes,866.66
+KEN,Kenya,Kitui,2007-10-01,-1.37,38.02,potatoes,1388.88
+KEN,Kenya,Kitui,2007-11-01,-1.37,38.02,potatoes,1291.66
+KEN,Kenya,Kitui,2008-02-01,-1.37,38.02,potatoes,1666.66
+KEN,Kenya,Kitui,2008-04-01,-1.37,38.02,potatoes,1962.95
+KEN,Kenya,Kitui,2008-05-01,-1.37,38.02,potatoes,1666.66
+KEN,Kenya,Kitui,2008-07-01,-1.37,38.02,potatoes,1249.99
+KEN,Kenya,Kitui,2008-08-01,-1.37,38.02,potatoes,1263.88
+KEN,Kenya,Kitui,2008-09-01,-1.37,38.02,potatoes,1374.99
+KEN,Kenya,Kitui,2008-11-01,-1.37,38.02,potatoes,1777.77
+KEN,Kenya,Kitui,2008-12-01,-1.37,38.02,potatoes,1555.55
+KEN,Kenya,Kitui,2009-01-01,-1.37,38.02,potatoes,1472.22
+KEN,Kenya,Kitui,2009-05-01,-1.37,38.02,potatoes,2638.88
+KEN,Kenya,Kitui,2009-06-01,-1.37,38.02,potatoes,1877.22
+KEN,Kenya,Kitui,2009-07-01,-1.37,38.02,potatoes,1588.88
+KEN,Kenya,Kitui,2009-08-01,-1.37,38.02,potatoes,1326.66
+KEN,Kenya,Kitui,2009-09-01,-1.37,38.02,potatoes,1513.88
+KEN,Kenya,Kitui,2009-12-01,-1.37,38.02,potatoes,1722.21
+KEN,Kenya,Kitui,2010-01-01,-1.37,38.02,potatoes,1499.99
+KEN,Kenya,Kitui,2010-03-01,-1.37,38.02,potatoes,1277.78
+KEN,Kenya,Kitui,2010-04-01,-1.37,38.02,potatoes,1407.21
+KEN,Kenya,Kitui,2010-05-01,-1.37,38.02,potatoes,1388.88
+KEN,Kenya,Kitui,2010-07-01,-1.37,38.02,potatoes,2083.33
+KEN,Kenya,Kitui,2010-08-01,-1.37,38.02,potatoes,2333.32
+KEN,Kenya,Kitui,2010-09-01,-1.37,38.02,potatoes,2250.0
+KEN,Kenya,Kitui,2010-10-01,-1.37,38.02,potatoes,2000.0
+KEN,Kenya,Kitui,2010-11-01,-1.37,38.02,potatoes,1722.21
+KEN,Kenya,Kitui,2010-12-01,-1.37,38.02,potatoes,1888.88
+KEN,Kenya,Kitui,2011-01-01,-1.37,38.02,potatoes,1777.77
+KEN,Kenya,Kitui,2011-02-01,-1.37,38.02,potatoes,2222.22
+KEN,Kenya,Kitui,2011-03-01,-1.37,38.02,potatoes,3388.88
+KEN,Kenya,Kitui,2011-04-01,-1.37,38.02,potatoes,3222.22
+KEN,Kenya,Kitui,2011-05-01,-1.37,38.02,potatoes,2740.55
+KEN,Kenya,Kitui,2011-07-01,-1.37,38.02,potatoes,1537.22
+KEN,Kenya,Kitui,2011-08-01,-1.37,38.02,potatoes,1666.66
+KEN,Kenya,Kitui,2011-09-01,-1.37,38.02,potatoes,1666.66
+KEN,Kenya,Kitui,2011-11-01,-1.37,38.02,potatoes,2111.1
+KEN,Kenya,Kitui,2011-12-01,-1.37,38.02,potatoes,2122.22
+KEN,Kenya,Kitui,2012-01-01,-1.37,38.02,potatoes,1888.88
+KEN,Kenya,Kitui,2012-04-01,-1.37,38.02,potatoes,2888.88
+KEN,Kenya,Kitui,2012-05-01,-1.37,38.02,potatoes,3055.55
+KEN,Kenya,Kitui,2012-06-01,-1.37,38.02,potatoes,2796.1
+KEN,Kenya,Kitui,2012-07-01,-1.37,38.02,potatoes,2111.1
+KEN,Kenya,Kitui,2012-08-01,-1.37,38.02,potatoes,2111.1
+KEN,Kenya,Kitui,2012-10-01,-1.37,38.02,potatoes,2777.77
+KEN,Kenya,Kitui,2012-11-01,-1.37,38.02,potatoes,2749.99
+KEN,Kenya,Kitui,2012-12-01,-1.37,38.02,potatoes,1888.88
+KEN,Kenya,Kitui,2013-01-01,-1.37,38.02,potatoes,2222.22
+KEN,Kenya,Kitui,2013-03-01,-1.37,38.02,potatoes,1972.21
+KEN,Kenya,Kitui,2013-04-01,-1.37,38.02,potatoes,2222.22
+KEN,Kenya,Kitui,2013-05-01,-1.37,38.02,potatoes,2222.22
+KEN,Kenya,Kitui,2013-07-01,-1.37,38.02,potatoes,2073.88
+KEN,Kenya,Kitui,2013-08-01,-1.37,38.02,potatoes,1888.88
+KEN,Kenya,Kitui,2013-09-01,-1.37,38.02,potatoes,2222.22
+KEN,Kenya,Kitui,2013-10-01,-1.37,38.02,potatoes,2184.99
+KEN,Kenya,Kitui,2013-11-01,-1.37,38.02,potatoes,2184.99
+KEN,Kenya,Kitui,2014-01-01,-1.37,38.02,potatoes,1583.33
+KEN,Kenya,Kitui,2014-02-01,-1.37,38.02,potatoes,2055.55
+KEN,Kenya,Kitui,2014-03-01,-1.37,38.02,potatoes,2148.15
+KEN,Kenya,Kitui,2014-04-01,-1.37,38.02,potatoes,2370.55
+KEN,Kenya,Kitui,2014-06-01,-1.37,38.02,potatoes,2361.11
+KEN,Kenya,Kitui,2014-08-01,-1.37,38.02,potatoes,1902.77
+KEN,Kenya,Kitui,2014-09-01,-1.37,38.02,potatoes,2125.0
+KEN,Kenya,Kitui,2014-10-01,-1.37,38.02,potatoes,2333.32
+KEN,Kenya,Kitui,2014-11-01,-1.37,38.02,potatoes,2583.32
+KEN,Kenya,Kitui,2014-12-01,-1.37,38.02,potatoes,1763.88
+KEN,Kenya,Kitui,2015-01-01,-1.37,38.02,potatoes,944.43
+KEN,Kenya,Kitui,2015-02-01,-1.37,38.02,potatoes,1249.99
+KEN,Kenya,Kitui,2015-03-01,-1.37,38.02,potatoes,1611.11
+KEN,Kenya,Kitui,2015-10-01,-1.37,38.02,potatoes,2200.0
+KEN,Kenya,Kitui,2016-01-01,-1.37,38.02,potatoes,2863.0
+KEN,Kenya,Kitui,2016-02-01,-1.37,38.02,potatoes,2200.0
+KEN,Kenya,Kitui,2016-03-01,-1.37,38.02,potatoes,3000.0
+KEN,Kenya,Kitui,2016-05-01,-1.37,38.02,potatoes,3500.0
+KEN,Kenya,Kitui,2016-06-01,-1.37,38.02,potatoes,2800.0
+KEN,Kenya,Kitui,2016-07-01,-1.37,38.02,potatoes,3150.0
+KEN,Kenya,Kitui,2016-08-01,-1.37,38.02,potatoes,2720.0
+KEN,Kenya,Kitui,2016-09-01,-1.37,38.02,potatoes,2800.0
+KEN,Kenya,Kitui,2016-11-01,-1.37,38.02,potatoes,3000.0
+KEN,Kenya,Kitui,2016-12-01,-1.37,38.02,potatoes,3000.0
+KEN,Kenya,Kitui,2017-01-01,-1.37,38.02,potatoes,3000.0
+KEN,Kenya,Kitui,2017-05-01,-1.37,38.02,potatoes,3550.0
+KEN,Kenya,Kitui,2017-06-01,-1.37,38.02,potatoes,4000.0
+KEN,Kenya,Kitui,2017-07-01,-1.37,38.02,potatoes,2000.0
+KEN,Kenya,Kitui,2017-08-01,-1.37,38.02,potatoes,2250.0
+KEN,Kenya,Kitui,2017-09-01,-1.37,38.02,potatoes,2200.0
+KEN,Kenya,Kitui,2017-10-01,-1.37,38.02,potatoes,2333.33
+KEN,Kenya,Kitui,2017-11-01,-1.37,38.02,potatoes,2875.0
+KEN,Kenya,Kitui,2017-12-01,-1.37,38.02,potatoes,3000.0
+KEN,Kenya,Kitui,2018-03-01,-1.37,38.02,potatoes,3833.33
+KEN,Kenya,Kitui,2018-06-01,-1.37,38.02,potatoes,3375.0
+KEN,Kenya,Kitui,2018-07-01,-1.37,38.02,potatoes,3500.0
+KEN,Kenya,Kitui,2018-08-01,-1.37,38.02,potatoes,4625.0
+KEN,Kenya,Kitui,2018-10-01,-1.37,38.02,potatoes,3800.0
+KEN,Kenya,Kitui,2018-11-01,-1.37,38.02,potatoes,3825.0
+KEN,Kenya,Kitui,2018-12-01,-1.37,38.02,potatoes,3850.0
+KEN,Kenya,Kitui,2019-04-01,-1.37,38.02,potatoes,4000.0
+KEN,Kenya,Kitui,2019-05-01,-1.37,38.02,potatoes,5700.0
+KEN,Kenya,Kitui,2019-06-01,-1.37,38.02,potatoes,5500.0
+KEN,Kenya,Kitui,2019-07-01,-1.37,38.02,potatoes,3733.33
+KEN,Kenya,Kitui,2019-09-01,-1.37,38.02,potatoes,2850.0
+KEN,Kenya,Kitui,2019-10-01,-1.37,38.02,potatoes,3300.0
+KEN,Kenya,Kitui,2020-02-01,-1.37,38.02,potatoes,3050.0
+KEN,Kenya,Kitui,2020-03-01,-1.37,38.02,potatoes,3500.0
+KEN,Kenya,Mombasa,2012-01-01,-4.05,39.67,potatoes,2180.0
+KEN,Kenya,Mombasa,2012-03-01,-4.05,39.67,potatoes,1718.88
+KEN,Kenya,Nairobi,2007-03-01,-1.28,36.82,potatoes,1636.11
+KEN,Kenya,Nairobi,2007-04-01,-1.28,36.82,potatoes,1552.08
+KEN,Kenya,Nairobi,2007-05-01,-1.28,36.82,potatoes,1119.04
+KEN,Kenya,Nairobi,2007-06-01,-1.28,36.82,potatoes,589.4
+KEN,Kenya,Nairobi,2007-07-01,-1.28,36.82,potatoes,557.22
+KEN,Kenya,Nairobi,2007-08-01,-1.28,36.82,potatoes,875.68
+KEN,Kenya,Nairobi,2007-09-01,-1.28,36.82,potatoes,735.06
+KEN,Kenya,Nairobi,2007-10-01,-1.28,36.82,potatoes,1134.72
+KEN,Kenya,Nairobi,2007-11-01,-1.28,36.82,potatoes,1239.43
+KEN,Kenya,Nairobi,2008-01-01,-1.28,36.82,potatoes,941.91
+KEN,Kenya,Nairobi,2008-02-01,-1.28,36.82,potatoes,854.16
+KEN,Kenya,Nairobi,2008-04-01,-1.28,36.82,potatoes,858.47
+KEN,Kenya,Nairobi,2008-05-01,-1.28,36.82,potatoes,1055.55
+KEN,Kenya,Nairobi,2008-06-01,-1.28,36.82,potatoes,1098.77
+KEN,Kenya,Nairobi,2008-07-01,-1.28,36.82,potatoes,1171.49
+KEN,Kenya,Nairobi,2008-09-01,-1.28,36.82,potatoes,1608.18
+KEN,Kenya,Nairobi,2008-10-01,-1.28,36.82,potatoes,1212.12
+KEN,Kenya,Nairobi,2008-12-01,-1.28,36.82,potatoes,1231.48
+KEN,Kenya,Nairobi,2009-01-01,-1.28,36.82,potatoes,1416.66
+KEN,Kenya,Nairobi,2009-02-01,-1.28,36.82,potatoes,1686.11
+KEN,Kenya,Nairobi,2009-04-01,-1.28,36.82,potatoes,2146.52
+KEN,Kenya,Nairobi,2009-05-01,-1.28,36.82,potatoes,2238.89
+KEN,Kenya,Nairobi,2009-07-01,-1.28,36.82,potatoes,1106.66
+KEN,Kenya,Nairobi,2009-09-01,-1.28,36.82,potatoes,1341.66
+KEN,Kenya,Nairobi,2009-12-01,-1.28,36.82,potatoes,1460.55
+KEN,Kenya,Nairobi,2010-02-01,-1.28,36.82,potatoes,969.43
+KEN,Kenya,Nairobi,2010-03-01,-1.28,36.82,potatoes,911.11
+KEN,Kenya,Nairobi,2010-05-01,-1.28,36.82,potatoes,1280.55
+KEN,Kenya,Nairobi,2010-06-01,-1.28,36.82,potatoes,1281.11
+KEN,Kenya,Nairobi,2010-07-01,-1.28,36.82,potatoes,1652.77
+KEN,Kenya,Nairobi,2010-11-01,-1.28,36.82,potatoes,1505.55
+KEN,Kenya,Nairobi,2010-12-01,-1.28,36.82,potatoes,1451.11
+KEN,Kenya,Nairobi,2011-01-01,-1.28,36.82,potatoes,1654.99
+KEN,Kenya,Nairobi,2011-03-01,-1.28,36.82,potatoes,3005.55
+KEN,Kenya,Nairobi,2011-04-01,-1.28,36.82,potatoes,2961.11
+KEN,Kenya,Nairobi,2011-05-01,-1.28,36.82,potatoes,1993.33
+KEN,Kenya,Nairobi,2011-08-01,-1.28,36.82,potatoes,1125.0
+KEN,Kenya,Nairobi,2011-09-01,-1.28,36.82,potatoes,1396.66
+KEN,Kenya,Nairobi,2011-10-01,-1.28,36.82,potatoes,1803.88
+KEN,Kenya,Nairobi,2011-11-01,-1.28,36.82,potatoes,1962.22
+KEN,Kenya,Nairobi,2012-02-01,-1.28,36.82,potatoes,2166.66
+KEN,Kenya,Nairobi,2012-03-01,-1.28,36.82,potatoes,2583.32
+KEN,Kenya,Nairobi,2012-04-01,-1.28,36.82,potatoes,2568.88
+KEN,Kenya,Nairobi,2012-05-01,-1.28,36.82,potatoes,2111.1
+KEN,Kenya,Nairobi,2012-06-01,-1.28,36.82,potatoes,2047.21
+KEN,Kenya,Nairobi,2012-07-01,-1.28,36.82,potatoes,1666.66
+KEN,Kenya,Nairobi,2012-08-01,-1.28,36.82,potatoes,1807.22
+KEN,Kenya,Nairobi,2012-10-01,-1.28,36.82,potatoes,2557.77
+KEN,Kenya,Nairobi,2012-11-01,-1.28,36.82,potatoes,2419.43
+KEN,Kenya,Nairobi,2012-12-01,-1.28,36.82,potatoes,1877.77
+KEN,Kenya,Nairobi,2013-02-01,-1.28,36.82,potatoes,1599.99
+KEN,Kenya,Nairobi,2013-03-01,-1.28,36.82,potatoes,1886.66
+KEN,Kenya,Nairobi,2013-04-01,-1.28,36.82,potatoes,1732.21
+KEN,Kenya,Nairobi,2013-05-01,-1.28,36.82,potatoes,1918.32
+KEN,Kenya,Nairobi,2013-09-01,-1.28,36.82,potatoes,1908.32
+KEN,Kenya,Nairobi,2013-11-01,-1.28,36.82,potatoes,1811.11
+KEN,Kenya,Nairobi,2014-02-01,-1.28,36.82,potatoes,1683.88
+KEN,Kenya,Nairobi,2014-04-01,-1.28,36.82,potatoes,2011.1
+KEN,Kenya,Nairobi,2014-05-01,-1.28,36.82,potatoes,2206.11
+KEN,Kenya,Nairobi,2014-07-01,-1.28,36.82,potatoes,1726.97
+KEN,Kenya,Nairobi,2014-09-01,-1.28,36.82,potatoes,1553.33
+KEN,Kenya,Nairobi,2014-12-01,-1.28,36.82,potatoes,1580.95
+KEN,Kenya,Nairobi,2015-01-01,-1.28,36.82,potatoes,1714.44
+KEN,Kenya,Nairobi,2015-02-01,-1.28,36.82,potatoes,1722.21
+KEN,Kenya,Nairobi,2015-03-01,-1.28,36.82,potatoes,1426.84
+KEN,Kenya,Nairobi,2015-04-01,-1.28,36.82,potatoes,1424.08
+KEN,Kenya,Nairobi,2015-07-01,-1.28,36.82,potatoes,689.38
+KEN,Kenya,Nairobi,2015-08-01,-1.28,36.82,potatoes,1700.0
+KEN,Kenya,Nairobi,2015-10-01,-1.28,36.82,potatoes,2732.0
+KEN,Kenya,Nairobi,2015-11-01,-1.28,36.82,potatoes,2930.0
+KEN,Kenya,Nairobi,2015-12-01,-1.28,36.82,potatoes,2243.0
+KEN,Kenya,Nairobi,2016-01-01,-1.28,36.82,potatoes,2045.0
+KEN,Kenya,Nairobi,2016-03-01,-1.28,36.82,potatoes,2460.0
+KEN,Kenya,Nairobi,2016-04-01,-1.28,36.82,potatoes,2730.0
+KEN,Kenya,Nairobi,2016-06-01,-1.28,36.82,potatoes,2635.0
+KEN,Kenya,Nairobi,2016-07-01,-1.28,36.82,potatoes,2552.81
+KEN,Kenya,Nairobi,2016-09-01,-1.28,36.82,potatoes,2732.0
+KEN,Kenya,Nairobi,2016-10-01,-1.28,36.82,potatoes,2965.0
+KEN,Kenya,Nairobi,2016-11-01,-1.28,36.82,potatoes,2740.0
+KEN,Kenya,Nairobi,2016-12-01,-1.28,36.82,potatoes,2589.0
+KEN,Kenya,Nairobi,2017-01-01,-1.28,36.82,potatoes,2803.0
+KEN,Kenya,Nairobi,2017-02-01,-1.28,36.82,potatoes,2893.75
+KEN,Kenya,Nairobi,2017-03-01,-1.28,36.82,potatoes,2872.0
+KEN,Kenya,Nairobi,2017-04-01,-1.28,36.82,potatoes,3172.5
+KEN,Kenya,Nairobi,2017-06-01,-1.28,36.82,potatoes,2674.0
+KEN,Kenya,Nairobi,2017-07-01,-1.28,36.82,potatoes,1875.0
+KEN,Kenya,Nairobi,2017-09-01,-1.28,36.82,potatoes,2000.0
+KEN,Kenya,Nairobi,2017-10-01,-1.28,36.82,potatoes,1915.0
+KEN,Kenya,Nairobi,2017-12-01,-1.28,36.82,potatoes,1731.67
+KEN,Kenya,Nairobi,2018-01-01,-1.28,36.82,potatoes,1944.0
+KEN,Kenya,Nairobi,2018-02-01,-1.28,36.82,potatoes,2130.0
+KEN,Kenya,Nairobi,2018-05-01,-1.28,36.82,potatoes,2526.0
+KEN,Kenya,Nairobi,2018-06-01,-1.28,36.82,potatoes,2050.0
+KEN,Kenya,Nairobi,2018-07-01,-1.28,36.82,potatoes,2117.5
+KEN,Kenya,Nairobi,2018-10-01,-1.28,36.82,potatoes,2668.75
+KEN,Kenya,Nairobi,2018-11-01,-1.28,36.82,potatoes,2725.0
+KEN,Kenya,Nairobi,2018-12-01,-1.28,36.82,potatoes,2450.0
+KEN,Kenya,Nairobi,2019-03-01,-1.28,36.82,potatoes,2252.5
+KEN,Kenya,Nairobi,2019-04-01,-1.28,36.82,potatoes,2575.0
+KEN,Kenya,Nairobi,2019-05-01,-1.28,36.82,potatoes,3840.0
+KEN,Kenya,Nairobi,2019-06-01,-1.28,36.82,potatoes,2796.0
+KEN,Kenya,Nairobi,2019-07-01,-1.28,36.82,potatoes,2528.0
+KEN,Kenya,Nairobi,2019-08-01,-1.28,36.82,potatoes,1520.0
+KEN,Kenya,Nairobi,2019-09-01,-1.28,36.82,potatoes,1890.0
+KEN,Kenya,Nairobi,2019-10-01,-1.28,36.82,potatoes,2500.0
+KEN,Kenya,Nairobi,2019-11-01,-1.28,36.82,potatoes,2820.0
+KEN,Kenya,Nairobi,2019-12-01,-1.28,36.82,potatoes,2080.0
+KEN,Kenya,Nairobi,2020-02-01,-1.28,36.82,potatoes,2300.0
+KEN,Kenya,Nairobi,2020-03-01,-1.28,36.82,potatoes,2733.33
+KEN,Kenya,Nakuru,2015-01-01,-0.28,36.07,potatoes,1324.44
+KEN,Kenya,Nakuru,2015-02-01,-0.28,36.07,potatoes,1388.88
+KEN,Kenya,Nakuru,2015-03-01,-0.28,36.07,potatoes,1441.35
+KEN,Kenya,Nakuru,2015-04-01,-0.28,36.07,potatoes,2272.72
+KEN,Kenya,Nakuru,2015-06-01,-0.28,36.07,potatoes,1181.81
+KEN,Kenya,Nakuru,2015-07-01,-0.28,36.07,potatoes,818.18
+KEN,Kenya,Nakuru,2015-09-01,-0.28,36.07,potatoes,2600.0
+KEN,Kenya,Nakuru,2015-11-01,-0.28,36.07,potatoes,4600.0
+KEN,Kenya,Nakuru,2015-12-01,-0.28,36.07,potatoes,3180.0
+KEN,Kenya,Nakuru,2016-01-01,-0.28,36.07,potatoes,3107.0
+KEN,Kenya,Nakuru,2016-02-01,-0.28,36.07,potatoes,3335.0
+KEN,Kenya,Nakuru,2016-03-01,-0.28,36.07,potatoes,4337.5
+KEN,Kenya,Nakuru,2016-05-01,-0.28,36.07,potatoes,4100.0
+KEN,Kenya,Nakuru,2016-09-01,-0.28,36.07,potatoes,3500.0
+KEN,Kenya,Nakuru,2016-11-01,-0.28,36.07,potatoes,3500.0
+KEN,Kenya,Nakuru,2016-12-01,-0.28,36.07,potatoes,3150.0
+KEN,Kenya,Nakuru,2017-01-01,-0.28,36.07,potatoes,3356.0
+KEN,Kenya,Nakuru,2017-03-01,-0.28,36.07,potatoes,3380.0
+KEN,Kenya,Nakuru,2017-04-01,-0.28,36.07,potatoes,2685.0
+KEN,Kenya,Nakuru,2017-07-01,-0.28,36.07,potatoes,1605.0
+KEN,Kenya,Nakuru,2017-10-01,-0.28,36.07,potatoes,1935.0
+KEN,Kenya,Nakuru,2017-11-01,-0.28,36.07,potatoes,1918.0
+KEN,Kenya,Nakuru,2018-02-01,-0.28,36.07,potatoes,2540.0
+KEN,Kenya,Nakuru,2018-03-01,-0.28,36.07,potatoes,2590.0
+KEN,Kenya,Nakuru,2018-04-01,-0.28,36.07,potatoes,3131.25
+KEN,Kenya,Nakuru,2018-05-01,-0.28,36.07,potatoes,2611.0
+KEN,Kenya,Nakuru,2018-07-01,-0.28,36.07,potatoes,2885.0
+KEN,Kenya,Nakuru,2018-11-01,-0.28,36.07,potatoes,2625.0
+KEN,Kenya,Nakuru,2018-12-01,-0.28,36.07,potatoes,2000.0
+KEN,Kenya,Nakuru,2019-04-01,-0.28,36.07,potatoes,2937.5
+KEN,Kenya,Nakuru,2019-05-01,-0.28,36.07,potatoes,4060.0
+KEN,Kenya,Nakuru,2019-06-01,-0.28,36.07,potatoes,3200.0
+KEN,Kenya,Nakuru,2019-07-01,-0.28,36.07,potatoes,1972.0
+KEN,Kenya,Nakuru,2019-08-01,-0.28,36.07,potatoes,1440.0
+KEN,Kenya,Nakuru,2019-09-01,-0.28,36.07,potatoes,1510.0
+KEN,Kenya,Nakuru,2019-12-01,-0.28,36.07,potatoes,2647.5
+KEN,Kenya,Nakuru,2020-02-01,-0.28,36.07,potatoes,2500.0
+KEN,Kenya,Nakuru,2020-03-01,-0.28,36.07,potatoes,2625.0
