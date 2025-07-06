@@ -2,336 +2,327 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from pathlib import Path
-import sys
-import os
+from datetime import datetime
 
-class MultiCountryFoodPriceAnalyzer:
-    """Unified processor for multiple African countries food price data"""
-    
-    def __init__(self, base_path=None):
-        # Find the project root directory (where data_sources folder is)
-        if base_path is None:
-            current_file = Path(__file__).resolve()
-            # Go up directories until we find data_sources folder
-            project_root = current_file.parent
-            while not (project_root / 'data_sources').exists() and project_root.parent != project_root:
-                project_root = project_root.parent
-            self.base_path = project_root / 'data_sources'
-        else:
-            self.base_path = Path(base_path)
-            
-        self.countries = {}
-        self.unified_data = None
-        
-        # Create output directories
-        self.processed_dir = self.base_path / 'processed'
-        self.processed_dir.mkdir(parents=True, exist_ok=True)
-        
-    def add_country_data(self, country_code, file_path, country_name):
-        """Add a new country's data to the analysis"""
-        print(f"Loading {country_name} data from {file_path}...")
-        
-        # Handle relative paths from project root
-        if not Path(file_path).is_absolute():
-            # If it's a relative path, make it relative to project root
-            project_root = self.base_path.parent
-            full_path = project_root / file_path
-        else:
-            full_path = Path(file_path)
-        
-        try:
-            df = pd.read_csv(full_path)
-            df['country_code'] = country_code
-            df['country_name'] = country_name
-            df['price_date'] = pd.to_datetime(df['price_date'])
-            
-            # Expanded commodity columns to handle both Kenya and Nigeria
-            commodity_cols = ['maize', 'rice', 'sorghum', 'wheat', 'potatoes', 'beans', 'millet', 'yam']
-            available_commodities = [col for col in commodity_cols if col in df.columns]
-            
-            print(f"   Available commodities: {available_commodities}")
-            
-            # Filter to rows with price data
-            if available_commodities:
-                price_filter = df[available_commodities].notna().any(axis=1)
-                df_clean = df[price_filter].copy()
-            else:
-                print(f"   No standard commodity columns found in {country_name} data")
-                return None
-            
-            # Store country info
-            self.countries[country_code] = {
-                'data': df_clean,
-                'name': country_name,
-                'markets': df_clean['mkt_name'].nunique(),
-                'commodities': available_commodities,
-                'date_range': (df_clean['price_date'].min(), df_clean['price_date'].max()),
-                'observations': len(df_clean)
-            }
-            
-            print(f"   {country_name}: {len(df_clean)} observations, {df_clean['mkt_name'].nunique()} markets")
-            print(f"   Date range: {df_clean['price_date'].min().strftime('%Y-%m')} to {df_clean['price_date'].max().strftime('%Y-%m')}")
-            
-            return df_clean
-            
-        except FileNotFoundError:
-            print(f"   Error: File not found: {full_path}")
-            return None
-        except Exception as e:
-            print(f"   Error loading {country_name} data: {str(e)}")
-            return None
-    
-    def create_unified_dataset(self):
-        """Combine all country data into unified format"""
-        if not self.countries:
-            print("No country data loaded. Add countries first!")
-            return None
-            
-        print(f"\nCreating unified dataset from {len(self.countries)} countries...")
-        all_data = []
-        
-        for country_code, country_info in self.countries.items():
-            df = country_info['data'].copy()
-            
-            # Melt commodity columns to long format for easier analysis
-            commodity_cols = country_info['commodities']
-            
-            # Select essential columns that should exist
-            id_vars = ['country_code', 'country_name', 'mkt_name', 'price_date']
-            
-            # Add geographic columns if they exist
-            if 'lat' in df.columns:
-                id_vars.append('lat')
-            if 'lon' in df.columns:
-                id_vars.append('lon')
-            
-            df_melted = pd.melt(
-                df, 
-                id_vars=id_vars,
-                value_vars=commodity_cols,
-                var_name='commodity',
-                value_name='price_local'
-            )
-            
-            # Remove null prices
-            df_melted = df_melted[df_melted['price_local'].notna()]
-            all_data.append(df_melted)
-        
-        self.unified_data = pd.concat(all_data, ignore_index=True)
-        
-        print(f"Unified dataset created:")
-        print(f"   {len(self.unified_data)} total price observations")
-        print(f"   {self.unified_data['country_name'].nunique()} countries")
-        print(f"   {self.unified_data['commodity'].nunique()} commodities")
-        print(f"   {self.unified_data['mkt_name'].nunique()} unique markets")
-        
-        # Save unified dataset
-        unified_path = self.processed_dir / 'unified_multi_country.csv'
-        self.unified_data.to_csv(unified_path, index=False)
-        print(f"   Saved to: {unified_path}")
-        
-        return self.unified_data
-    
-    def cross_country_analysis(self):
-        """Perform cross-country price analysis"""
-        if self.unified_data is None:
-            print("Creating unified dataset first...")
-            self.create_unified_dataset()
-        
-        print(f"\n{'='*60}")
-        print("CROSS-COUNTRY FOOD PRICE ANALYSIS")
-        print(f"{'='*60}")
-        
-        # Average prices by country and commodity
-        avg_prices = self.unified_data.groupby(['country_name', 'commodity'])['price_local'].agg([
-            'mean', 'std', 'count'
-        ]).round(2)
-        
-        print(f"\nAVERAGE PRICES BY COUNTRY:")
-        print(avg_prices)
-        
-        # Price volatility comparison
-        volatility = self.unified_data.groupby(['country_name', 'commodity'])['price_local'].std().reset_index()
-        volatility_pivot = volatility.pivot(index='commodity', columns='country_name', values='price_local')
-        
-        print(f"\nPRICE VOLATILITY COMPARISON (Standard Deviation):")
-        print(volatility_pivot.round(2))
-        
-        # Shared commodities analysis
-        shared_commodities = []
-        kenya_commodities = set()
-        nigeria_commodities = set()
-        
-        for country_code, country_info in self.countries.items():
-            if country_info['name'] == 'Kenya':
-                kenya_commodities = set(country_info['commodities'])
-            elif country_info['name'] == 'Nigeria':
-                nigeria_commodities = set(country_info['commodities'])
-        
-        shared_commodities = list(kenya_commodities.intersection(nigeria_commodities))
-        
-        if shared_commodities:
-            print(f"\nSHARED COMMODITIES: {shared_commodities}")
-            for commodity in shared_commodities:
-                commodity_data = self.unified_data[self.unified_data['commodity'] == commodity]
-                if len(commodity_data) > 0:
-                    country_avg = commodity_data.groupby('country_name')['price_local'].mean()
-                    print(f"  {commodity}: Kenya {country_avg.get('Kenya', 'N/A'):.2f} vs Nigeria {country_avg.get('Nigeria', 'N/A'):.2f}")
-        else:
-            print(f"\nNO SHARED COMMODITIES between countries")
-            print(f"Kenya commodities: {list(kenya_commodities)}")
-            print(f"Nigeria commodities: {list(nigeria_commodities)}")
-        
-        return avg_prices, volatility_pivot
-    
-    def create_comparison_charts(self):
-        """Generate cross-country comparison visualizations"""
-        if self.unified_data is None:
-            self.create_unified_dataset()
-        
-        # Find the best commodity for comparison
-        commodity_counts = self.unified_data.groupby(['commodity', 'country_name']).size().reset_index(name='count')
-        commodity_by_countries = commodity_counts.groupby('commodity')['country_name'].nunique()
-        
-        # Try to find a commodity present in multiple countries
-        multi_country_commodities = commodity_by_countries[commodity_by_countries > 1]
-        
-        if len(multi_country_commodities) > 0:
-            commodity = multi_country_commodities.index[0]
-            print(f"\nCreating visualizations for {commodity} (shared across countries)...")
-        else:
-            # If no shared commodity, use the most common one
-            commodity = self.unified_data['commodity'].value_counts().index[0]
-            print(f"\nCreating visualizations for {commodity} (most common commodity)...")
-        
-        commodity_data = self.unified_data[self.unified_data['commodity'] == commodity].copy()
-        
-        # Create comparison charts
-        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
-        
-        # 1. Average prices by country
-        avg_prices = commodity_data.groupby('country_name')['price_local'].mean().sort_values()
-        avg_prices.plot(kind='barh', ax=ax1, color='skyblue')
-        ax1.set_title(f'Average {commodity.title()} Prices by Country')
-        ax1.set_xlabel('Average Price (Local Currency)')
-        
-        # 2. Price trends over time
-        monthly_avg = commodity_data.groupby(['country_name', 'price_date'])['price_local'].mean().reset_index()
-        
-        colors = ['blue', 'red', 'green', 'orange', 'purple', 'brown', 'pink', 'gray']
-        for i, country in enumerate(monthly_avg['country_name'].unique()):
-            country_data = monthly_avg[monthly_avg['country_name'] == country]
-            color = colors[i % len(colors)]
-            ax2.plot(country_data['price_date'], country_data['price_local'], 
-                    label=country, marker='o', alpha=0.7, color=color)
-        
-        ax2.set_title(f'{commodity.title()} Price Trends Over Time')
-        ax2.set_xlabel('Date')
-        ax2.set_ylabel('Price (Local Currency)')
-        ax2.legend()
-        ax2.tick_params(axis='x', rotation=45)
-        
-        plt.tight_layout()
-        
-        # Save chart
-        chart_path = self.processed_dir / 'cross_country_comparison.png'
-        plt.savefig(chart_path, dpi=300, bbox_inches='tight')
-        print(f"   Chart saved to: {chart_path}")
-        plt.show()
-    
-    def generate_summary_report(self):
-        """Generate comprehensive analysis report"""
-        print(f"\n{'='*60}")
-        print("GENERATING SUMMARY REPORT")
-        print(f"{'='*60}")
-        
-        report_path = self.processed_dir / 'multi_country_summary.txt'
-        
-        with open(report_path, 'w') as f:
-            f.write("PRICEPULSE: MULTI-COUNTRY FOOD PRICE ANALYSIS\n")
-            f.write("="*50 + "\n\n")
-            
-            f.write("DATASET OVERVIEW:\n")
-            f.write(f"Analysis Date: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M')}\n")
-            f.write(f"Countries Analyzed: {len(self.countries)}\n\n")
-            
-            for code, info in self.countries.items():
-                f.write(f"{info['name']} ({code}):\n")
-                f.write(f"   • {info['observations']:,} price observations\n")
-                f.write(f"   • {info['markets']} unique markets\n")
-                f.write(f"   • {len(info['commodities'])} commodities: {', '.join(info['commodities'])}\n")
-                f.write(f"   • Date range: {info['date_range'][0].strftime('%Y-%m')} to {info['date_range'][1].strftime('%Y-%m')}\n\n")
-            
-            if self.unified_data is not None:
-                f.write("UNIFIED DATASET SUMMARY:\n")
-                f.write(f"   • Total observations: {len(self.unified_data):,}\n")
-                f.write(f"   • Countries: {self.unified_data['country_name'].nunique()}\n")
-                f.write(f"   • Commodities: {list(self.unified_data['commodity'].unique())}\n")
-                f.write(f"   • Markets: {self.unified_data['mkt_name'].nunique()}\n")
-                f.write(f"   • Date range: {self.unified_data['price_date'].min().strftime('%Y-%m')} to {self.unified_data['price_date'].max().strftime('%Y-%m')}\n")
-        
-        print(f"Summary report saved to: {report_path}")
-        
-        # Print portfolio highlights
-        print(f"\nPORTFOLIO HIGHLIGHTS:")
-        print(f"   Multi-country data processing framework operational")
-        print(f"   {len(self.countries)} African countries integrated")
-        if self.unified_data is not None:
-            print(f"   {len(self.unified_data):,} price observations processed")
-            print(f"   {self.unified_data['mkt_name'].nunique()} markets monitored")
-        print(f"   Cross-country price analysis and visualization capabilities")
-        print(f"   Scalable architecture ready for additional countries")
+def load_kenya_data():
+    """Load and process Kenya data"""
+    kenya_file = '../../data_sources/processed/kenya_prices_clean.csv'
+    df_kenya = pd.read_csv(kenya_file)
+    df_kenya['country'] = 'Kenya'
+    df_kenya['country_code'] = 'KEN'
+    df_kenya['region'] = 'East Africa'
+    df_kenya['sub_region'] = 'East Africa'
+    df_kenya['population_millions'] = 54.0
+    return df_kenya
 
-def main():
-    """Main execution function"""
-    print("PRICEPULSE: MULTI-COUNTRY FOOD PRICE ANALYZER")
-    print("="*50)
+def load_nigeria_data():
+    """Load and process Nigeria data"""
+    nigeria_file = '../../data_sources/processed/nigeria_prices_clean.csv'
+    df_nigeria = pd.read_csv(nigeria_file)
+    df_nigeria['country'] = 'Nigeria'
+    df_nigeria['country_code'] = 'NGA'
+    df_nigeria['region'] = 'West Africa'
+    df_nigeria['sub_region'] = 'West Africa'
+    df_nigeria['population_millions'] = 218.0
+    return df_nigeria
+
+def load_mali_data():
+    """Load and process Mali data"""
+    mali_file = '../../data_sources/processed/mali_prices_clean.csv'
+    df_mali = pd.read_csv(mali_file)
+    df_mali['country'] = 'Mali'
+    df_mali['country_code'] = 'MLI'
+    df_mali['region'] = 'Sahel'
+    df_mali['sub_region'] = 'West Africa'
+    df_mali['population_millions'] = 22.0
+    return df_mali
+
+def load_mozambique_data():
+    """Load and process Mozambique data"""
+    moz_file = '../../data_sources/processed/mozambique_prices_clean.csv'
+    df_moz = pd.read_csv(moz_file)
+    df_moz['country'] = 'Mozambique'
+    df_moz['country_code'] = 'MOZ'
+    df_moz['region'] = 'Southern Africa'
+    df_moz['sub_region'] = 'SADC'
+    df_moz['population_millions'] = 32.0
+    return df_moz
+
+def load_senegal_data():
+    """Load and process Senegal data"""
+    sen_file = '../../data_sources/processed/senegal_prices_clean.csv'
+    df_sen = pd.read_csv(sen_file)
+    df_sen['country'] = 'Senegal'
+    df_sen['country_code'] = 'SEN'
+    df_sen['region'] = 'West Africa'
+    df_sen['sub_region'] = 'Coastal West Africa'
+    df_sen['population_millions'] = 17.0
+    return df_sen
+
+def load_somalia_data():
+    """Load and process Somalia data"""
+    som_file = '../../data_sources/processed/somalia_prices_clean.csv'
+    df_som = pd.read_csv(som_file)
+    df_som['country'] = 'Somalia'
+    df_som['country_code'] = 'SOM'
+    df_som['region'] = 'Horn of Africa'
+    df_som['sub_region'] = 'East Africa'
+    df_som['population_millions'] = 17.0
+    return df_som
+
+def process_multi_country_data():
+    """Process all 6 countries and create unified dataset"""
     
-    # Initialize analyzer
-    analyzer = MultiCountryFoodPriceAnalyzer()
+    print("=== PRICEPULSE 6-COUNTRY EXPANSION ===")
+    print("Loading all country datasets...")
     
-    countries_loaded = 0
+    # Load existing countries
+    df_kenya = load_kenya_data()
+    df_nigeria = load_nigeria_data()
     
-    # Load Kenya data
-    kenya_file = 'data_sources/processed/kenya_prices_clean.csv'
-    full_kenya_path = analyzer.base_path.parent / kenya_file
+    # Load new countries
+    df_mali = load_mali_data()
+    df_mozambique = load_mozambique_data()
+    df_senegal = load_senegal_data()
+    df_somalia = load_somalia_data()
     
-    if full_kenya_path.exists():
-        kenya_data = analyzer.add_country_data('KEN', kenya_file, 'Kenya')
-        if kenya_data is not None:
-            countries_loaded += 1
-    else:
-        print(f"Kenya data file not found at: {full_kenya_path}")
+    # Combine all datasets
+    all_countries = [df_kenya, df_nigeria, df_mali, df_mozambique, df_senegal, df_somalia]
+    df_combined = pd.concat(all_countries, ignore_index=True)
     
-    # Load Nigeria data
-    nigeria_file = 'data_sources/processed/nigeria_prices_clean.csv'
-    full_nigeria_path = analyzer.base_path.parent / nigeria_file
+    # Convert price_date to datetime for analysis
+    df_combined['price_date'] = pd.to_datetime(df_combined['price_date'])
     
-    if full_nigeria_path.exists():
-        nigeria_data = analyzer.add_country_data('NGA', nigeria_file, 'Nigeria')
-        if nigeria_data is not None:
-            countries_loaded += 1
-    else:
-        print(f"Nigeria data file not found at: {full_nigeria_path}")
+    print(f"\n COMBINED DATASET SUMMARY:")
+    print(f"Total observations: {len(df_combined):,}")
+    print(f"Countries: {df_combined['country'].nunique()}")
+    print(f"Markets: {df_combined['mkt_name'].nunique()}")
+    print(f"Total population covered: {df_combined['population_millions'].sum():.0f}M people")
+    print(f"Date range: {df_combined['price_date'].min().strftime('%Y-%m-%d')} to {df_combined['price_date'].max().strftime('%Y-%m-%d')}")
     
-    # Run analysis if we have at least one country
-    if countries_loaded > 0:
-        analyzer.create_unified_dataset()
-        analyzer.cross_country_analysis()
-        analyzer.create_comparison_charts()
-        analyzer.generate_summary_report()
+    # Country breakdown
+    print(f"\n COUNTRY BREAKDOWN:")
+    country_summary = df_combined.groupby('country').agg({
+        'mkt_name': 'nunique',
+        'population_millions': 'first',
+        'region': 'first',
+        'currency': 'first'
+    }).round(0)
+    
+    for country in df_combined['country'].unique():
+        country_data = df_combined[df_combined['country'] == country]
+        print(f"{country}: {len(country_data):,} obs, {country_data['mkt_name'].nunique()} markets, {country_data['region'].iloc[0]}")
+    
+    return df_combined
+
+def analyze_shared_commodities(df_combined):
+    """Analyze commodities shared across countries"""
+    
+    print(f"\n SHARED COMMODITY ANALYSIS:")
+    
+    # Define commodity mappings for each country
+    country_commodities = {
+        'Kenya': ['maize', 'potatoes', 'sorghum'],
+        'Nigeria': ['rice', 'sorghum', 'beans', 'millet', 'yam'],
+        'Mali': ['beans', 'groundnuts', 'maize', 'millet', 'rice', 'sorghum'],
+        'Mozambique': ['cowpeas', 'groundnuts', 'maize', 'maize_meal', 'oil', 'rice', 'sugar', 'wheat_flour'],
+        'Senegal': ['maize', 'millet', 'rice', 'sorghum'],
+        'Somalia': ['maize', 'oil', 'rice', 'sorghum']
+    }
+    
+    # Analyze shared commodities
+    shared_analysis = {}
+    all_commodities = set()
+    for commodities in country_commodities.values():
+        all_commodities.update(commodities)
+    
+    for commodity in all_commodities:
+        countries_with_commodity = [country for country, commodities in country_commodities.items() 
+                                  if commodity in commodities]
+        if len(countries_with_commodity) > 1:
+            shared_analysis[commodity] = countries_with_commodity
+    
+    print("Multi-country commodities:")
+    for commodity, countries in sorted(shared_analysis.items(), key=lambda x: len(x[1]), reverse=True):
+        print(f"• {commodity.upper()}: {len(countries)} countries - {', '.join(countries)}")
+    
+    return shared_analysis
+
+def analyze_regional_patterns(df_combined):
+    """Analyze regional price patterns"""
+    
+    print(f"\n REGIONAL ANALYSIS:")
+    
+    regional_summary = df_combined.groupby('region').agg({
+        'country': 'nunique',
+        'mkt_name': 'nunique',
+        'population_millions': 'sum'
+    }).round(0)
+    
+    print("Regional coverage:")
+    for region in df_combined['region'].unique():
+        region_data = df_combined[df_combined['region'] == region]
+        countries = region_data['country'].unique()
+        print(f"• {region}: {', '.join(countries)} ({region_data['population_millions'].sum():.0f}M people)")
+
+def generate_cross_country_sorghum_analysis(df_combined):
+    """Analyze sorghum prices across all countries that have it"""
+    
+    print(f"\n SORGHUM CROSS-COUNTRY ANALYSIS:")
+    
+    # Countries with sorghum data
+    sorghum_countries = []
+    for country in df_combined['country'].unique():
+        country_data = df_combined[df_combined['country'] == country]
+        if 'sorghum' in country_data.columns and not country_data['sorghum'].isna().all():
+            sorghum_countries.append(country)
+    
+    if sorghum_countries:
+        print(f"Sorghum available in: {', '.join(sorghum_countries)}")
         
-        print(f"\nSUCCESS! Multi-country analysis completed with {countries_loaded} countries.")
+        # Create sorghum analysis for each country
+        sorghum_analysis = {}
+        for country in sorghum_countries:
+            country_data = df_combined[df_combined['country'] == country]
+            sorghum_data = country_data[country_data['sorghum'].notna()]
+            
+            if len(sorghum_data) > 0:
+                avg_price = sorghum_data['sorghum'].mean()
+                currency = sorghum_data['currency'].iloc[0]
+                observations = len(sorghum_data)
+                sorghum_analysis[country] = {
+                    'avg_price': avg_price,
+                    'currency': currency,
+                    'observations': observations
+                }
         
-        if countries_loaded == 2:
-            print(f"\nKEY INSIGHTS:")
-            print(f"   - Kenya focus: Maize-based food system (East Africa)")
-            print(f"   - Nigeria focus: Rice/Yam-based food system (West Africa)")
-            print(f"   - Combined coverage: 250+ million people")
-            print(f"   - Regional food security comparison enabled")
-    else:
-        print("No country data could be loaded. Check file paths.")
+        print("Average sorghum prices by country:")
+        for country, data in sorghum_analysis.items():
+            print(f"• {country}: {data['avg_price']:.0f} {data['currency']} (from {data['observations']} observations)")
+
+def create_visualizations(df_combined):
+    """Create visualizations for the 6-country dataset"""
+    
+    print(f"\n GENERATING VISUALIZATIONS...")
+    
+    # Set up the plotting style
+    plt.style.use('default')
+    sns.set_palette("husl")
+    
+    # Create figure with subplots
+    fig, axes = plt.subplots(2, 2, figsize=(16, 12))
+    fig.suptitle('PricePulse: 6-Country African Food Price Intelligence', fontsize=16, fontweight='bold')
+    
+    # 1. Country observation counts
+    country_counts = df_combined['country'].value_counts()
+    axes[0, 0].bar(country_counts.index, country_counts.values)
+    axes[0, 0].set_title('Observations by Country')
+    axes[0, 0].set_ylabel('Number of Observations')
+    axes[0, 0].tick_params(axis='x', rotation=45)
+    
+    # 2. Regional distribution
+    region_counts = df_combined['region'].value_counts()
+    axes[0, 1].pie(region_counts.values, labels=region_counts.index, autopct='%1.1f%%')
+    axes[0, 1].set_title('Regional Distribution')
+    
+    # 3. Market count by country
+    market_counts = df_combined.groupby('country')['mkt_name'].nunique()
+    axes[1, 0].bar(market_counts.index, market_counts.values)
+    axes[1, 0].set_title('Markets by Country')
+    axes[1, 0].set_ylabel('Number of Markets')
+    axes[1, 0].tick_params(axis='x', rotation=45)
+    
+    # 4. Population coverage
+    pop_by_region = df_combined.groupby('region')['population_millions'].first()
+    axes[1, 1].bar(pop_by_region.index, pop_by_region.values)
+    axes[1, 1].set_title('Population Coverage by Region (Millions)')
+    axes[1, 1].set_ylabel('Population (Millions)')
+    axes[1, 1].tick_params(axis='x', rotation=45)
+    
+    plt.tight_layout()
+    plt.savefig('../../data_sources/processed/six_country_overview.png', dpi=300, bbox_inches='tight')
+    print(" Visualization saved: six_country_overview.png")
+
+def save_unified_dataset(df_combined):
+    """Save the unified 6-country dataset"""
+    
+    output_file = '../../data_sources/processed/unified_six_country.csv'
+    df_combined.to_csv(output_file, index=False)
+    print(f"\n UNIFIED DATASET SAVED: {output_file}")
+    print(f"Final dataset: {len(df_combined):,} observations across 6 countries")
+
+def generate_summary_report(df_combined, shared_commodities):
+    """Generate comprehensive summary report"""
+    
+    report_file = '../../data_sources/processed/six_country_summary.txt'
+    
+    with open(report_file, 'w') as f:
+        f.write("PRICEPULSE: 6-COUNTRY AFRICAN FOOD PRICE INTELLIGENCE SUMMARY\n")
+        f.write("=" * 70 + "\n\n")
+        
+        f.write(f"Generated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+        
+        f.write("PORTFOLIO OVERVIEW:\n")
+        f.write(f"• Total observations: {len(df_combined):,}\n")
+        f.write(f"• Countries covered: {df_combined['country'].nunique()}\n")
+        f.write(f"• Markets monitored: {df_combined['mkt_name'].nunique()}\n")
+        f.write(f"• Population coverage: {df_combined['population_millions'].sum():.0f}M people\n")
+        f.write(f"• Geographic span: 5 African regions\n")
+        f.write(f"• Date coverage: {df_combined['price_date'].min().strftime('%Y-%m-%d')} to {df_combined['price_date'].max().strftime('%Y-%m-%d')}\n\n")
+        
+        f.write("COUNTRY BREAKDOWN:\n")
+        for country in sorted(df_combined['country'].unique()):
+            country_data = df_combined[df_combined['country'] == country]
+            f.write(f"• {country}: {len(country_data):,} observations, {country_data['mkt_name'].nunique()} markets, {country_data['region'].iloc[0]}\n")
+        
+        f.write("\nSHARED COMMODITIES (Cross-Country Analysis Potential):\n")
+        for commodity, countries in sorted(shared_commodities.items(), key=lambda x: len(x[1]), reverse=True):
+            f.write(f"• {commodity.upper()}: {len(countries)} countries - {', '.join(countries)}\n")
+        
+        f.write("\nREGIONAL COVERAGE:\n")
+        for region in sorted(df_combined['region'].unique()):
+            region_data = df_combined[df_combined['region'] == region]
+            countries = region_data['country'].unique()
+            f.write(f"• {region}: {', '.join(sorted(countries))} ({region_data['population_millions'].sum():.0f}M people)\n")
+        
+        f.write("\nKEY INSIGHTS:\n")
+        f.write("• Mali provides highest data volume (15,143 observations)\n")
+        f.write("• Senegal has perfect commodity overlap with existing portfolio\n")
+        f.write("• Sorghum available in 5/6 countries - ideal for pan-African analysis\n")
+        f.write("• Mali + Senegal share XOF currency - direct price comparisons possible\n")
+        f.write("• Somalia provides critical conflict zone food security intelligence\n")
+        f.write("• Mozambique opens entirely new Southern Africa market\n")
+        f.write("• 827% increase in observations from original 2-country system\n")
+    
+    print(f" SUMMARY REPORT SAVED: {report_file}")
 
 if __name__ == "__main__":
-    main()
+    # Execute the complete 6-country analysis
+    print(" Starting PricePulse 6-Country Analysis...")
+    
+    # Process all data
+    df_combined = process_multi_country_data()
+    
+    # Analyze shared commodities
+    shared_commodities = analyze_shared_commodities(df_combined)
+    
+    # Regional analysis
+    analyze_regional_patterns(df_combined)
+    
+    # Sorghum cross-country analysis
+    generate_cross_country_sorghum_analysis(df_combined)
+    
+    # Create visualizations
+    create_visualizations(df_combined)
+    
+    # Save unified dataset
+    save_unified_dataset(df_combined)
+    
+    # Generate summary report
+    generate_summary_report(df_combined, shared_commodities)
+    
+    print(f"\n SUCCESS! PricePulse now covers 6 countries with {len(df_combined):,} observations!")
+    print(" Check data_sources/processed/ for all outputs:")
+    print("   • unified_six_country.csv (complete dataset)")
+    print("   • six_country_overview.png (visualizations)")
+    print("   • six_country_summary.txt (comprehensive report)")

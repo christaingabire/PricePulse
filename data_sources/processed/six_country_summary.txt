@@ -1,0 +1,45 @@
+PRICEPULSE: 6-COUNTRY AFRICAN FOOD PRICE INTELLIGENCE SUMMARY
+======================================================================
+
+Generated on: 2025-07-06 12:01:36
+
+PORTFOLIO OVERVIEW:
+• Total observations: 36,143
+• Countries covered: 6
+• Markets monitored: 404
+• Population coverage: 1354488M people
+• Geographic span: 5 African regions
+• Date coverage: 2007-01-01 to 2025-06-01
+
+COUNTRY BREAKDOWN:
+• Kenya: 1,144 observations, 14 markets, East Africa
+• Mali: 15,143 observations, 127 markets, Sahel
+• Mozambique: 4,564 observations, 96 markets, Southern Africa
+• Nigeria: 2,754 observations, 60 markets, West Africa
+• Senegal: 9,054 observations, 64 markets, West Africa
+• Somalia: 3,484 observations, 43 markets, Horn of Africa
+
+SHARED COMMODITIES (Cross-Country Analysis Potential):
+• SORGHUM: 5 countries - Kenya, Nigeria, Mali, Senegal, Somalia
+• MAIZE: 5 countries - Kenya, Mali, Mozambique, Senegal, Somalia
+• RICE: 5 countries - Nigeria, Mali, Mozambique, Senegal, Somalia
+• MILLET: 3 countries - Nigeria, Mali, Senegal
+• OIL: 2 countries - Mozambique, Somalia
+• GROUNDNUTS: 2 countries - Mali, Mozambique
+• BEANS: 2 countries - Nigeria, Mali
+
+REGIONAL COVERAGE:
+• East Africa: Kenya (61776M people)
+• Horn of Africa: Somalia (59228M people)
+• Sahel: Mali (333146M people)
+• Southern Africa: Mozambique (146048M people)
+• West Africa: Nigeria, Senegal (754290M people)
+
+KEY INSIGHTS:
+• Mali provides highest data volume (15,143 observations)
+• Senegal has perfect commodity overlap with existing portfolio
+• Sorghum available in 5/6 countries - ideal for pan-African analysis
+• Mali + Senegal share XOF currency - direct price comparisons possible
+• Somalia provides critical conflict zone food security intelligence
+• Mozambique opens entirely new Southern Africa market
+• 827% increase in observations from original 2-country system
