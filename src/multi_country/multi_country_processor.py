@@ -46,8 +46,8 @@ class MultiCountryFoodPriceAnalyzer:
             df['country_name'] = country_name
             df['price_date'] = pd.to_datetime(df['price_date'])
             
-            # Standardize commodity columns (World Bank RTFP format)
-            commodity_cols = ['maize', 'rice', 'sorghum', 'wheat', 'potatoes', 'beans']
+            # Expanded commodity columns to handle both Kenya and Nigeria
+            commodity_cols = ['maize', 'rice', 'sorghum', 'wheat', 'potatoes', 'beans', 'millet', 'yam']
             available_commodities = [col for col in commodity_cols if col in df.columns]
             
             print(f"   Available commodities: {available_commodities}")
@@ -158,6 +158,31 @@ class MultiCountryFoodPriceAnalyzer:
         print(f"\nPRICE VOLATILITY COMPARISON (Standard Deviation):")
         print(volatility_pivot.round(2))
         
+        # Shared commodities analysis
+        shared_commodities = []
+        kenya_commodities = set()
+        nigeria_commodities = set()
+        
+        for country_code, country_info in self.countries.items():
+            if country_info['name'] == 'Kenya':
+                kenya_commodities = set(country_info['commodities'])
+            elif country_info['name'] == 'Nigeria':
+                nigeria_commodities = set(country_info['commodities'])
+        
+        shared_commodities = list(kenya_commodities.intersection(nigeria_commodities))
+        
+        if shared_commodities:
+            print(f"\nSHARED COMMODITIES: {shared_commodities}")
+            for commodity in shared_commodities:
+                commodity_data = self.unified_data[self.unified_data['commodity'] == commodity]
+                if len(commodity_data) > 0:
+                    country_avg = commodity_data.groupby('country_name')['price_local'].mean()
+                    print(f"  {commodity}: Kenya {country_avg.get('Kenya', 'N/A'):.2f} vs Nigeria {country_avg.get('Nigeria', 'N/A'):.2f}")
+        else:
+            print(f"\nNO SHARED COMMODITIES between countries")
+            print(f"Kenya commodities: {list(kenya_commodities)}")
+            print(f"Nigeria commodities: {list(nigeria_commodities)}")
+        
         return avg_prices, volatility_pivot
     
     def create_comparison_charts(self):
@@ -165,36 +190,34 @@ class MultiCountryFoodPriceAnalyzer:
         if self.unified_data is None:
             self.create_unified_dataset()
         
-        # Filter to maize (most common commodity)
-        maize_data = self.unified_data[self.unified_data['commodity'] == 'maize'].copy()
+        # Find the best commodity for comparison
+        commodity_counts = self.unified_data.groupby(['commodity', 'country_name']).size().reset_index(name='count')
+        commodity_by_countries = commodity_counts.groupby('commodity')['country_name'].nunique()
         
-        if len(maize_data) == 0:
-            print("No maize data available for comparison")
-            # Try other commodities
-            available_commodities = self.unified_data['commodity'].unique()
-            if len(available_commodities) > 0:
-                commodity = available_commodities[0]
-                print(f"   Using {commodity} instead...")
-                maize_data = self.unified_data[self.unified_data['commodity'] == commodity].copy()
-            else:
-                print("No commodity data available for visualization")
-                return
+        # Try to find a commodity present in multiple countries
+        multi_country_commodities = commodity_by_countries[commodity_by_countries > 1]
+        
+        if len(multi_country_commodities) > 0:
+            commodity = multi_country_commodities.index[0]
+            print(f"\nCreating visualizations for {commodity} (shared across countries)...")
         else:
-            commodity = 'maize'
+            # If no shared commodity, use the most common one
+            commodity = self.unified_data['commodity'].value_counts().index[0]
+            print(f"\nCreating visualizations for {commodity} (most common commodity)...")
         
-        print(f"\nCreating visualizations for {commodity}...")
+        commodity_data = self.unified_data[self.unified_data['commodity'] == commodity].copy()
         
         # Create comparison charts
         fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 6))
         
         # 1. Average prices by country
-        avg_prices = maize_data.groupby('country_name')['price_local'].mean().sort_values()
+        avg_prices = commodity_data.groupby('country_name')['price_local'].mean().sort_values()
         avg_prices.plot(kind='barh', ax=ax1, color='skyblue')
         ax1.set_title(f'Average {commodity.title()} Prices by Country')
         ax1.set_xlabel('Average Price (Local Currency)')
         
         # 2. Price trends over time
-        monthly_avg = maize_data.groupby(['country_name', 'price_date'])['price_local'].mean().reset_index()
+        monthly_avg = commodity_data.groupby(['country_name', 'price_date'])['price_local'].mean().reset_index()
         
         colors = ['blue', 'red', 'green', 'orange', 'purple', 'brown', 'pink', 'gray']
         for i, country in enumerate(monthly_avg['country_name'].unique()):
@@ -268,61 +291,47 @@ def main():
     # Initialize analyzer
     analyzer = MultiCountryFoodPriceAnalyzer()
     
-    # Debug: Print the paths being checked
-    print(f"Base path found: {analyzer.base_path}")
-    print(f"Looking for Kenya file at: {analyzer.base_path.parent / 'data_sources/processed/kenya_prices_clean.csv'}")
+    countries_loaded = 0
     
-    # Load Kenya data (using your existing cleaned data)
+    # Load Kenya data
     kenya_file = 'data_sources/processed/kenya_prices_clean.csv'
-    
-    # Check if file exists
     full_kenya_path = analyzer.base_path.parent / kenya_file
-    print(f"Full path to check: {full_kenya_path}")
-    print(f"File exists: {full_kenya_path.exists()}")
     
     if full_kenya_path.exists():
         kenya_data = analyzer.add_country_data('KEN', kenya_file, 'Kenya')
-        
         if kenya_data is not None:
-            # Perform analysis with available data
-            analyzer.create_unified_dataset()
-            analyzer.cross_country_analysis()
-            analyzer.create_comparison_charts()
-            analyzer.generate_summary_report()
-            
-            print(f"\nSUCCESS! Multi-country framework tested with Kenya data.")
-            print(f"\nNEXT STEPS:")
-            print(f"   1. Download Nigeria data from World Bank")
-            print(f"   2. Save as: data_sources/raw/NGA_RTFP_mkt_2007_2025.csv")
-            print(f"   3. Add Nigeria to the analysis")
-            print(f"   4. Repeat for Rwanda, Ghana, etc.")
-        else:
-            print("Failed to load Kenya data. Check file path and format.")
+            countries_loaded += 1
     else:
         print(f"Kenya data file not found at: {full_kenya_path}")
-        print(f"Current working directory: {Path.cwd()}")
-        print(f"Script location: {Path(__file__).resolve()}")
+    
+    # Load Nigeria data
+    nigeria_file = 'data_sources/processed/nigeria_prices_clean.csv'
+    full_nigeria_path = analyzer.base_path.parent / nigeria_file
+    
+    if full_nigeria_path.exists():
+        nigeria_data = analyzer.add_country_data('NGA', nigeria_file, 'Nigeria')
+        if nigeria_data is not None:
+            countries_loaded += 1
+    else:
+        print(f"Nigeria data file not found at: {full_nigeria_path}")
+    
+    # Run analysis if we have at least one country
+    if countries_loaded > 0:
+        analyzer.create_unified_dataset()
+        analyzer.cross_country_analysis()
+        analyzer.create_comparison_charts()
+        analyzer.generate_summary_report()
         
-        # Try to find the file manually
-        possible_paths = [
-            Path.cwd() / "../../data_sources/processed/kenya_prices_clean.csv",
-            Path(__file__).parent.parent.parent / "data_sources/processed/kenya_prices_clean.csv",
-            Path("/Users/christaingabire/Documents/PricePulse/data_sources/processed/kenya_prices_clean.csv")
-        ]
+        print(f"\nSUCCESS! Multi-country analysis completed with {countries_loaded} countries.")
         
-        print("Checking possible paths:")
-        for path in possible_paths:
-            print(f"   {path}: {path.exists()}")
-            if path.exists():
-                print(f"   FOUND IT! Using: {path}")
-                kenya_data = analyzer.add_country_data('KEN', str(path), 'Kenya')
-                if kenya_data is not None:
-                    analyzer.create_unified_dataset()
-                    analyzer.cross_country_analysis()
-                    analyzer.create_comparison_charts()
-                    analyzer.generate_summary_report()
-                    print(f"\nSUCCESS! Multi-country framework tested with Kenya data.")
-                break
+        if countries_loaded == 2:
+            print(f"\nKEY INSIGHTS:")
+            print(f"   - Kenya focus: Maize-based food system (East Africa)")
+            print(f"   - Nigeria focus: Rice/Yam-based food system (West Africa)")
+            print(f"   - Combined coverage: 250+ million people")
+            print(f"   - Regional food security comparison enabled")
+    else:
+        print("No country data could be loaded. Check file paths.")
 
 if __name__ == "__main__":
     main()

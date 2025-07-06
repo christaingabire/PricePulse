@@ -2,8 +2,8 @@ PRICEPULSE: MULTI-COUNTRY FOOD PRICE ANALYSIS
 ==================================================
 
 DATASET OVERVIEW:
-Analysis Date: 2025-07-06 10:22
-Countries Analyzed: 1
+Analysis Date: 2025-07-06 11:11
+Countries Analyzed: 2
 
 Kenya (KEN):
    • 1,144 price observations
@@ -11,9 +11,15 @@ Kenya (KEN):
    • 3 commodities: maize, sorghum, potatoes
    • Date range: 2007-01 to 2020-12
 
+Nigeria (NGA):
+   • 2,754 price observations
+   • 60 unique markets
+   • 5 commodities: rice, sorghum, beans, millet, yam
+   • Date range: 2014-05 to 2025-06
+
 UNIFIED DATASET SUMMARY:
-   • Total observations: 1,535
-   • Countries: 1
-   • Commodities: ['maize', 'sorghum', 'potatoes']
-   • Markets: 14
-   • Date range: 2007-01 to 2020-12
+   • Total observations: 9,001
+   • Countries: 2
+   • Commodities: ['maize', 'sorghum', 'potatoes', 'rice', 'beans', 'millet', 'yam']
+   • Markets: 74
+   • Date range: 2007-01 to 2025-06
