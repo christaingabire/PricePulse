@@ -110,7 +110,19 @@ With 36,000+ price observations across African markets, this data could support:
 - Country agricultural ministry data for validation
 - FAO market monitoring where available
 
-The World Bank data has been comprehensive and well-maintained across countries.
+The World Bank data has been comprehensive and well-maintained across countries
+
+---
+
+## Demo Notebook
+
+See the platform in action: **[View Demo Notebook](demo.ipynb)**
+
+The demo shows:
+- 36,000+ observations across 6 African countries
+- Cross-country sorghum price analysis (5 countries)
+- Regional food system comparisons
+- Conflict zone monitoring capabilities
 
 ---
 
