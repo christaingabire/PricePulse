@@ -87,6 +87,9 @@ This approach focuses on shape (change over time) rather than absolute currency 
 
 ---
 
+## Dashboard Preview
+![PricePulse Dashboard](images/dashboard_index.png)
+
 ## Dashboard
 
 The dashboard provides a visual way to explore Africa’s food price landscape. You can switch between local prices and Index (2019=100) mode to compare price movements across countries
