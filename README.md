@@ -88,7 +88,7 @@ This approach focuses on shape (change over time) rather than absolute currency 
 ---
 
 ## Dashboard Preview
-![PricePulse Dashboard](images/dashboard_index.png)
+![PricePulse Dashboard](data_sources/processed/dashboard_index.png)
 
 ## Dashboard
 
@@ -182,7 +182,7 @@ streamlit run src/dashboard/streamlit_app.py
 Requirements: pandas, numpy, matplotlib, plotly, streamlit
 
 Note: The unified dataset (unified_multi_country.csv) is generated locally via the build script and excluded from version control due to file size
-
+```
 --- 
 
 ## Next Steps
