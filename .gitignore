@@ -7,3 +7,6 @@ ehthumbs.db
 Thumbs.db
 .DS_Store
 **/.DS_Store
+data_sources/processed/*.csv
+data_sources/raw/
+*.ipynb_checkpoints
