@@ -161,22 +161,27 @@ This project made me think about how data engineering intersects with developmen
 
 ## Running the Pipeline
 
--- Clone and navigate
+You can rebuild the dataset and launch the dashboard locally in just a few steps:
+
+```bash
+# 1.Clone the repository
 git clone https://github.com/christaingabire/PricePulse.git
 cd PricePulse
 
--- Run data cleaners
+# 2️. Run country-specific data cleaners
 python src/processing/clean_mali.py
 python src/processing/clean_senegal.py
--- ... repeat for other countries
+# ...repeat for other countries as needed
 
--- Build unified dataset (with Index)
+# 3️. Build the unified dataset (adds 2019=100 Index)
 python src/multi_country/build_unified.py
 
--- Launch dashboard
+# 4️. Launch the interactive dashboard
 streamlit run src/dashboard/streamlit_app.py
 
 Requirements: pandas, numpy, matplotlib, plotly, streamlit
+
+Note: The unified dataset (unified_multi_country.csv) is generated locally via the build script and excluded from version control due to file size
 
 --- 
 
