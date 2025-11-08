@@ -1,47 +1,118 @@
 # PricePulse
 
-I built this project to analyze food prices across African countries and understand how food markets work differently across the continent. I realized how little cross-country food price data was available in an accessible format.
+I built PricePulse to explore how food prices behave across African countries, and what those movements reveal about regional trade, agriculture, and food security. This started as a small data-cleaning exercise and quickly became an attempt to make cross-country price data actually comparable and meaningful. I realized how little accessible, standardized food price data existed, even for major staples like maize or rice that millions rely on every day
+
+---
 
 ## What This Project Does
 
-PricePulse takes messy food price data from different African countries and makes it possible to compare prices, identify trends, and spot interesting patterns across regions. The system now covers six countries spanning East Africa to the Sahel, representing over 360 million people and different agricultural systems.
+PricePulse takes messy, country-specific food price data and transforms it into something you can analyze across borders. It allows users to compare trends, track volatility, and visualize how food markets differ across the continent
 
-## Current Coverage
+The system currently covers:
 
-The platform monitors food prices across:
-- **6 countries**: Kenya, Nigeria, Mali, Mozambique, Senegal, Somalia
-- **404 markets**: From rural trading posts to major urban centers
-- **36,000+ observations**: Covering 18 years of price data (2007-2025)
-- **5 regions**: East Africa, West Africa, Sahel, Southern Africa, Horn of Africa
+- 6 countries: Kenya, Nigeria, Mali, Mozambique, Senegal, and Somalia
 
-Key commodities tracked include maize, rice, sorghum, millet, and regional specialties, with some crops available across multiple countries for direct comparison.
+- 404 markets: from rural trading posts to major urban centers
 
-## Interesting Discoveries
+- 36,000+ price observations (2007–2025)
 
-The most interesting aspect has been seeing how different food systems are across the continent:
+- 5 regions: East Africa, West Africa, Sahel, Southern Africa, and the Horn of Africa
 
-- **Regional differences**: East Africa relies heavily on maize, while West Africa centers on rice and other grains
-- **Price variations**: Sorghum costs much more in Kenya than Nigeria, which suggests potential trade opportunities
-- **Currency zones**: Mali and Senegal share the same currency, making price comparisons easier
-- **Crisis patterns**: Somalia's markets show different price patterns that could be useful for monitoring food security
+Key commodities include maize, rice, millet, and sorghum, as well as region-specific foods. Some are shared across countries, which makes it possible to compare them directly
 
-These patterns show not just market differences but also how geography, conflict, and food security connect across Africa.
+---
 
-## How I Built This
+## Why It Matters
 
-### The Data Challenge
-Getting clean, comparable data across countries was harder than expected. Each country has different commodity names, market structures, and data quality. Some countries focus on cereals while others emphasize root crops.
+Food price data isn’t just about economics; It reflects climate shocks, political stability, and trade systems. By cleaning and unifying this information, we can start answering questions like:
 
-I used the World Bank's Real-Time Food Prices database as the main source since it's standardized across countries and updated regularly.
+- Why do prices move together across borders in some years, but not others?
 
-### Technical Approach
-The project uses a modular Python structure that can handle new countries:
-- Country-specific cleaners handle different data formats
-- A unified processor combines everything for cross-country analysis  
-- Automatic commodity matching enables price comparisons
-- Pandas and matplotlib handle data processing and visualization
+- Which markets are most volatile?
 
-The hardest part was building something flexible enough to handle different African food systems while still making meaningful comparisons possible.
+- How are global events (like COVID-19 or the 2022 food crisis) visible in local markets?
+
+---
+
+## How It Works
+
+This project uses a modular Python setup that allows each country’s data to be cleaned separately, then merged into a single unified dataset
+
+Main components:
+
+- processing/: Country-specific cleaners for different formats
+
+- multi_country/: Unified processor that merges and reshapes data
+
+- dashboard/: Interactive Streamlit dashboard for exploring results
+
+- Core technologies: pandas, numpy, matplotlib, plotly, and streamlit
+
+---
+
+## The Data Challenge
+
+Each country collects data differently; Different currencies, market names, even different spellings for the same commodity. Building a pipeline that could align all of these took iteration and patience.
+
+I used the World Bank Real-Time Food Prices database as the primary source because it’s the most standardized and frequently updated. Even then, I had to handle issues like:
+
+- Missing or misaligned dates
+
+- Varying frequency (weekly vs monthly)
+
+- Currency differences (KES, NGN, CFA, SOS, etc.)
+
+- Datasets with 50+ columns of related food items
+
+---
+
+
+## Making Prices Comparable
+
+Cross-country comparisons don’t mean much unless prices are normalized. Here’s how I handled it:
+
+1. Reshaping the data from wide (each commodity in its own column) to long format (country | date | commodity | price)
+
+2. Creating an Index (2019 = 100) for every country–commodity pair
+
+    2.1. This means that an index value of 150 shows prices are 50% higher than in 2019
+
+3. Building a Streamlit dashboard that lets users toggle between:
+
+    3.1. Local currency (raw prices)
+
+    3.2. Index (comparable trends)
+
+This approach focuses on shape (change over time) rather than absolute currency values; A cleaner way to compare across different economies
+
+---
+
+## Dashboard
+
+The dashboard provides a visual way to explore Africa’s food price landscape. You can switch between local prices and Index (2019=100) mode to compare price movements across countries
+
+Key visualizations:
+
+1. Trend lines: How prices evolve over time across countries
+
+2. Cross-country comparison: Average prices for a selected commodity
+
+3. Distribution & volatility: How stable each market is
+
+4. KPIs:
+
+    4.1. 12-month change: Are prices rising or falling compared to last year?
+
+    4.2. Volatility: How stable are prices over the past 12 months?
+
+Together, these give a quick sense of which markets are heating up, stabilizing, or diverging
+
+Run locally:
+streamlit run src/dashboard/streamlit_app.py
+
+
+NOTE: Dashboard can be run locally with Streamlit or deployed to Streamlit Cloud.
+---
 
 ## Project Structure
 
@@ -56,65 +127,83 @@ PricePulse/
 │   └── analysis/               # Individual country analysis
 ```
 
+--- 
+
+## Early Insights
+
+- Regional patterns: Maize dominates East Africa; rice is more central in West Africa
+
+- Price volatility: Somalia and Mozambique show sharper price swings, possibly linked to supply disruptions
+
+- Currency effects: Without normalization, local-currency plots make Somalia look exaggerated — the index view fixes this
+
+- Post-2020 inflation: All countries show a visible jump in prices, consistent with global food inflation trends
+
+---
+
+
 ## What I Learned
 
-This project taught me a lot about working with real-world data:
-- African food markets are complex and diverse
-- Building scalable code from the start saves time later
-- Cross-country analysis needs careful handling of currencies and local conditions
-- Food security patterns often reflect broader economic and political situations
+- Real-world data is rarely clean or comparable
 
-I also learned that good food price data could help policy makers and humanitarian organizations make better decisions.
+- Designing scalable code from the start saves hours of rework later
 
-## Running the Analysis
+- Cross-country analysis demands both technical rigor and contextual understanding (agriculture, currency, policy)
 
-To run the analysis:
+- Good data storytelling requires context, not just code
 
-```bash
-# Clone and navigate
+This project made me think about how data engineering intersects with development and how better information can shape smarter decisions
+
+---
+
+## Running the Pipeline
+
+-- Clone and navigate
 git clone https://github.com/christaingabire/PricePulse.git
 cd PricePulse
 
-# Run individual country cleaners
+-- Run data cleaners
 python src/processing/clean_mali.py
 python src/processing/clean_senegal.py
-# ... etc for each country
+-- ... repeat for other countries
 
-# Run cross-country analysis
-python src/multi_country/multi_country_processor.py
-```
+-- Build unified dataset (with Index)
+python src/multi_country/build_unified.py
 
-Requirements: pandas, numpy, matplotlib, seaborn
+-- Launch dashboard
+streamlit run src/dashboard/streamlit_app.py
+
+Requirements: pandas, numpy, matplotlib, plotly, streamlit
+
+--- 
 
 ## Next Steps
 
-I'm planning to expand to more countries to build better continental coverage. Ethiopia, Democratic Republic of Congo, and South Sudan are on the list due to their importance for food security.
+- Add more countries (Ethiopia, DRC, South Sudan) for broader coverage
 
-Ideas I'm exploring:
-- Crisis alerting for conflict-affected areas
-- Seasonal analysis to understand harvest impacts
-- Trade flow analysis between neighboring countries
-- Web interface for easier exploration
+- Integrate currency normalization (USD) and inflation-adjusted (real) prices
 
-## Potential Applications
+- Explore seasonality analysis (harvest vs. lean months)
 
-With 36,000+ price observations across African markets, this data could support:
-- Early warning systems for food crises
-- Trade policy analysis
-- Agricultural development planning
-- Humanitarian response
+- Add a rolling volatility chart and crisis alerting feature
+
+---
 
 ## Data Sources
 
-- World Bank Real-Time Food Prices database (primary source)
-- Country agricultural ministry data for validation
-- FAO market monitoring where available
+- World Bank: Real-Time Food Prices Database
+
+- National agricultural ministries: For local validation
+
+- FAO: Market monitoring and crisis updates
 
 The World Bank data has been comprehensive and well-maintained across countries
 
 ---
 
 ## Demo Notebook
+
+NOTE: This needs to be updated to reflec the current data
 
 See the platform in action: **[View Demo Notebook](demo.ipynb)**
 
@@ -126,4 +215,4 @@ The demo shows:
 
 ---
 
-I'm a data engineer interested in working in public interest. African food markets tell interesting stories about economics, development, and resilience, and there's more to discover.
+I'm a data engineer with an interest in how data systems and social systems overlap. I believe good public data can change how we understand markets, development, and everyday life across Africa

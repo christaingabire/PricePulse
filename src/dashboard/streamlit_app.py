@@ -1,60 +1,48 @@
-
 import pandas as pd
 import numpy as np
 import plotly.express as px
 import streamlit as st
 import os
 
-# -------------------------------------------------------
-# PAGE CONFIGURATION
-# -------------------------------------------------------
+# ----------------------------------------------------
+# Page setup
+# ----------------------------------------------------
 st.set_page_config(page_title="PricePulse Dashboard", page_icon="🌍", layout="wide")
 
-# -------------------------------------------------------
-# LOAD DATA
-# -------------------------------------------------------
-
-@st.cache_data
-def load_data(path: str) -> pd.DataFrame:
-    df = pd.read_csv(path)
-    df.columns = [c.strip().lower() for c in df.columns]
-
-    # Rename columns to match dashboard expectations
-    rename_map = {
-        "country_name": "country",
-        "price_date": "date",
-        "mkt_name": "market",
-    }
-    df = df.rename(columns=rename_map)
-
-    # Ensure date column is properly parsed
-    if "date" in df.columns:
-        df["date"] = pd.to_datetime(df["date"], errors="coerce")
-        df = df.dropna(subset=["date"])
-
-    # If no USD prices exist, fall back to local
-    if "price_usd" not in df.columns and "price_local" in df.columns:
-        df["price"] = df["price_local"]
-
-    return df
-
-
-# Path to your unified dataset
+# ----------------------------------------------------
+# Load data
+# ----------------------------------------------------
 DATA_PATH = "data_sources/processed/unified_multi_country.csv"
 
 if not os.path.exists(DATA_PATH):
     st.error(f" Data file not found at {DATA_PATH}")
     st.stop()
 
+@st.cache_data
+def load_data(path):
+    df = pd.read_csv(path)
+    df.columns = [c.strip().lower() for c in df.columns]
+    df["date"] = pd.to_datetime(df["date"], errors="coerce")
+    df = df.dropna(subset=["date"])
+    return df
+
 df = load_data(DATA_PATH)
 
-# -------------------------------------------------------
-# SIDEBAR FILTERS
-# -------------------------------------------------------
+# ----------------------------------------------------
+# Sidebar filters
+# ----------------------------------------------------
 with st.sidebar:
     st.header("Filters")
 
-    # Date range slider
+    # View mode toggle
+    view_mode = st.radio(
+        "View mode",
+        ["Index (2019=100)", "Local (per kg)"],
+        index=0,
+        help="Index is the default mode and makes countries comparable."
+)
+
+    # Date range
     min_date, max_date = df["date"].min(), df["date"].max()
     date_range = st.slider(
         "Date range",
@@ -63,123 +51,112 @@ with st.sidebar:
         value=(min_date.to_pydatetime(), max_date.to_pydatetime()),
     )
 
-    # Region (optional)
-    regions = sorted(df["region"].dropna().unique().tolist()) if "region" in df.columns else []
-    region_sel = st.multiselect("Region", regions, default=regions) if regions else []
-
-    # Country
+    # Country and commodity filters
     countries = sorted(df["country"].dropna().unique().tolist())
     country_sel = st.multiselect("Country", countries, default=countries)
 
-    # Commodity
     commodities = sorted(df["commodity"].dropna().unique().tolist())
-    default_commodity = "maize" if "maize" in commodities else (commodities[0] if commodities else None)
-    commodity_sel = st.multiselect("Commodity", commodities, default=[default_commodity] if default_commodity else [])
-
-    # Price basis
-    price_candidates = [c for c in ["price_usd", "price_local", "price"] if c in df.columns]
-    price_col_default = "price_usd" if "price_usd" in price_candidates else price_candidates[0]
-    price_basis = st.radio(
-        "Price basis",
-        options=price_candidates,
-        index=price_candidates.index(price_col_default),
-        help="Choose USD if available for cross-country comparability.",
+    default_commodity = "maize" if "maize" in commodities else commodities[0]
+    commodity_sel = st.multiselect(
+        "Commodity", commodities, default=[default_commodity]
     )
 
-# -------------------------------------------------------
-# APPLY FILTERS
-# -------------------------------------------------------
+# ----------------------------------------------------
+# Apply filters
+# ----------------------------------------------------
 mask = df["date"].between(pd.to_datetime(date_range[0]), pd.to_datetime(date_range[1]))
-if "region" in df.columns and region_sel:
-    mask &= df["region"].isin(region_sel)
 if country_sel:
     mask &= df["country"].isin(country_sel)
 if commodity_sel:
     mask &= df["commodity"].isin(commodity_sel)
-
 view = df.loc[mask].copy()
 
-# -------------------------------------------------------
-# DASHBOARD HEADER
-# -------------------------------------------------------
+
+# Select column to plot
+plot_local = "price_local"
+plot_col = plot_local if view_mode.startswith("Local") else "price_index"
+
+# ----------------------------------------------------
+# Header and context note
+# ----------------------------------------------------
 st.title(" PricePulse: African Food Price Explorer")
-st.caption("Compare food prices across countries, markets, and commodities (2007–2025). Source: World Bank Real-Time Food Prices + validation sources.")
 
-# -------------------------------------------------------
-# KPIs
-# -------------------------------------------------------
-col1, col2, col3, col4 = st.columns(4)
-if len(view):
-    latest_date = view["date"].max()
-    latest = view[view["date"] == latest_date]
-    avg_level = latest[price_basis].mean()
-
-    # Year-over-year change
-    one_year_prior = latest_date - pd.Timedelta(days=365)
-    past_window = view[view["date"] <= one_year_prior]
-    yoy = np.nan
-    if len(past_window):
-        past_avg = past_window[price_basis].mean()
-        if pd.notnull(past_avg) and past_avg != 0:
-            yoy = ((avg_level - past_avg) / past_avg) * 100
-
-    col1.metric("Latest date", latest_date.strftime("%Y-%m-%d"))
-    col2.metric(f"Avg price ({price_basis})", f"{avg_level:,.2f}" if pd.notnull(avg_level) else "—")
-    col3.metric("YoY change", f"{yoy:,.1f}%" if pd.notnull(yoy) else "—")
-    col4.metric("Observations", f"{len(view):,}")
+    
+if plot_col == plot_local:
+    st.info("Viewing prices in local currency per kg. Values are not comparable across countries")
 else:
-    st.info("No data for the current filters. Try broadening your selection.")
+    st.success("Viewing prices as an Index (2019=100). A value of 150 means prices are 50% higher than in 2019")
 
-# -------------------------------------------------------
-# PRICE TREND (LINE CHART)
-# -------------------------------------------------------
-st.subheader(" Price trends over time")
+
+st.caption("Data: World Bank Real-Time Food Prices (2007–2025).")
+
+# ----------------------------------------------------
+# KPIs
+# ----------------------------------------------------
+view["year_month"] = view["date"].dt.to_period("M")
+monthly = (
+    view.groupby("year_month", as_index=True)[plot_col]
+        .median()
+        .sort_index()
+)
+
+col1, col2, col3, col4 = st.columns(4)
+if len(monthly) >= 13:
+    latest_month = monthly.index[-1]
+    current_val = monthly.iloc[-1]
+    year_ago_val = monthly.iloc[-13]
+
+    yoy_change = ((current_val - year_ago_val) / year_ago_val * 100) if year_ago_val != 0 else np.nan
+    # Volatility = standard deviation of last 12 months
+    volatility = monthly.iloc[-12:].std()
+
+    col1.metric("Latest month", str(latest_month))
+    col2.metric("Median Index (2019=100)", f"{current_val:,.0f}")
+    col3.metric("12-mo Change", f"{yoy_change:+.1f}%" if pd.notnull(yoy_change) else "—")
+    col4.metric("12-mo Volatility (σ)", f"{volatility:,.1f}")
+else:
+    col1.metric("Latest month", "—")
+    col2.metric("Median Index", "—")
+    col3.metric("12-mo Change", "—")
+    col4.metric("12-mo Volatility", "—")
+
+# ----------------------------------------------------
+# Charts
+# ----------------------------------------------------
 if len(view):
+
+    st.subheader(" Price trends over time")
     ts = (
-        view.groupby(["date", "country", "commodity"], as_index=False)[price_basis]
+        view.groupby(["date", "country"], as_index=False)[plot_col]
         .mean()
     )
-    fig = px.line(ts, x="date", y=price_basis, color="country", hover_data=["commodity"], title=None)
-    fig.update_layout(legend_title_text="Country", height=420, margin=dict(t=10))
+    fig = px.line(ts, x="date", y=plot_col, color="country")
+    fig.update_layout(legend_title_text="Country", height=400, margin=dict(t=10))
     st.plotly_chart(fig, use_container_width=True)
 
-# -------------------------------------------------------
-# CROSS-COUNTRY COMPARISON (BAR)
-# -------------------------------------------------------
-st.subheader(" Cross-country comparison by commodity")
-if len(view):
-    commodity_pick = st.selectbox(
-        "Choose commodity for comparison",
-        sorted(view["commodity"].unique().tolist()),
-        index=sorted(view["commodity"].unique().tolist()).index(default_commodity)
-        if default_commodity in view["commodity"].unique()
-        else 0,
-    )
+    st.subheader(" Cross-country comparison by commodity")
+    commodity_pick = st.selectbox("Choose commodity for comparison", sorted(view["commodity"].unique()))
     cc = (
         view[view["commodity"] == commodity_pick]
-        .groupby("country", as_index=False)[price_basis]
+        .groupby("country", as_index=False)[plot_col]
         .mean()
-        .sort_values(price_basis, ascending=False)
+        .sort_values(plot_col, ascending=False)
     )
-    fig2 = px.bar(cc, x="country", y=price_basis, text=price_basis, title=None)
-    fig2.update_traces(texttemplate="%{text:.1f}", textposition="outside")
-    fig2.update_layout(yaxis_title=price_basis, height=440, margin=dict(t=10))
+    fig2 = px.bar(cc, x="country", y=plot_col, text=plot_col)
+    fig2.update_traces(texttemplate="%{text:.0f}", textposition="outside")
+    fig2.update_layout(yaxis_title=plot_col, height=400, margin=dict(t=10))
     st.plotly_chart(fig2, use_container_width=True)
 
-# -------------------------------------------------------
-# DISTRIBUTION / VOLATILITY (BOX PLOT)
-# -------------------------------------------------------
-st.subheader(" Distribution & volatility")
-if len(view):
-    long = view[["country", "commodity", price_basis]].dropna()
-    fig3 = px.box(long, x="country", y=price_basis, color="commodity", points="outliers")
-    fig3.update_layout(height=480, margin=dict(t=10))
+    st.subheader(" Distribution & volatility")
+    long = view[["country", "commodity", plot_col]].dropna()
+    fig3 = px.box(long, x="country", y=plot_col, color="commodity", points="outliers")
+    fig3.update_layout(height=450, margin=dict(t=10))
     st.plotly_chart(fig3, use_container_width=True)
 
-# -------------------------------------------------------
-# RAW DATA TABLE
-# -------------------------------------------------------
-with st.expander("Show filtered data"):
-    st.dataframe(view.sort_values("date", ascending=False), use_container_width=True)
+    with st.expander("Show filtered data"):
+        st.dataframe(view.sort_values("date", ascending=False), use_container_width=True)
 
-st.caption(" Tip: Use the sidebar to filter by region, country, commodity, and date range.")
+else:
+    st.warning("No records match your current filters")
+
+st.caption(" Tip: Adjust filters or switch to Index view to explore regional differences")
